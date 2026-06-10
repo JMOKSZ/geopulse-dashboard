@@ -77,15 +77,15 @@
       "threshold_zh": "每+1% ≈ $6000亿结算量转移",
       "source": "SWIFT RMB Tracker",
       "sourceUrl": "https://www.swift.com/our-solutions/compliance-and-shared-services/business-intelligence/renminbi/rmb-tracker",
-      "note": "Monthly publication. Shows both share and absolute volume. CIPS volume (¥480T) dwarfs SWIFT RMB ($5.8T) because CIPS captures off-SWIFT flows (Russia, ME, ASEAN)",
-      "note_zh": "月度发布。同时公布份额和绝对交易额。CIPS总量(¥480万亿)远超SWIFT人民币($5.8万亿)，因为CIPS覆盖了绕过SWIFT的通道（俄罗斯、中东、东盟）"
+      "note": "2025: ~¥180T ($25T). Up from ¥175T in 2024. CIPS captures off-SWIFT flows (Russia, ME, ASEAN) — real RMB picture is ~4× what SWIFT alone shows",
+      "note_zh": "2025年约¥180万亿（$25万亿）。2024年为¥175万亿。CIPS覆盖绕过SWIFT的通道（俄罗斯、中东、东盟）——真实人民币国际化程度是SWIFT显示数据的约4倍"
     },
     "cipsRmbVolume": {
-      "value": "~¥480T annual (est.)",
-      "value_zh": "约480万亿人民币（年化估算）",
-      "unit": "annual RMB settlement volume / ~$66T",
-      "unit_zh": "年化人民币结算量 / 约$66万亿",
-      "baseline": "~¥440T (2025)",
+      "value": "~¥180T annual (2025 est.)",
+      "value_zh": "约¥180万亿/年（2025年估算）",
+      "unit": "annual RMB settlement volume / ~$25T",
+      "unit_zh": "年化人民币结算量 / 约$25万亿",
+      "baseline": "~¥175T (2024)",
       "trend": "rising",
       "status": "warning",
       "threshold": "CIPS volume growing faster than SWIFT share — real picture",
