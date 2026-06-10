@@ -18,7 +18,126 @@
     '切换语言至中文': '切换语言至英文',
   };
 
-  /* ─── i18n ─────────────────────────────────── */
+  /* ─── PDF Export ─────────────────────────── */
+
+  function exportPDF() {
+    // Expand all layers before printing
+    document.querySelectorAll('.layer').forEach(section => {
+      const hdr = section.querySelector('.layer-header');
+      const content = section.querySelector('.layer-content');
+      section.setAttribute('aria-expanded', 'true');
+      if (hdr) hdr.setAttribute('aria-expanded', 'true');
+      if (content) content.hidden = false;
+    });
+    // Trigger browser print (Save as PDF)
+    window.print();
+  }
+
+  /* ─── Trend Chart (canvas) ────────────────── */
+
+  const TREND_DATA = [
+    { year: '2018', label: 'Trump tariffs', pct: 5 },
+    { year: '2019', label: 'Escalation', pct: 10 },
+    { year: '2020', label: 'Phase 1 + COVID', pct: 12 },
+    { year: '2021', label: 'Biden continues', pct: 15 },
+    { year: '2022', label: 'CHIPS Act', pct: 20 },
+    { year: '2023', label: 'Huawei 5G', pct: 25 },
+    { year: '2024', label: 'AI arms race', pct: 28 },
+    { year: '2025', label: 'DeepSeek + tariffs', pct: 32 },
+    { year: '2026', label: 'Hormuz crisis', pct: 38 },
+  ];
+
+  function renderTrendChart() {
+    const canvas = document.getElementById('trend-canvas');
+    if (!canvas) return;
+
+    const wrapper = document.getElementById('trend-chart-wrapper');
+    const dpr = window.devicePixelRatio || 1;
+    const rect = wrapper.getBoundingClientRect();
+    const w = rect.width || 600;
+    const h = 70;
+
+    canvas.width = w * dpr;
+    canvas.height = h * dpr;
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
+
+    const ctx = canvas.getContext('2d');
+    ctx.scale(dpr, dpr);
+
+    const pad = { left: 30, right: 10, top: 8, bottom: 18 };
+    const chartW = w - pad.left - pad.right;
+    const chartH = h - pad.top - pad.bottom;
+    const isZh = STATE.lang === 'zh';
+
+    // Clear
+    ctx.clearRect(0, 0, w, h);
+
+    // Grid lines (horizontal — subtle)
+    ctx.strokeStyle = '#E8DCC9';
+    ctx.lineWidth = 0.5;
+    [0, 25, 50, 75, 100].forEach(pct => {
+      const y = pad.top + chartH * (1 - pct / 100);
+      ctx.beginPath();
+      ctx.moveTo(pad.left, y);
+      ctx.lineTo(w - pad.right, y);
+      ctx.stroke();
+    });
+
+    // Data points
+    const points = TREND_DATA.map((d, i) => ({
+      x: pad.left + (i / (TREND_DATA.length - 1)) * chartW,
+      y: pad.top + chartH * (1 - d.pct / 100),
+      ...d
+    }));
+
+    // Fill area under line
+    ctx.beginPath();
+    ctx.moveTo(points[0].x, pad.top + chartH);
+    points.forEach(p => ctx.lineTo(p.x, p.y));
+    ctx.lineTo(points[points.length - 1].x, pad.top + chartH);
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(200, 75, 49, 0.08)';
+    ctx.fill();
+
+    // Line
+    ctx.beginPath();
+    points.forEach((p, i) => i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y));
+    ctx.strokeStyle = '#C84B31';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+
+    // Dots + labels (every other year to avoid crowding)
+    points.forEach((p, i) => {
+      // Dot
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 2.5, 0, Math.PI * 2);
+      ctx.fillStyle = i === points.length - 1 ? '#C84B31' : '#8B7355';
+      ctx.fill();
+
+      // Year label (only some years to avoid crowding)
+      if (i === 0 || i === points.length - 1 || i === 4 || i === 6 || i === 8) {
+        ctx.fillStyle = i === points.length - 1 ? '#C84B31' : '#8B7355';
+        ctx.font = i === points.length - 1
+          ? 'bold 8px -apple-system, sans-serif'
+          : '7px -apple-system, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'top';
+        ctx.fillText(p.year, p.x, pad.top + chartH + 2);
+      }
+    });
+
+    // Y-axis labels (0%, 38%, 100%)
+    ctx.fillStyle = '#A0907A';
+    ctx.font = '7px -apple-system, sans-serif';
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('0%', pad.left - 4, pad.top + chartH);
+    ctx.fillText(isZh ? '当前 38%' : 'Now 38%', pad.left - 4, points[points.length - 1].y);
+    ctx.fillText('100%', pad.left - 4, pad.top);
+  }
+
+  /* ─── Init ─────────────────────────────────── */
 
   async function loadLang(lang) {
     try {
@@ -235,6 +354,7 @@
 
     updateTimestamp();
     generateSummary();
+    renderTrendChart();
   }
 
   /* ─── Auto-Generated Strategic Summary ──────── */
@@ -296,6 +416,7 @@
 
     // Try to load data from JSON files
     await refreshData();
+    renderTrendChart();
 
     // Hide loading overlay
     const overlay = document.getElementById('loading-overlay');
@@ -312,8 +433,10 @@
         await applyLanguage(newLang);
         updateTimestamp();
         generateSummary();
+        renderTrendChart();
         // Re-render data in new language
         await refreshData();
+        renderTrendChart();
       });
     }
 
@@ -323,11 +446,22 @@
       refreshBtn.addEventListener('click', async () => {
         refreshBtn.classList.add('spinning');
         await refreshData();
+        renderTrendChart();
         // Also re-apply language labels
         await applyLanguage(STATE.lang);
         setTimeout(() => refreshBtn.classList.remove('spinning'), 600);
       });
     }
+
+    // PDF export button
+    const pdfBtn = document.getElementById('btn-export-pdf');
+    if (pdfBtn) {
+      pdfBtn.addEventListener('click', exportPDF);
+    }
+
+    // Trend chart
+    renderTrendChart();
+    window.addEventListener('resize', () => renderTrendChart());
 
     // Auto-refresh every 30 min
     STATE.refreshTimer = setInterval(refreshData, 30 * 60 * 1000);
