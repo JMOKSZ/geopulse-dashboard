@@ -69,8 +69,23 @@
   "ind-energy-intensity-date": "Est. Q2 2026",
 
   "ind-mbs": "MBS Travel",
+  "ind-mbs-val": "Beijing Apr 2026. Next: ?",
+
   "ind-singapore": "Singapore Stance",
-  "ind-adb-loans": "ADB RMB Loans",
+  "ind-singapore-val": "Officially neutral, adjusting quietly",
+
+  "ind-adb-rmb": "ADB RMB Loans",
+  "ind-adb-rmb-val": "Annual data (Jun release)",
+
   "ind-hkma": "HKMA Interventions",
-  "ind-gold-route": "China Gold Import Route"
+  "ind-hkma-val": "Monitor HKD weak-side",
+
+  "ind-gold-route": "China Gold Import Route",
+  "ind-gold-route-val": "Switching to direct Russia?",
+
+  "summary-heading": "Strategic Summary",
+  "summary-text": "Hormuz blockade → Energy costs surge → China's manufacturing cost advantage widens → Trade surplus hits records → Capital controls seal the exits → RMB appreciates to 3-year highs → Central banks accelerate gold buying → Dollar reserve share erodes → Multi-polar system emerges. Current phase: Accelerated erosion of the dollar-centric order, with the US-Iran conflict amplifying pre-existing structural trends. China's relative position strengthening but not yet a challenger for leadership — more a beneficiary of the vacuum.",
+
+  "switch-lang": "Switch language to Chinese",
+  "refresh": "Refresh dashboard data"
 }

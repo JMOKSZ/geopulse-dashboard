@@ -69,8 +69,23 @@
   "ind-energy-intensity-date": "估算Q2 2026",
 
   "ind-mbs": "MBS行程",
+  "ind-mbs-val": "2026年4月访京。下一站：？",
+
   "ind-singapore": "新加坡立场",
-  "ind-adb-loans": "亚开行人民币贷款",
+  "ind-singapore-val": "官方中立，暗中调整",
+
+  "ind-adb-rmb": "亚开行人民币贷款",
+  "ind-adb-rmb-val": "年度数据（6月发布）",
+
   "ind-hkma": "金管局干预",
-  "ind-gold-route": "中国黄金进口路径"
+  "ind-hkma-val": "关注港币弱方兑换",
+
+  "ind-gold-route": "中国黄金进口路径",
+  "ind-gold-route-val": "转向直接对俄采购？",
+
+  "summary-heading": "战略摘要",
+  "summary-text": "霍尔木兹封锁 → 能源成本飙升 → 中国制造成本优势扩大 → 贸易顺差创新高 → 资本管制封住出口 → RMB升至三年高位 → 央行加速购金 → 美元储备份额侵蚀 → 多极化体系浮现。当前阶段：美元中心秩序加速侵蚀，美伊冲突放大了原有的结构性趋势。中国相对地位在增强，但尚未成为领导地位的挑战者——更像是真空中的受益者。",
+
+  "switch-lang": "切换语言至英文",
+  "refresh": "刷新仪表盘数据"
 }
