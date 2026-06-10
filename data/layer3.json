@@ -20,6 +20,36 @@
       "note": "May 2026: exports +19.4% YoY. Hormuz boosts relative competitiveness via energy cost gap.",
       "note_zh": "2026年5月：出口同比+19.4%。霍尔木兹通过能源成本差距扩大相对竞争力。"
     },
+    "chinaTradeShare": {
+      "value": "~14.5%",
+      "value_zh": "约14.5%",
+      "unit": "% of global merchandise trade",
+      "unit_zh": "全球商品贸易占比",
+      "baseline": "15.5% (2021 peak)",
+      "trend": "declining",
+      "status": "normal",
+      "threshold": "Still elevated historically—any share >12% = systemic relevance",
+      "threshold_zh": "历史上仍处于高位——>12%即具有系统性意义",
+      "source": "WTO / UNCTAD",
+      "sourceUrl": "https://www.wto.org/",
+      "note": "Slight dip from peak as supply chain diversifies, but absolute volume growing.",
+      "note_zh": "随供应链多元化从峰值略降，但绝对额仍在增长。"
+    },
+    "chinaTradeWeight": {
+      "value": "~35%",
+      "value_zh": "约35%",
+      "unit": "% of global tradable tonnage",
+      "unit_zh": "全球可贸易商品吨位占比",
+      "baseline": "~30% (2020)",
+      "trend": "rising",
+      "status": "warning",
+      "threshold": "Weight share > value share = China dominates heavy/physical trade",
+      "threshold_zh": "重量占比>价值占比=中国主导重工业/实体贸易",
+      "source": "World Steel / IEA / UNCTAD",
+      "sourceUrl": "https://www.worldsteel.org/",
+      "note": "Steel 54%, Cement 60%, Coal 50%, Containers 80% of global. Physical dominance underappreciated.",
+      "note_zh": "全球钢铁54%、水泥60%、煤炭50%、集装箱80%。实物主导地位被低估。"
+    },
     "industrialProfits": {
       "value": "TBD (Jun release)",
       "value_zh": "待发布（6月发布）",
@@ -78,7 +108,7 @@
       "source": "CPCA / company reports",
       "sourceUrl": "https://x.com/search?q=China+EV+exports+2026",
       "note": "Hormuz → competitor logistics cost up → China EV price gap widens",
-      "note_zh": "霍尔木兹→对手物流成本↑→中国电动车价格差距扩大"
+      "note_zh": "霍尔木兹→竞争对手物流成本上升→中国电动车价差扩大"
     }
   }
 }
