@@ -1,13 +1,19 @@
 {
   "dashboard": "Geopolitical Pulse / 地缘脉冲",
   "version": "1.0.0",
-  "lastUpdated": "2026-06-10T12:00:00Z",
+  "lastUpdated": "2026-06-10T23:24:55Z",
   "updateFrequency": {
     "marketData": "realtime",
     "xScraped": "daily",
     "officialStats": "monthly"
   },
-  "layers": ["layer1", "layer2", "layer3", "layer4", "layer5"],
+  "layers": [
+    "layer1",
+    "layer2",
+    "layer3",
+    "layer4",
+    "layer5"
+  ],
   "framework": {
     "chain": [
       "Hormuz disruption → Oil↑ → China manufacturing advantage↑ → Trade surplus↑",
@@ -23,9 +29,9 @@
     ]
   },
   "keyLevels": {
-    "usdCny": "6.77",
-    "dxy": "99.8 (est)",
+    "usdCny": "6.7807",
+    "dxy": "86.66",
     "cfets": "101.41",
-    "gold": "$2,350/oz (est)"
+    "gold": "$4,044/oz"
   }
 }

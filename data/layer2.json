@@ -94,6 +94,36 @@
       "sourceUrl": "https://www.cips.com.cn/",
       "note": "CIPS covers Russia, Middle East, ASEAN trade bypassing SWIFT. True RMB internationalization is higher than SWIFT data shows.",
       "note_zh": "CIPS覆盖俄罗斯、中东、东盟的贸易，绕过SWIFT。真实的人民币国际化程度比SWIFT数据显示的要高。"
+    },
+    "usdCnyRate": {
+      "value": "6.7807",
+      "value_zh": "6.7807",
+      "unit": "CNY per USD",
+      "unit_zh": "人民币/美元",
+      "baseline": "7.00 (2025 avg)",
+      "trend": "rising",
+      "status": "normal",
+      "threshold": "<6.5 = significant appreciation",
+      "threshold_zh": "<6.5 = 显著升值",
+      "source": "Frankfurter API / ECB",
+      "sourceUrl": "https://api.frankfurter.app",
+      "note": "Daily spot rate. WMT 2026-06-10",
+      "note_zh": "每日即期汇率。更新于 2026-06-10"
+    },
+    "spotGold": {
+      "value": "$4,044",
+      "value_zh": "$4,044",
+      "unit": "USD/oz",
+      "unit_zh": "美元/盎司",
+      "baseline": "$2,350 (2025 avg)",
+      "trend": "rising",
+      "status": "normal",
+      "threshold": ">$3,000 = panic pricing",
+      "threshold_zh": ">$3,000 = 恐慌定价",
+      "source": "Gold API",
+      "sourceUrl": "https://www.gold-api.com",
+      "note": "Spot gold price. Updated 2026-06-10",
+      "note_zh": "现货黄金价格。更新于 2026-06-10"
     }
   }
 }
