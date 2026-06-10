@@ -820,13 +820,13 @@
                     </div>
                 </article>
 
-                <!-- SWIFT RMB Share -->
+                <!-- SWIFT RMB Share + Volume -->
                 <article class="card" data-indicator="usd-swift-rmb">
                     <div class="card-header">
-                        <span class="card-name" data-i18n="ind-swift-rmb">SWIFT RMB Share</span>
+                        <span class="card-name" data-i18n="ind-swift-rmb">SWIFT RMB</span>
                         <span class="card-status" aria-label="Status: normal">🟢</span>
                     </div>
-                    <div class="card-value">~5.5%</div>
+                    <div class="card-value"><span class="val-main">~5.5%</span> <span class="val-sub" data-i18n="ind-swift-abs">// $5.8T annual</span></div>
                     <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
                     <div class="card-source">
                         Source: <a href="https://www.swift.com/our-solutions/compliance-and-shared-services/business-intelligence/renminbi/rmb-tracker" target="_blank" rel="noopener noreferrer">SWIFT RMB Tracker</a>
@@ -841,7 +841,7 @@
                     </div>
                     <div class="card-value" data-i18n="ind-cips-val">~¥480T annual (est.)</div>
                     <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
-                    <div class="card-threshold" data-i18n="ind-cips-threshold">SWIFT + CIPS combined > SWIFT alone</div>
+                    <div class="card-threshold" data-i18n="ind-cips-compare">~$66T — 11× SWIFT RMB volume</div>
                     <div class="card-source">
                         Source: <a href="https://www.cips.com.cn/" target="_blank" rel="noopener noreferrer">CIPS / PBOC</a>
                     </div>
@@ -1239,9 +1239,10 @@
                         },
                         {
                             "id": "swift-rmb",
-                            "name": "SWIFT RMB Share",
-                            "name_zh": "SWIFT人民币份额",
-                            "value": "~5.5%",
+                            "name": "SWIFT RMB",
+                            "name_zh": "SWIFT人民币",
+                            "value": "~5.5% // $5.8T annual",
+                            "value_zh": "约5.5% // $5.8万亿/年",
                             "unit": "",
                             "unit_zh": "",
                             "trend": "up",

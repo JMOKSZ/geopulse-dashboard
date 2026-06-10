@@ -38,11 +38,12 @@
   "ind-dxy-oil": "美元-油价相关性",
   "ind-dxy-oil-val": "脱钩中",
 
-  "ind-swift-rmb": "SWIFT人民币份额",
+  "ind-swift-rmb": "SWIFT人民币",
+  "ind-swift-abs": "$5.8万亿/年 // 约5.5%份额",
 
   "ind-cips": "CIPS人民币结算量",
   "ind-cips-val": "约480万亿人民币（年化）",
-  "ind-cips-threshold": "SWIFT + CIPS合起来才算完整图景",
+  "ind-cips-compare": "约$66万亿 — 是SWIFT人民币的11倍",
 
   "ind-trade-surplus": "月度贸易顺差",
   "ind-trade-surplus-date": "2026年5月",
