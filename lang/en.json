@@ -40,6 +40,10 @@
 
   "ind-swift-rmb": "SWIFT RMB Share",
 
+  "ind-cips": "CIPS RMB Volume",
+  "ind-cips-val": "~¥480T annual (est.)",
+  "ind-cips-threshold": "SWIFT + CIPS combined > SWIFT alone",
+
   "ind-trade-surplus": "Monthly Trade Surplus",
   "ind-trade-surplus-date": "May 2026",
 

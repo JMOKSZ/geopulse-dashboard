@@ -40,6 +40,10 @@
 
   "ind-swift-rmb": "SWIFT人民币份额",
 
+  "ind-cips": "CIPS人民币结算量",
+  "ind-cips-val": "约480万亿人民币（年化）",
+  "ind-cips-threshold": "SWIFT + CIPS合起来才算完整图景",
+
   "ind-trade-surplus": "月度贸易顺差",
   "ind-trade-surplus-date": "2026年5月",
 

@@ -79,6 +79,21 @@
       "sourceUrl": "https://www.swift.com/our-solutions/compliance-and-shared-services/business-intelligence/renminbi/rmb-tracker",
       "note": "Monthly publication. Trending up but from very low base vs USD (~47%)",
       "note_zh": "月度发布。虽然上升但基数远低于美元(~47%)"
+    },
+    "cipsRmbVolume": {
+      "value": "~¥480T annual (est.)",
+      "value_zh": "约480万亿人民币（年化估算）",
+      "unit": "annual RMB settlement volume",
+      "unit_zh": "年化人民币结算量",
+      "baseline": "~¥440T (2025)",
+      "trend": "rising",
+      "status": "warning",
+      "threshold": "CIPS volume growing faster than SWIFT share — real picture",
+      "threshold_zh": "CIPS增速超过SWIFT份额增速——这才是真实图景",
+      "source": "CIPS / PBOC",
+      "sourceUrl": "https://www.cips.com.cn/",
+      "note": "CIPS covers Russia, Middle East, ASEAN trade bypassing SWIFT. True RMB internationalization is higher than SWIFT data shows.",
+      "note_zh": "CIPS覆盖俄罗斯、中东、东盟的贸易，绕过SWIFT。真实的人民币国际化程度比SWIFT数据显示的要高。"
     }
   }
 }
