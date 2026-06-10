@@ -15,7 +15,7 @@
       "status": "critical",
       "threshold": ">0.5% critical",
       "threshold_zh": ">0.5% 危险",
-      "source": "Lloyd's / LMA",
+      "source": "Lloyd's / LMA (updated)",
       "sourceUrl": "https://x.com/search?q=war+risk+premium+hormuz",
       "note": "VLCC single transit ~$3-8M at current rates",
       "note_zh": "VLCC单次航行保费约$3-8M"
