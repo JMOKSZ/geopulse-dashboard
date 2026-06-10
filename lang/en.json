@@ -4,97 +4,69 @@
   "loading": "Loading geopolitical data…",
   "lang-label": "中文",
   "refresh-label": "Refresh",
-
   "layer-1-title": "Strait of Hormuz",
   "layer-2-title": "Dollar System",
   "layer-3-title": "China Macro",
   "layer-4-title": "AI & Tech",
   "layer-5-title": "Wild Signals",
-
   "ind-war-risk": "War Risk Premium",
   "ind-war-risk-baseline": "Baseline: 0.25%",
   "ind-war-risk-threshold": "Threshold: >0.5% critical",
-
   "ind-throughput": "Strait Throughput",
   "ind-throughput-normal": "Normal: 17 mb/d",
   "ind-throughput-threshold": "Threshold: <5 mb/d critical",
-
   "ind-irgc": "IRGC Statement Freq",
   "ind-irgc-threshold": "Threshold: >5/week warning",
-
   "ind-5thfleet": "US 5th Fleet",
   "ind-5thfleet-val": "Awaiting orders, at anchor Bahrain",
-
   "ind-gcc": "Saudi / UAE Stance",
   "ind-gcc-val": "Pressing US for action, exploring alternatives",
-
   "ind-auction": "Treasury Auction Coverage",
   "ind-auction-val": "Bid-to-cover ratio declining",
-
   "ind-foreign-holdings": "Foreign Treasury Holdings",
   "ind-cb-gold": "Central Bank Gold Purchases",
   "ind-cb-gold-val": "17t (Apr), China +10t (May)",
-
   "ind-dxy-oil": "DXY–Oil Correlation",
   "ind-dxy-oil-val": "Decoupling in progress",
-
   "ind-swift-rmb": "SWIFT RMB",
   "ind-swift-abs": "$5.8T annual // ~5.5% share",
-
   "ind-cips": "CIPS RMB Volume",
   "ind-cips-val": "~¥180T annual (2025 est.)",
   "ind-cips-compare": "~$25T — 4.3× SWIFT RMB volume",
-
   "ind-trade-surplus": "Monthly Trade Surplus",
   "ind-trade-surplus-date": "May 2026",
-
   "ind-industrial-profits": "Industrial Profits",
   "ind-industrial-profits-val": "TBD (monthly)",
-
   "ind-fx-settlement": "FX Settlement Ratio",
   "ind-fx-settlement-val": "Available from SAFE (monthly)",
-
   "ind-cfets": "CFETS RMB Index",
   "ind-cfets-date": "Jun 2, 2026",
   "ind-cfets-threshold": "Threshold: >104 intervention zone",
-
   "ind-ev-exports": "China EV Exports",
   "ind-ev-exports-val": "Monthly data via CPCA",
-
   "ind-gpu-premium": "GPU Black Market Premium",
   "ind-gpu-premium-val": "H100 ~2–3× MSRP (grey market)",
-
   "ind-ai-adoption": "China AI Adoption",
   "ind-ai-adoption-val": "DeepSeek V4, Claude, Gemini — rapid enterprise deployment",
-
   "ind-nvda-asia": "NVDA Asia Revenue",
   "ind-nvda-asia-val": "Next earnings: Aug 2026",
-
   "ind-energy-intensity": "China Energy Intensity",
   "ind-energy-intensity-date": "Est. Q2 2026",
-
   "ind-mbs": "MBS Travel",
   "ind-mbs-val": "Beijing Apr 2026. Next: ?",
-
   "ind-singapore": "Singapore Stance",
   "ind-singapore-val": "Officially neutral, adjusting quietly",
-
   "ind-adb-rmb": "ADB RMB Loans",
   "ind-adb-rmb-val": "Annual data (Jun release)",
-
   "ind-hkma": "HKMA Interventions",
   "ind-hkma-val": "Monitor HKD weak-side",
-
   "ind-gold-route": "China Gold Import Route",
   "ind-gold-route-val": "Switching to direct Russia?",
-
   "summary-heading": "Strategic Summary",
   "summary-text": "Hormuz blockade → Energy costs surge → China's manufacturing cost advantage widens → Trade surplus hits records → Capital controls seal the exits → RMB appreciates to 3-year highs → Central banks accelerate gold buying → Dollar reserve share erodes → Multi-polar system emerges. Current phase: Accelerated erosion of the dollar-centric order, with the US-Iran conflict amplifying pre-existing structural trends. China's relative position strengthening but not yet a challenger for leadership — more a beneficiary of the vacuum.",
-
   "progress-label": "US–China Game Progression (since 2018 Trump tariffs)",
-
   "export-pdf": "PDF",
-
   "switch-lang": "Switch language to Chinese",
-  "refresh": "Refresh dashboard data"
+  "refresh": "Refresh dashboard data",
+  "trend-heading": "US–China Trend Timeline"
 }

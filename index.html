@@ -546,6 +546,13 @@
                 padding: 1.125rem;
             }
 
+            #trend-chart-wrapper {
+                height: 140px;
+            }
+            #trend-canvas {
+                height: 140px;
+            }
+
             .progress-pct {
                 font-size: 1.75rem;
                 min-width: 4ch;
@@ -605,8 +612,36 @@
         }
 
         /* ── Trend Chart ────────────────────────── */
-        #trend-chart-wrapper { margin-top: 0.5rem; width: 100%; height: 70px; }
-        #trend-canvas { width: 100%; height: 70px; display: block; }
+        /* ── Trend Timeline (standalone) ──────────────── */
+        .trend-section {
+            background: var(--card-bg);
+            border: 1px solid #E8DCC9;
+            border-left: 4px solid var(--accent);
+            border-radius: var(--radius);
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .trend-header h2 {
+            font-size: 1.0625rem;
+            font-weight: 700;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        #trend-chart-wrapper {
+            margin-top: 0.75rem;
+            width: 100%;
+            height: 200px;
+        }
+        #trend-canvas {
+            width: 100%;
+            height: 200px;
+            display: block;
+        }
 
         /* ── PDF button ─────────────────────────── */
         #btn-export-pdf {
@@ -694,6 +729,18 @@
                 at 6.77, CFETS index at 101.41, and PBOC gold buying continues for the 18th consecutive
                 month. The key unknown: how long Hormuz stays closed.
             </p>
+        </section>
+
+        <!-- ──────────────────────────────────────────────── -->
+        <!-- TREND TIMELINE (standalone)                      -->
+        <!-- ──────────────────────────────────────────────── -->
+        <section class="trend-section" aria-labelledby="trend-heading">
+            <div class="trend-header">
+                <h2 id="trend-heading">
+                    <span aria-hidden="true">📈</span>
+                    <span data-i18n="trend-heading">US–China Trend Timeline</span>
+                </h2>
+            </div>
             <div id="trend-chart-wrapper">
                 <canvas id="trend-canvas" aria-label="US-China game progression trend since 2018"></canvas>
             </div>

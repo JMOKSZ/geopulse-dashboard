@@ -36,15 +36,15 @@
   /* ─── Trend Chart (canvas) ────────────────── */
 
   const TREND_DATA = [
-    { year: '2018', label: 'Trump tariffs', pct: 5 },
-    { year: '2019', label: 'Escalation', pct: 10 },
-    { year: '2020', label: 'Phase 1 + COVID', pct: 12 },
-    { year: '2021', label: 'Biden continues', pct: 15 },
-    { year: '2022', label: 'CHIPS Act', pct: 20 },
-    { year: '2023', label: 'Huawei 5G', pct: 25 },
-    { year: '2024', label: 'AI arms race', pct: 28 },
-    { year: '2025', label: 'DeepSeek + tariffs', pct: 32 },
-    { year: '2026', label: 'Hormuz crisis', pct: 38 },
+    { year: '2018', label: 'Trump tariffs', labelZh: '特朗普关税', pct: 5 },
+    { year: '2019', label: 'Escalation', labelZh: '贸易战升级', pct: 10 },
+    { year: '2020', label: 'Phase 1 + COVID', labelZh: '第一阶段+疫情', pct: 12 },
+    { year: '2021', label: 'Biden continues', labelZh: '拜登延续', pct: 15 },
+    { year: '2022', label: 'CHIPS Act', labelZh: '芯片法案', pct: 20 },
+    { year: '2023', label: 'Huawei 5G', labelZh: '华为5G回归', pct: 25 },
+    { year: '2024', label: 'AI arms race', labelZh: 'AI军备竞赛', pct: 28 },
+    { year: '2025', label: 'DeepSeek + tariffs', labelZh: 'DeepSeek+关税', pct: 32 },
+    { year: '2026', label: 'Hormuz crisis', labelZh: '霍尔木兹危机', pct: 38 },
   ];
 
   function renderTrendChart() {
@@ -52,10 +52,11 @@
     if (!canvas) return;
 
     const wrapper = document.getElementById('trend-chart-wrapper');
+    if (!wrapper) return;
     const dpr = window.devicePixelRatio || 1;
     const rect = wrapper.getBoundingClientRect();
     const w = rect.width || 600;
-    const h = 70;
+    const h = 200;
 
     canvas.width = w * dpr;
     canvas.height = h * dpr;
@@ -65,7 +66,8 @@
     const ctx = canvas.getContext('2d');
     ctx.scale(dpr, dpr);
 
-    const pad = { left: 30, right: 10, top: 8, bottom: 18 };
+    // Padding — more room for labels
+    const pad = { left: 36, right: 16, top: 24, bottom: 28 };
     const chartW = w - pad.left - pad.right;
     const chartH = h - pad.top - pad.bottom;
     const isZh = STATE.lang === 'zh';
@@ -76,7 +78,7 @@
     // Grid lines (horizontal — subtle)
     ctx.strokeStyle = '#E8DCC9';
     ctx.lineWidth = 0.5;
-    [0, 25, 50, 75, 100].forEach(pct => {
+    [0, 10, 20, 30, 38, 50, 75, 100].forEach(pct => {
       const y = pad.top + chartH * (1 - pct / 100);
       ctx.beginPath();
       ctx.moveTo(pad.left, y);
@@ -97,43 +99,122 @@
     points.forEach(p => ctx.lineTo(p.x, p.y));
     ctx.lineTo(points[points.length - 1].x, pad.top + chartH);
     ctx.closePath();
-    ctx.fillStyle = 'rgba(200, 75, 49, 0.08)';
+    ctx.fillStyle = 'rgba(200, 75, 49, 0.06)';
     ctx.fill();
 
     // Line
     ctx.beginPath();
     points.forEach((p, i) => i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y));
     ctx.strokeStyle = '#C84B31';
-    ctx.lineWidth = 1.5;
+    ctx.lineWidth = 2;
     ctx.stroke();
 
-    // Dots + labels (every other year to avoid crowding)
+    // Draw dots + annotations
+    const isLast = i => i === points.length - 1;
+
+    // Tracks used y-ranges for label collision avoidance
+    const usedRanges = [];
+
+    function labelFits(y, labelH) {
+      const top = y - labelH - 2;
+      const bot = y + 2;
+      return !usedRanges.some(r => top < r[1] && bot > r[0]);
+    }
+
+    function reserveRange(y, labelH, offset) {
+      usedRanges.push([y - labelH - offset - 2, y - offset + 2]);
+    }
+
     points.forEach((p, i) => {
+      const isCurrent = isLast(i);
+      const dotRadius = isCurrent ? 5 : 3;
+      const dotColor = isCurrent ? '#C84B31' : '#8B7355';
+
       // Dot
       ctx.beginPath();
-      ctx.arc(p.x, p.y, 2.5, 0, Math.PI * 2);
-      ctx.fillStyle = i === points.length - 1 ? '#C84B31' : '#8B7355';
+      ctx.arc(p.x, p.y, dotRadius, 0, Math.PI * 2);
+      ctx.fillStyle = dotColor;
       ctx.fill();
+      if (isCurrent) {
+        // Glow ring around current dot
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, 8, 0, Math.PI * 2);
+        ctx.strokeStyle = 'rgba(200, 75, 49, 0.25)';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+      }
 
-      // Year label (only some years to avoid crowding)
-      if (i === 0 || i === points.length - 1 || i === 4 || i === 6 || i === 8) {
-        ctx.fillStyle = i === points.length - 1 ? '#C84B31' : '#8B7355';
-        ctx.font = i === points.length - 1
-          ? 'bold 8px -apple-system, sans-serif'
-          : '7px -apple-system, sans-serif';
-        ctx.textAlign = 'center';
+      // Milestone label — place above dot for early pts, below for later
+      // Alternate: above for even i, below for odd, current gets special
+      const eventLabel = isZh ? p.labelZh || p.label : p.label;
+
+      // Year always below
+      ctx.fillStyle = isCurrent ? '#C84B31' : '#A0907A';
+      ctx.font = isCurrent ? 'bold 10px -apple-system, sans-serif' : '9px -apple-system, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'top';
+      ctx.fillText(p.year, p.x, pad.top + chartH + 4);
+
+      // Event label — alternate above/below for readability
+      let labelAbove = (i % 2 === 0) || isCurrent;
+      // For dense middle section, push key ones only
+      if (i === 1 || i === 3 || i === 5 || i === 7) labelAbove = false;
+
+      const fontSize = isCurrent ? 11 : 9;
+      const fontWeight = isCurrent ? 'bold' : 'normal';
+      ctx.font = fontWeight + ' ' + fontSize + 'px -apple-system, sans-serif';
+      ctx.textAlign = 'center';
+
+      if (labelAbove) {
+        ctx.textBaseline = 'bottom';
+        const labelY = p.y - dotRadius - 4;
+        // Badge background for the current point
+        if (isCurrent) {
+          const tw = ctx.measureText(eventLabel).width;
+          const bx = p.x - tw / 2 - 6, by = labelY - fontSize - 4, bw = tw + 12, bh = fontSize + 8;
+          ctx.fillStyle = '#C84B31';
+          ctx.beginPath();
+          ctx.roundRect(bx, by, bw, bh, 4);
+          ctx.fill();
+          ctx.fillStyle = '#FFF';
+          ctx.fillText(eventLabel, p.x, labelY - 2);
+        } else {
+          ctx.fillStyle = '#4A3F2E';
+          ctx.fillText(eventLabel, p.x, labelY);
+        }
+      } else {
         ctx.textBaseline = 'top';
-        ctx.fillText(p.year, p.x, pad.top + chartH + 2);
+        const labelY = p.y + dotRadius + 4;
+        ctx.fillStyle = '#4A3F2E';
+        ctx.fillText(eventLabel, p.x, labelY + 12); // below year
+      }
+
+      // For key milestones, draw a small connecting line to y-axis
+      if (i === 0 || i === 4 || i === 6 || isCurrent) {
+        ctx.strokeStyle = isCurrent ? 'rgba(200,75,49,0.2)' : 'rgba(139,115,85,0.15)';
+        ctx.lineWidth = 1;
+        ctx.setLineDash([3, 4]);
+        ctx.beginPath();
+        ctx.moveTo(pad.left, p.y);
+        ctx.lineTo(p.x, p.y);
+        ctx.stroke();
+        ctx.setLineDash([]);
+
+        // Y-axis value label for key milestones
+        ctx.fillStyle = isCurrent ? '#C84B31' : '#A0907A';
+        ctx.font = isCurrent ? 'bold 9px -apple-system, sans-serif' : '8px -apple-system, sans-serif';
+        ctx.textAlign = 'right';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(p.pct + '%', pad.left - 4, p.y);
       }
     });
 
-    // Y-axis labels (0%, 38%, 100%)
+    // Y-axis labels (0%, 100%)
     ctx.fillStyle = '#A0907A';
-    ctx.font = '7px -apple-system, sans-serif';
+    ctx.font = '8px -apple-system, sans-serif';
     ctx.textAlign = 'right';
     ctx.textBaseline = 'middle';
     ctx.fillText('0%', pad.left - 4, pad.top + chartH);
-    ctx.fillText(isZh ? '当前 38%' : 'Now 38%', pad.left - 4, points[points.length - 1].y);
     ctx.fillText('100%', pad.left - 4, pad.top);
   }
 
