@@ -1,7 +1,7 @@
 {
   "dashboard": "Geopolitical Pulse / 地缘脉冲",
   "version": "1.0.0",
-  "lastUpdated": "2026-06-10T23:24:55Z",
+  "lastUpdated": "2026-06-10T23:26:07Z",
   "updateFrequency": {
     "marketData": "realtime",
     "xScraped": "daily",
@@ -30,8 +30,8 @@
   },
   "keyLevels": {
     "usdCny": "6.7807",
-    "dxy": "86.66",
+    "dxy": "102.34",
     "cfets": "101.41",
-    "gold": "$4,044/oz"
+    "gold": "$4,050/oz"
   }
 }

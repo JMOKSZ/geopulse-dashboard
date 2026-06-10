@@ -111,8 +111,8 @@
       "note_zh": "每日即期汇率。更新于 2026-06-10"
     },
     "spotGold": {
-      "value": "$4,044",
-      "value_zh": "$4,044",
+      "value": "$4,050",
+      "value_zh": "$4,050",
       "unit": "USD/oz",
       "unit_zh": "美元/盎司",
       "baseline": "$2,350 (2025 avg)",
