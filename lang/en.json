@@ -1,0 +1,76 @@
+{
+  "app-title": "Geopolitical Pulse",
+  "app-title-zh": "地缘脉冲",
+  "loading": "Loading geopolitical data…",
+  "lang-label": "中文",
+  "refresh-label": "Refresh",
+
+  "layer-1-title": "Strait of Hormuz",
+  "layer-2-title": "Dollar System",
+  "layer-3-title": "China Macro",
+  "layer-4-title": "AI & Tech",
+  "layer-5-title": "Wild Signals",
+
+  "ind-war-risk": "War Risk Premium",
+  "ind-war-risk-baseline": "Baseline: 0.25%",
+  "ind-war-risk-threshold": "Threshold: >0.5% critical",
+
+  "ind-throughput": "Strait Throughput",
+  "ind-throughput-normal": "Normal: 17 mb/d",
+  "ind-throughput-threshold": "Threshold: <5 mb/d critical",
+
+  "ind-irgc": "IRGC Statement Freq",
+  "ind-irgc-threshold": "Threshold: >5/week warning",
+
+  "ind-5thfleet": "US 5th Fleet",
+  "ind-5thfleet-val": "Awaiting orders, at anchor Bahrain",
+
+  "ind-gcc": "Saudi / UAE Stance",
+  "ind-gcc-val": "Pressing US for action, exploring alternatives",
+
+  "ind-auction": "Treasury Auction Coverage",
+  "ind-auction-val": "Bid-to-cover ratio declining",
+
+  "ind-foreign-holdings": "Foreign Treasury Holdings",
+  "ind-cb-gold": "Central Bank Gold Purchases",
+  "ind-cb-gold-val": "17t (Apr), China +10t (May)",
+
+  "ind-dxy-oil": "DXY–Oil Correlation",
+  "ind-dxy-oil-val": "Decoupling in progress",
+
+  "ind-swift-rmb": "SWIFT RMB Share",
+
+  "ind-trade-surplus": "Monthly Trade Surplus",
+  "ind-trade-surplus-date": "May 2026",
+
+  "ind-industrial-profits": "Industrial Profits",
+  "ind-industrial-profits-val": "TBD (monthly)",
+
+  "ind-fx-settlement": "FX Settlement Ratio",
+  "ind-fx-settlement-val": "Available from SAFE (monthly)",
+
+  "ind-cfets": "CFETS RMB Index",
+  "ind-cfets-date": "Jun 2, 2026",
+  "ind-cfets-threshold": "Threshold: >104 intervention zone",
+
+  "ind-ev-exports": "China EV Exports",
+  "ind-ev-exports-val": "Monthly data via CPCA",
+
+  "ind-gpu-premium": "GPU Black Market Premium",
+  "ind-gpu-premium-val": "H100 ~2–3× MSRP (grey market)",
+
+  "ind-ai-adoption": "China AI Adoption",
+  "ind-ai-adoption-val": "DeepSeek R1, 通义, 文心 — rapid enterprise deployment",
+
+  "ind-nvda-asia": "NVDA Asia Revenue",
+  "ind-nvda-asia-val": "Next earnings: Aug 2026",
+
+  "ind-energy-intensity": "China Energy Intensity",
+  "ind-energy-intensity-date": "Est. Q2 2026",
+
+  "ind-mbs": "MBS Travel",
+  "ind-singapore": "Singapore Stance",
+  "ind-adb-loans": "ADB RMB Loans",
+  "ind-hkma": "HKMA Interventions",
+  "ind-gold-route": "China Gold Import Route"
+}

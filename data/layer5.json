@@ -1,0 +1,81 @@
+{
+  "id": "layer5",
+  "title": "Layer 5: Wild Signals",
+  "title_zh": "第五层：草蛇灰线——意外信号",
+  "desc": "Grassroots clues — more reliable than headlines",
+  "desc_zh": "这些不在头条里，但比任何高级指标都准",
+  "indicators": {
+    "mbsItinerary": {
+      "value": "Beijing Apr 2026. Next: ?",
+      "value_zh": "2026年4月访京。下一站：？",
+      "unit": "",
+      "baseline": "Balanced US-China visits",
+      "trend": "stable",
+      "status": "normal",
+      "threshold": "More Beijing than DC visits = strategic drift",
+      "threshold_zh": "去北京多于华盛顿=战略偏移",
+      "source": "X / news tracking",
+      "sourceUrl": "https://x.com/search?q=MBS+travel+2026",
+      "note": "MBS itinerary = world's most honest thermometer of alignment. Track next destination.",
+      "note_zh": "MBS行程=世界上最诚实的温度计。追踪下一站去哪。"
+    },
+    "singaporeStance": {
+      "value": "Officially neutral, adjusting quietly",
+      "value_zh": "官方中立，暗中调整",
+      "unit": "",
+      "baseline": "Strict non-alignment",
+      "trend": "stable",
+      "status": "normal",
+      "threshold": "Singapore picks a side = every other Asian ally is already doing it",
+      "threshold_zh": "新加坡选边=其他亚洲盟友已经在做了",
+      "source": "speeches / press conferences",
+      "sourceUrl": "https://x.com/search?q=Singapore+stance+US+China+2026",
+      "note": "Singapore is the honest thermometer — they pick a side before others do.",
+      "note_zh": "新加坡是最诚实的温度计——它选边比别人都早。"
+    },
+    "adbLoanCurrency": {
+      "value": "Annual data (Jun release)",
+      "value_zh": "年度数据（6月发布）",
+      "unit": "% of new loans in RMB",
+      "unit_zh": "新增贷款RMB占比",
+      "baseline": "~0.5% (2024)",
+      "trend": "stable",
+      "status": "unknown",
+      "threshold": "Meaningful increase (>2%) = multilateral acceptance of RMB",
+      "threshold_zh": "显著增长(>2%)=多边机构对RMB的实质接受",
+      "source": "ADB / World Bank",
+      "sourceUrl": "https://x.com/search?q=ADB+loan+currency+RMB",
+      "note": "Operational acceptance of RMB at multilateral level — slower but more real than SWIFT data",
+      "note_zh": "多边层面RMB的操作性接受——比SWIFT数据慢但更真实"
+    },
+    "hkmaInterventions": {
+      "value": "Monitor HKD weak-side",
+      "value_zh": "关注港币弱方兑换",
+      "unit": "interventions/month",
+      "unit_zh": "干预次数/月",
+      "baseline": "0-1/month (normal)",
+      "trend": "stable",
+      "status": "unknown",
+      "threshold": "Sustained weak-side touches = capital outflow pressure from Asia",
+      "threshold_zh": "持续触碰弱方=亚洲资本外流压力",
+      "source": "HKMA daily data",
+      "sourceUrl": "https://x.com/search?q=HKMA+intervention+2026",
+      "note": "HKMA interventions = pressure gauge for capital flows from/to Asia",
+      "note_zh": "金管局干预频率=亚洲资本流动的压力计"
+    },
+    "chinaGoldImportPath": {
+      "value": "Switching to direct Russia?",
+      "value_zh": "转向直接对俄采购？",
+      "unit": "",
+      "baseline": "London/Switzerland route",
+      "trend": "stable",
+      "status": "warning",
+      "threshold": "Route change = settlement system de-dollarization in motion",
+      "threshold_zh": "路径改变=结算体系去美元化在进行",
+      "source": "Customs data / trade flows",
+      "sourceUrl": "https://x.com/search?q=China+gold+import+Russia+2026",
+      "note": "If China gold imports shift from London/Switzerland to direct Russia procurement, settlement currency changes too.",
+      "note_zh": "如果中国黄金进口从伦敦/瑞士转向直接向俄采购，结算币种也在变。"
+    }
+  }
+}

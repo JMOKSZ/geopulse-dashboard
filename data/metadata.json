@@ -1,0 +1,31 @@
+{
+  "dashboard": "Geopolitical Pulse / 地缘脉冲",
+  "version": "1.0.0",
+  "lastUpdated": "2026-06-10T12:00:00Z",
+  "updateFrequency": {
+    "marketData": "realtime",
+    "xScraped": "daily",
+    "officialStats": "monthly"
+  },
+  "layers": ["layer1", "layer2", "layer3", "layer4", "layer5"],
+  "framework": {
+    "chain": [
+      "Hormuz disruption → Oil↑ → China manufacturing advantage↑ → Trade surplus↑",
+      "Capital controls seal exits → RMB appreciates",
+      "Gold replaces Treasuries → Dollar share declines",
+      "Multi-polar reserve system emerges"
+    ],
+    "chain_zh": [
+      "霍尔木兹扰动 → 油价↑ → 中国制造相对优势↑ → 顺差↑",
+      "资本管制封住出口 → RMB升值",
+      "黄金替代美债 → 美元份额下降",
+      "多极化储备体系浮现"
+    ]
+  },
+  "keyLevels": {
+    "usdCny": "6.77",
+    "dxy": "99.8 (est)",
+    "cfets": "101.41",
+    "gold": "$2,350/oz (est)"
+  }
+}

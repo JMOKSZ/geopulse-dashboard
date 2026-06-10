@@ -1,0 +1,76 @@
+{
+  "app-title": "地缘脉冲",
+  "app-title-zh": "地缘脉冲",
+  "loading": "正在加载地缘政治数据…",
+  "lang-label": "EN",
+  "refresh-label": "刷新",
+
+  "layer-1-title": "霍尔木兹",
+  "layer-2-title": "美元体系",
+  "layer-3-title": "中国宏观",
+  "layer-4-title": "AI与科技",
+  "layer-5-title": "草蛇灰线",
+
+  "ind-war-risk": "战争险保费",
+  "ind-war-risk-baseline": "基准: 0.25%",
+  "ind-war-risk-threshold": "阈值: >0.5% 危险",
+
+  "ind-throughput": "海峡通过量",
+  "ind-throughput-normal": "正常: 17 mb/d",
+  "ind-throughput-threshold": "阈值: <5 mb/d 危险",
+
+  "ind-irgc": "IRGC声明频率",
+  "ind-irgc-threshold": "阈值: >5次/周 警惕",
+
+  "ind-5thfleet": "美第五舰队",
+  "ind-5thfleet-val": "锚泊中——巴林",
+
+  "ind-gcc": "沙特/阿联酋表态",
+  "ind-gcc-val": "向美施压，探索替代方案",
+
+  "ind-auction": "美债拍卖覆盖率",
+  "ind-auction-val": "投标覆盖率下降中",
+
+  "ind-foreign-holdings": "外国持有美债",
+  "ind-cb-gold": "央行购金量",
+  "ind-cb-gold-val": "4月全球17吨，中国+10吨(5月)",
+
+  "ind-dxy-oil": "美元-油价相关性",
+  "ind-dxy-oil-val": "脱钩中",
+
+  "ind-swift-rmb": "SWIFT人民币份额",
+
+  "ind-trade-surplus": "月度贸易顺差",
+  "ind-trade-surplus-date": "2026年5月",
+
+  "ind-industrial-profits": "工业企业利润",
+  "ind-industrial-profits-val": "待发布（月度）",
+
+  "ind-fx-settlement": "结售汇比率",
+  "ind-fx-settlement-val": "待外管局发布",
+
+  "ind-cfets": "CFETS人民币指数",
+  "ind-cfets-date": "2026年6月2日",
+  "ind-cfets-threshold": "阈值: >104 可能干预",
+
+  "ind-ev-exports": "中国电动车出口",
+  "ind-ev-exports-val": "月度数据 via CPCA",
+
+  "ind-gpu-premium": "GPU黑市溢价",
+  "ind-gpu-premium-val": "H100 ~MSRP的2-3倍 (灰市)",
+
+  "ind-ai-adoption": "中国AI渗透率",
+  "ind-ai-adoption-val": "DeepSeek R1、通义、文心——企业部署加速",
+
+  "ind-nvda-asia": "NVDA亚洲收入",
+  "ind-nvda-asia-val": "下次财报: 2026年8月",
+
+  "ind-energy-intensity": "中国能源强度",
+  "ind-energy-intensity-date": "估算Q2 2026",
+
+  "ind-mbs": "MBS行程",
+  "ind-singapore": "新加坡立场",
+  "ind-adb-loans": "亚开行人民币贷款",
+  "ind-hkma": "金管局干预",
+  "ind-gold-route": "中国黄金进口路径"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "layer4",
+  "title": "Layer 4: AI & Tech Competition",
+  "title_zh": "第四层：AI与科技竞争",
+  "desc": "Technology as the long-term structural variable",
+  "desc_zh": "技术作为长期结构性变量",
+  "indicators": {
+    "gpuBlackMarket": {
+      "value": "2-3x MSRP",
+      "value_zh": "MSRP的2-3倍",
+      "unit": "premium above MSRP",
+      "unit_zh": "高于官方定价",
+      "baseline": "~1.5x (2025)",
+      "trend": "stable",
+      "status": "warning",
+      "threshold": "Premium falling = sanctions leaking; Premium rising = bottleneck tightening",
+      "threshold_zh": "溢价下降=制裁在漏；溢价上升=瓶颈收紧",
+      "source": "SemiAnalysis / grey market",
+      "sourceUrl": "https://x.com/search?q=H100+black+market+China",
+      "note": "H100/B200 grey market premium. Monitor restrictions vs smuggling flows.",
+      "note_zh": "H100/B200灰市溢价。关注禁令与走私流量的博弈。"
+    },
+    "chinaAiAdoption": {
+      "value": "Rapid enterprise deployment",
+      "value_zh": "企业级部署加速",
+      "unit": "adoption index",
+      "unit_zh": "渗透指数",
+      "baseline": "Moderate (2025)",
+      "trend": "rising",
+      "status": "normal",
+      "threshold": "Monitor: DeepSeek API calls, 通义 enterprise cases, 文心 industry adoption",
+      "threshold_zh": "关注：DeepSeek API调用量、通义企业案例、文心行业落地",
+      "source": "GitHub / company announcements / X",
+      "sourceUrl": "https://x.com/search?q=DeepSeek+enterprise+China",
+      "note": "DeepSeek R1 proved export controls don't stop AI progress, only change path.",
+      "note_zh": "DeepSeek R1证明了出口管制不能阻止AI进步，只是改变了路径。"
+    },
+    "nvdaAsiaRevenue": {
+      "value": "Next: Aug 2026",
+      "value_zh": "下次发布：2026年8月",
+      "unit": "% of total revenue",
+      "unit_zh": "占总收入比例",
+      "baseline": "~25% (pre-restriction)",
+      "trend": "stable",
+      "status": "unknown",
+      "threshold": "Asia share rising = chips still flowing despite restrictions",
+      "threshold_zh": "亚洲占比上升=芯片仍在流通",
+      "source": "NVDA IR / SEC filings",
+      "sourceUrl": "https://x.com/search?q=NVDA+earnings+Asia+revenue",
+      "note": "Quarterly earnings. Check 'China' and 'Singapore' revenue breakdowns.",
+      "note_zh": "季度财报。关注'中国'和'新加坡'的收入拆分。"
+    },
+    "chinaEnergyIntensity": {
+      "value": "-3.2% YoY (est)",
+      "value_zh": "同比-3.2%（估算）",
+      "unit": "% change YoY",
+      "unit_zh": "同比变化%",
+      "baseline": "-3.5% (2025)",
+      "trend": "falling",
+      "status": "normal",
+      "threshold": "Sustained -3%+ = AI + manufacturing efficiency offsetting energy costs",
+      "threshold_zh": "持续-3%以上=AI+制造效率在抵扣能源成本",
+      "source": "NBS (quarterly, 1Q lag)",
+      "sourceUrl": "https://x.com/search?q=China+energy+intensity+2026",
+      "note": "Key competitiveness metric: China efficiency gains vs rivals' pure fuel cost exposure",
+      "note_zh": "关键竞争力指标：中国效率提升vs竞争对手的纯燃料成本暴露"
+    }
+  }
+}

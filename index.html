@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Geopolitical Pulse — Real-time geopolitical risk monitoring dashboard tracking Hormuz, dollar system, China macro, AI &amp; tech, and wild signals.">
+    <meta name="theme-color" content="#FAF5EE">
+    <title>Geopolitical Pulse | 地缘脉冲</title>
+
+    <!-- Favicon: 🌐 as inline SVG -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Preconnect for any external source domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        /*
+         * Minimal critical-path CSS inlined to avoid FOUC on the loading
+         * overlay and initial layout. Full styles live in css/style.css.
+         */
+
+        :root {
+            --bg:         #FAF5EE;
+            --text:       #2C2416;
+            --accent:     #C84B31;
+            --secondary:  #1A73E8;
+            --card-bg:    #FFFFFF;
+            --border:     #E5DDD2;
+            --shadow:     0 2px 8px rgba(44,36,22,0.06);
+            --shadow-lg:  0 4px 24px rgba(44,36,22,0.10);
+            --radius:     12px;
+            --radius-sm:  8px;
+            --font:       -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif;
+            --transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            -webkit-text-size-adjust: 100%;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ── Loading Overlay ─────────────────────────────── */
+        #loading-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: var(--bg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            transition: opacity var(--transition), visibility var(--transition);
+        }
+
+        #loading-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .loading-spinner {
+            width: 48px;
+            height: 48px;
+            border: 4px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            font-size: 1rem;
+            color: #8B7E6A;
+            letter-spacing: 0.02em;
+        }
+
+        /* ── Header ──────────────────────────────────────── */
+        .dashboard-header {
+            background: #FFFFFF;
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 4px rgba(44,36,22,0.04);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: baseline;
+            gap: 0.75rem;
+        }
+
+        .header-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text);
+            letter-spacing: -0.01em;
+        }
+
+        .header-title-zh {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #8B7E6A;
+        }
+
+        .header-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .last-updated {
+            font-size: 0.8125rem;
+            color: #8B7E6A;
+            white-space: nowrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.375rem;
+            padding: 0.5rem 1rem;
+            font-family: var(--font);
+            font-size: 0.8125rem;
+            font-weight: 600;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            background: #FFFFFF;
+            color: var(--text);
+            cursor: pointer;
+            transition: all var(--transition);
+            white-space: nowrap;
+            user-select: none;
+        }
+
+        .btn:hover {
+            background: var(--bg);
+            border-color: #D4C8B8;
+        }
+
+        .btn:active {
+            transform: scale(0.97);
+        }
+
+        .btn--accent {
+            background: var(--accent);
+            color: #FFFFFF;
+            border-color: var(--accent);
+        }
+
+        .btn--accent:hover {
+            background: #B33D27;
+            border-color: #B33D27;
+        }
+
+        .btn .icon {
+            font-size: 1.1em;
+        }
+
+        /* ── Main Dashboard Area ─────────────────────────── */
+        .dashboard-main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem 1.5rem 3rem;
+        }
+
+        /* ── Layer Sections ──────────────────────────────── */
+        .layer {
+            background: #FFFFFF;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: box-shadow var(--transition);
+        }
+
+        .layer:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .layer-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 1.25rem;
+            cursor: pointer;
+            user-select: none;
+            background: transparent;
+            transition: background var(--transition);
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-family: var(--font);
+            color: var(--text);
+        }
+
+        .layer-header:hover {
+            background: #FDFAF5;
+        }
+
+        .layer-header:focus-visible {
+            outline: 2px solid var(--secondary);
+            outline-offset: -2px;
+            border-radius: var(--radius) var(--radius) 0 0;
+        }
+
+        .layer-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--bg);
+            font-size: 0.8125rem;
+            font-weight: 700;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .layer-title {
+            font-size: 1.0625rem;
+            font-weight: 700;
+            flex: 1;
+        }
+
+        .layer-aggregate-status {
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .layer-chevron {
+            flex-shrink: 0;
+            font-size: 0.75rem;
+            color: #8B7E6A;
+            transition: transform var(--transition);
+        }
+
+        .layer[aria-expanded="true"] .layer-chevron {
+            transform: rotate(180deg);
+        }
+
+        /* ── Layer Content (card grid) ───────────────────── */
+        .layer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+            padding: 0 1.25rem 1.25rem;
+            transition: max-height var(--transition), opacity var(--transition), padding var(--transition);
+            max-height: 5000px;
+            opacity: 1;
+            overflow: hidden;
+        }
+
+        .layer[aria-expanded="false"] .layer-content {
+            max-height: 0;
+            opacity: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        /* ── Indicator Card ──────────────────────────────── */
+        .card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            transition: transform var(--transition), box-shadow var(--transition);
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 0.5rem;
+        }
+
+        .card-name {
+            font-size: 0.8125rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            color: #6B5E4A;
+            flex: 1;
+        }
+
+        .card-status {
+            font-size: 1.125rem;
+            flex-shrink: 0;
+            line-height: 1;
+        }
+
+        .card-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text);
+            line-height: 1.2;
+            word-break: break-word;
+        }
+
+        .card-unit {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #8B7E6A;
+        }
+
+        .card-trend {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            font-size: 0.8125rem;
+            font-weight: 600;
+        }
+
+        .card-trend--up    { color: #C84B31; }
+        .card-trend--down  { color: #1A73E8; }
+        .card-trend--flat  { color: #8B7E6A; }
+        .card-trend--unknown { color: #AFA590; }
+
+        .card-threshold {
+            font-size: 0.75rem;
+            color: #8B7E6A;
+            padding: 0.375rem 0.5rem;
+            background: rgba(200,75,49,0.06);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        }
+
+        .card-source {
+            font-size: 0.6875rem;
+            margin-top: auto;
+        }
+
+        .card-source a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .card-source a:hover {
+            text-decoration: underline;
+        }
+
+        /* ── Strategic Summary ────────────────────────────── */
+        .strategic-summary {
+            background: linear-gradient(135deg, #FDF8F2 0%, #FFF9F0 100%);
+            border: 2px solid var(--accent);
+            border-left: 6px solid var(--accent);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .strategic-summary h2 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .strategic-summary p {
+            font-size: 0.9375rem;
+            line-height: 1.75;
+            color: #4A3F2E;
+        }
+
+        /* ── Responsive ───────────────────────────────────── */
+        @media (max-width: 768px) {
+            .dashboard-header {
+                padding: 0.75rem 1rem;
+            }
+
+            .header-title {
+                font-size: 1.25rem;
+            }
+
+            .header-title-zh {
+                font-size: 1.0625rem;
+            }
+
+            .dashboard-main {
+                padding: 1rem 0.75rem 2rem;
+            }
+
+            .layer-header {
+                padding: 0.875rem 1rem;
+            }
+
+            .layer-content {
+                grid-template-columns: 1fr;
+                padding: 0 1rem 1rem;
+                gap: 0.75rem;
+            }
+
+            .layer-title {
+                font-size: 0.9375rem;
+            }
+
+            .card {
+                padding: 0.875rem;
+            }
+
+            .strategic-summary {
+                padding: 1.125rem;
+            }
+
+            .btn {
+                padding: 0.4375rem 0.75rem;
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (min-width: 1920px) {
+            .dashboard-main {
+                max-width: 1800px;
+                padding: 2rem 3rem 4rem;
+            }
+
+            .layer-content {
+                grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            }
+        }
+
+        /* ── Reduced motion ──────────────────────────────── */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* ── Print ───────────────────────────────────────── */
+        @media print {
+            .dashboard-header {
+                position: static;
+            }
+
+            .layer[aria-expanded="false"] .layer-content {
+                max-height: none;
+                opacity: 1;
+                padding: 0 1.25rem 1.25rem;
+            }
+
+            .btn,
+            #loading-overlay {
+                display: none !important;
+            }
+
+            .card:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ════════════════════════════════════════════════════ -->
+    <!-- LOADING OVERLAY                                     -->
+    <!-- ════════════════════════════════════════════════════ -->
+    <div id="loading-overlay" role="status" aria-live="polite" aria-label="Loading dashboard data">
+        <div class="loading-spinner" aria-hidden="true"></div>
+        <p class="loading-text" data-i18n="loading">Loading geopolitical data…</p>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════ -->
+    <!-- HEADER                                              -->
+    <!-- ════════════════════════════════════════════════════ -->
+    <header class="dashboard-header" role="banner">
+        <div class="header-brand">
+            <h1 class="header-title" data-i18n="app-title">Geopolitical Pulse</h1>
+            <span class="header-title-zh" data-i18n="app-title-zh" aria-hidden="true">地缘脉冲</span>
+        </div>
+        <div class="header-meta">
+            <span class="last-updated" id="last-updated" data-i18n-prefix="updated" aria-live="polite">
+                Updated: <time datetime="2026-06-10T09:30:00Z">10 Jun 2026, 09:30 UTC</time>
+            </span>
+            <button class="btn" id="btn-lang-toggle" aria-label="Switch language to Chinese" data-i18n-attr="aria-label" data-i18n-key="switch-lang">
+                <span class="icon">🌐</span>
+                <span data-i18n="lang-label">中文</span>
+            </button>
+            <button class="btn btn--accent" id="btn-refresh" aria-label="Refresh dashboard data" data-i18n-attr="aria-label" data-i18n-key="refresh">
+                <span class="icon">↻</span>
+                <span data-i18n="refresh-label">Refresh</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ════════════════════════════════════════════════════ -->
+    <!-- DASHBOARD MAIN                                      -->
+    <!-- ════════════════════════════════════════════════════ -->
+    <main class="dashboard-main" role="main" aria-label="Geopolitical monitoring dashboard">
+
+        <!-- ──────────────────────────────────────────────── -->
+        <!-- LAYER 1: Strait of Hormuz                        -->
+        <!-- ──────────────────────────────────────────────── -->
+        <section class="layer" id="layer-1" data-layer="1" aria-expanded="true" aria-labelledby="layer-1-heading">
+            <button class="layer-header" id="layer-1-heading" aria-expanded="true" aria-controls="layer-1-content">
+                <span class="layer-number" aria-hidden="true">1</span>
+                <span class="layer-title" data-i18n="layer-1-title">Strait of Hormuz</span>
+                <span class="layer-aggregate-status" aria-label="Layer status: critical" title="Critical">🔴</span>
+                <span class="layer-chevron" aria-hidden="true">▼</span>
+            </button>
+            <div class="layer-content" id="layer-1-content" role="region" aria-labelledby="layer-1-heading">
+
+                <!-- War Risk Premium -->
+                <article class="card" data-indicator="hrmz-war-risk">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-war-risk">War Risk Premium</span>
+                        <span class="card-status" aria-label="Status: critical" title="Critical — exceeds 0.5% threshold">🔴</span>
+                    </div>
+                    <div class="card-value">1.0%</div>
+                    <div class="card-unit" data-i18n="ind-war-risk-baseline">Baseline: 0.25%</div>
+                    <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
+                    <div class="card-threshold" data-i18n="ind-war-risk-threshold">Threshold: &gt;0.5% critical</div>
+                    <div class="card-source">
+                        Source: <a href="https://www.lloyds.com/market-data/market-bulletins" target="_blank" rel="noopener noreferrer">Lloyd's Market Bulletin</a>
+                    </div>
+                </article>
+
+                <!-- Strait Throughput -->
+                <article class="card" data-indicator="hrmz-throughput">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-throughput">Strait Throughput</span>
+                        <span class="card-status" aria-label="Status: critical" title="Critical — below 5 mb/d threshold">🔴</span>
+                    </div>
+                    <div class="card-value">&lt;0.5 mb/d</div>
+                    <div class="card-unit" data-i18n="ind-throughput-normal">Normal: 17 mb/d</div>
+                    <span class="card-trend card-trend--down" aria-label="Trend: decreasing">↓ Decreasing</span>
+                    <div class="card-threshold" data-i18n="ind-throughput-threshold">Threshold: &lt;5 mb/d critical</div>
+                    <div class="card-source">
+                        Source: <a href="https://www.vortexa.com/" target="_blank" rel="noopener noreferrer">Vortexa Tanker Tracking</a>
+                    </div>
+                </article>
+
+                <!-- IRGC Statement Frequency -->
+                <article class="card" data-indicator="hrmz-irgc">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-irgc">IRGC Statement Freq</span>
+                        <span class="card-status" aria-label="Status: warning" title="Warning — exceeds 5/week">🟡</span>
+                    </div>
+                    <div class="card-value">8/week</div>
+                    <div class="card-unit">&nbsp;</div>
+                    <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
+                    <div class="card-threshold" data-i18n="ind-irgc-threshold">Threshold: &gt;5/week warning</div>
+                    <div class="card-source">
+                        Source: <a href="https://en.irna.ir/" target="_blank" rel="noopener noreferrer">IRNA / OSINT monitoring</a>
+                    </div>
+                </article>
+
+                <!-- US 5th Fleet -->
+                <article class="card" data-indicator="hrmz-5thfleet">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-5thfleet">US 5th Fleet</span>
+                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                    </div>
+                    <div class="card-value" data-i18n="ind-5thfleet-val">Awaiting orders, at anchor Bahrain</div>
+                    <div class="card-unit">&nbsp;</div>
+                    <span class="card-trend card-trend--flat" aria-label="Trend: stable">→ Stable</span>
+                    <div class="card-source">
+                        Source: <a href="https://www.cusnc.navy.mil/" target="_blank" rel="noopener noreferrer">US NAVCENT</a>
+                    </div>
+                </article>
+
+                <!-- Saudi/UAE Stance -->
+                <article class="card" data-indicator="hrmz-gcc">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-gcc">Saudi / UAE Stance</span>
+                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                    </div>
+                    <div class="card-value" data-i18n="ind-gcc-val">Pressing US for action, exploring alternatives</div>
+                    <div class="card-unit">&nbsp;</div>
+                    <span class="card-trend card-trend--up" aria-label="Trend: escalating">↑ Escalating</span>
+                    <div class="card-source">
+                        Source: <a href="https://www.spa.gov.sa/en/" target="_blank" rel="noopener noreferrer">SPA / WAM</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ──────────────────────────────────────────────── -->
+        <!-- LAYER 2: Dollar System                           -->
+        <!-- ──────────────────────────────────────────────── -->
+        <section class="layer" id="layer-2" data-layer="2" aria-expanded="false" aria-labelledby="layer-2-heading">
+            <button class="layer-header" id="layer-2-heading" aria-expanded="false" aria-controls="layer-2-content">
+                <span class="layer-number" aria-hidden="true">2</span>
+                <span class="layer-title" data-i18n="layer-2-title">Dollar System</span>
+                <span class="layer-aggregate-status" aria-label="Layer status: warning" title="Warning">🟡</span>
+                <span class="layer-chevron" aria-hidden="true">▼</span>
+            </button>
+            <div class="layer-content" id="layer-2-content" role="region" aria-labelledby="layer-2-heading">
+
+                <!-- Treasury Auction Coverage -->
+                <article class="card" data-indicator="usd-auction">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-auction">Treasury Auction Coverage</span>
+                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                    </div>
+                    <div class="card-value" data-i18n="ind-auction-val">Bid-to-cover ratio declining</div>
+                    <div class="card-unit">&nbsp;</div>
+                    <span class="card-trend card-trend--down" aria-label="Trend: declining">↓ Declining</span>
+                    <div class="card-source">
+                        Source: <a href="https://www.treasurydirect.gov/auctions/auction-query/" target="_blank" rel="noopener noreferrer">TreasuryDirect</a>
+                    </div>
+                </article>
+
+                <!-- Foreign Treasury Holdings -->
+                <article class="card" data-indicator="usd-foreign-holdings">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-foreign-holdings">Foreign Treasury Holdings</span>
+                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                    </div>
+                    <div class="card-value">$8.1T <span class="card-unit">(estimate)</span></div>
+                    <span class="card-trend card-trend--down" aria-label="Trend: decreasing">↓ Decreasing</span>
+                    <div class="card-source">
+                        Source: <a href="https://ticdata.treasury.gov/" target="_blank" rel="noopener noreferrer">TIC Data</a>
+                    </div>
+                </article>
+
+                <!-- Central Bank Gold -->
+                <article class="card" data-indicator="usd-gold">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-cb-gold">Central Bank Gold Purchases</span>
+                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                    </div>
+                    <div class="card-value" data-i18n="ind-cb-gold-val">17t (Apr), China +10t (May)</div>
+                    <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
+                    <div class="card-source">
+                        Source: <a href="https://www.gold.org/goldhub/data/gold-reserves-by-country" target="_blank" rel="noopener noreferrer">World Gold Council</a>
+                    </div>
+                </article>
+
+                <!-- DXY-Oil Correlation -->
+                <article class="card" data-indicator="usd-dxy-oil">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-dxy-oil">DXY–Oil Correlation</span>
+                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                    </div>
+                    <div class="card-value" data-i18n="ind-dxy-oil-val">Decoupling in progress</div>
+                    <span class="card-trend card-trend--down" aria-label="Trend: decoupling">↓ Decoupling</span>
+                    <div class="card-source">
+                        Source: <a href="https://fred.stlouisfed.org/series/DTWEXBGS" target="_blank" rel="noopener noreferrer">FRED DXY</a>
+                    </div>
+                </article>
+
+                <!-- SWIFT RMB Share -->
+                <article class="card" data-indicator="usd-swift-rmb">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-swift-rmb">SWIFT RMB Share</span>
+                        <span class="card-status" aria-label="Status: normal">🟢</span>
+                    </div>
+                    <div class="card-value">~5.5%</div>
+                    <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
+                    <div class="card-source">
+                        Source: <a href="https://www.swift.com/our-solutions/compliance-and-shared-services/business-intelligence/renminbi/rmb-tracker" target="_blank" rel="noopener noreferrer">SWIFT RMB Tracker</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ──────────────────────────────────────────────── -->
+        <!-- LAYER 3: China Macro                              -->
+        <!-- ──────────────────────────────────────────────── -->
+        <section class="layer" id="layer-3" data-layer="3" aria-expanded="false" aria-labelledby="layer-3-heading">
+            <button class="layer-header" id="layer-3-heading" aria-expanded="false" aria-controls="layer-3-content">
+                <span class="layer-number" aria-hidden="true">3</span>
+                <span class="layer-title" data-i18n="layer-3-title">China Macro</span>
+                <span class="layer-aggregate-status" aria-label="Layer status: normal" title="Normal">🟢</span>
+                <span class="layer-chevron" aria-hidden="true">▼</span>
+            </button>
+            <div class="layer-content" id="layer-3-content" role="region" aria-labelledby="layer-3-heading">
+
+                <!-- Monthly Trade Surplus -->
+                <article class="card" data-indicator="cn-trade-surplus">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-trade-surplus">Monthly Trade Surplus</span>
+                        <span class="card-status" aria-label="Status: normal">🟢</span>
+                    </div>
+                    <div class="card-value">$105.4B</div>
+                    <div class="card-unit" data-i18n="ind-trade-surplus-date">May 2026</div>
+                    <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
+                    <div class="card-source">
+                        Source: <a href="https://www.customs.gov.cn/" target="_blank" rel="noopener noreferrer">China Customs</a>
+                    </div>
+                </article>
+
+                <!-- Industrial Profits -->
+                <article class="card" data-indicator="cn-industrial-profits">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-industrial-profits">Industrial Profits</span>
+                        <span class="card-status" aria-label="Status: no data" title="Data pending">⚪</span>
+                    </div>
+                    <div class="card-value" data-i18n="ind-industrial-profits-val">TBD (monthly)</div>
+                    <div class="card-unit">&nbsp;</div>
+                    <span class="card-trend card-trend--unknown" aria-label="Trend: unknown">? Unknown</span>
+                    <div class="card-source">
+                        Source: <a href="https://www.stats.gov.cn/english/" target="_blank" rel="noopener noreferrer">NBS China</a>
+                    </div>
+                </article>
+
+                <!-- FX Settlement Ratio -->
+                <article class="card" data-indicator="cn-fx-settlement">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-fx-settlement">FX Settlement Ratio</span>
+                        <span class="card-status" aria-label="Status: no data" title="Data pending">⚪</span>
+                    </div>
+                    <div class="card-value" data-i18n="ind-fx-settlement-val">Available from SAFE (monthly)</div>
+                    <div class="card-unit">&nbsp;</div>
+                    <span class="card-trend card-trend--unknown" aria-label="Trend: unknown">? Unknown</span>
+                    <div class="card-source">
+                        Source: <a href="https://www.safe.gov.cn/en/" target="_blank" rel="noopener noreferrer">SAFE</a>
+                    </div>
+                </article>
+
+                <!-- CFETS RMB Index -->
+                <article class="card" data-indicator="cn-cfets">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-cfets">CFETS RMB Index</span>
+                        <span class="card-status" aria-label="Status: normal">🟢</span>
+                    </div>
+                    <div class="card-value">101.41</div>
+                    <div class="card-unit" data-i18n="ind-cfets-date">Jun 2, 2026</div>
+                    <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
+                    <div class="card-threshold" data-i18n="ind-cfets-threshold">Threshold: &gt;104 intervention zone</div>
+                    <div class="card-source">
+                        Source: <a href="https://www.chinamoney.com.cn/english/" target="_blank" rel="noopener noreferrer">CFETS</a>
+                    </div>
+                </article>
+
+                <!-- China EV Exports -->
+                <article class="card" data-indicator="cn-ev-exports">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-ev-exports">China EV Exports</span>
+                        <span class="card-status" aria-label="Status: no data" title="Data pending">⚪</span>
+                    </div>
+                    <div class="card-value" data-i18n="ind-ev-exports-val">Monthly data via CPCA</div>
+                    <div class="card-unit">&nbsp;</div>
+                    <span class="card-trend card-trend--unknown" aria-label="Trend: unknown">? Unknown</span>
+                    <div class="card-source">
+                        Source: <a href="https://www.cpcaauto.com/" target="_blank" rel="noopener noreferrer">CPCA</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ──────────────────────────────────────────────── -->
+        <!-- LAYER 4: AI & Tech                                -->
+        <!-- ──────────────────────────────────────────────── -->
+        <section class="layer" id="layer-4" data-layer="4" aria-expanded="false" aria-labelledby="layer-4-heading">
+            <button class="layer-header" id="layer-4-heading" aria-expanded="false" aria-controls="layer-4-content">
+                <span class="layer-number" aria-hidden="true">4</span>
+                <span class="layer-title" data-i18n="layer-4-title">AI &amp; Tech</span>
+                <span class="layer-aggregate-status" aria-label="Layer status: normal" title="Normal">🟢</span>
+                <span class="layer-chevron" aria-hidden="true">▼</span>
+            </button>
+            <div class="layer-content" id="layer-4-content" role="region" aria-labelledby="layer-4-heading">
+
+                <!-- GPU Black Market Premium -->
+                <article class="card" data-indicator="ai-gpu-premium">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-gpu-premium">GPU Black Market Premium</span>
+                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                    </div>
+                    <div class="card-value" data-i18n="ind-gpu-premium-val">H100 ~2–3× MSRP (grey market)</div>
+                    <div class="card-unit">&nbsp;</div>
+                    <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
+                    <div class="card-source">
+                        Source: <a href="https://www.tomshardware.com/" target="_blank" rel="noopener noreferrer">Tom's Hardware / OSINT</a>
+                    </div>
+                </article>
+
+                <!-- China AI Adoption -->
+                <article class="card" data-indicator="ai-china-adoption">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-ai-adoption">China AI Adoption</span>
+                        <span class="card-status" aria-label="Status: normal">🟢</span>
+                    </div>
+                    <div class="card-value" data-i18n="ind-ai-adoption-val">DeepSeek R1, 通义, 文心 — rapid enterprise deployment</div>
+                    <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
+                    <div class="card-source">
+                        Source: <a href="https://www.theinformation.com/" target="_blank" rel="noopener noreferrer">The Information / SCMP</a>
+                    </div>
+                </article>
+
+                <!-- NVDA Asia Revenue -->
+                <article class="card" data-indicator="ai-nvda-asia">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-nvda-asia">NVDA Asia Revenue</span>
+                        <span class="card-status" aria-label="Status: no data" title="Data pending">⚪</span>
+                    </div>
+                    <div class="card-value" data-i18n="ind-nvda-asia-val">Next earnings: Aug 2026</div>
+                    <div class="card-unit">&nbsp;</div>
+                    <span class="card-trend card-trend--unknown" aria-label="Trend: unknown">? Unknown</span>
+                    <div class="card-source">
+                        Source: <a href="https://investor.nvidia.com/" target="_blank" rel="noopener noreferrer">NVIDIA Investor Relations</a>
+                    </div>
+                </article>
+
+                <!-- China Energy Intensity -->
+                <article class="card" data-indicator="ai-energy-intensity">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-energy-intensity">China Energy Intensity</span>
+                        <span class="card-status" aria-label="Status: normal">🟢</span>
+                    </div>
+                    <div class="card-value">−3.2% YoY</div>
+                    <div class="card-unit" data-i18n="ind-energy-intensity-date">Est. Q2 2026</div>
+                    <span class="card-trend card-trend--down" aria-label="Trend: decreasing (improving)">↓ Improving</span>
+                    <div class="card-source">
+                        Source: <a href="https://www.iea.org/" target="_blank" rel="noopener noreferrer">IEA / NEA China</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ──────────────────────────────────────────────── -->
+        <!-- LAYER 5: Wild Signals                             -->
+        <!-- ──────────────────────────────────────────────── -->
+        <section class="layer" id="layer-5" data-layer="5" aria-expanded="false" aria-labelledby="layer-5-heading">
+            <button class="layer-header" id="layer-5-heading" aria-expanded="false" aria-controls="layer-5-content">
+                <span class="layer-number" aria-hidden="true">5</span>
+                <span class="layer-title" data-i18n="layer-5-title">Wild Signals</span>
+                <span class="layer-aggregate-status" aria-label="Layer status: warning" title="Warning">🟡</span>
+                <span class="layer-chevron" aria-hidden="true">▼</span>
+            </button>
+            <div class="layer-content" id="layer-5-content" role="region" aria-labelledby="layer-5-heading">
+
+                <!-- MBS Travel -->
+                <article class="card" data-indicator="ws-mbs">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-mbs">MBS Travel</span>
+                        <span class="card-status" aria-label="Status: no data" title="Unknown">⚪</span>
+                    </div>
+                    <div class="card-value" data-i18n="ind-mbs-val">Last visit: Beijing Apr 2026. Next: ?</div>
+                    <span class="card-trend card-trend--unknown" aria-label="Trend: unknown">? Unknown</span>
+                    <div class="card-source">
+                        Source: <a href="https://www.spa.gov.sa/en/" target="_blank" rel="noopener noreferrer">SPA / Diplomatic OSINT</a>
+                    </div>
+                </article>
+
+                <!-- Singapore Stance -->
+                <article class="card" data-indicator="ws-singapore">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-singapore">Singapore Stance</span>
+                        <span class="card-status" aria-label="Status: normal">🟢</span>
+                    </div>
+                    <div class="card-value" data-i18n="ind-singapore-val">Officially neutral, quietly adjusting</div>
+                    <span class="card-trend card-trend--flat" aria-label="Trend: stable">→ Stable</span>
+                    <div class="card-source">
+                        Source: <a href="https://www.mfa.gov.sg/" target="_blank" rel="noopener noreferrer">MFA Singapore</a>
+                    </div>
+                </article>
+
+                <!-- ADB/WB RMB Loans -->
+                <article class="card" data-indicator="ws-adb-rmb">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-adb-rmb">ADB / WB RMB Loans</span>
+                        <span class="card-status" aria-label="Status: no data" title="Data pending">⚪</span>
+                    </div>
+                    <div class="card-value" data-i18n="ind-adb-rmb-val">Annual data</div>
+                    <span class="card-trend card-trend--unknown" aria-label="Trend: unknown">? Unknown</span>
+                    <div class="card-source">
+                        Source: <a href="https://www.adb.org/" target="_blank" rel="noopener noreferrer">ADB / World Bank</a>
+                    </div>
+                </article>
+
+                <!-- HKMA Interventions -->
+                <article class="card" data-indicator="ws-hkma">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-hkma">HKMA Interventions</span>
+                        <span class="card-status" aria-label="Status: no data" title="Monitoring">⚪</span>
+                    </div>
+                    <div class="card-value" data-i18n="ind-hkma-val">Monitor HKD weak-side touches</div>
+                    <span class="card-trend card-trend--flat" aria-label="Trend: monitoring">→ Monitoring</span>
+                    <div class="card-source">
+                        Source: <a href="https://www.hkma.gov.hk/eng/" target="_blank" rel="noopener noreferrer">HKMA</a>
+                    </div>
+                </article>
+
+                <!-- China Gold Import Route -->
+                <article class="card" data-indicator="ws-gold-route">
+                    <div class="card-header">
+                        <span class="card-name" data-i18n="ind-gold-route">China Gold Import Route</span>
+                        <span class="card-status" aria-label="Status: warning" title="Warning">🟡</span>
+                    </div>
+                    <div class="card-value" data-i18n="ind-gold-route-val">Switching to direct Russia route?</div>
+                    <span class="card-trend card-trend--unknown" aria-label="Trend: unknown">? Unknown</span>
+                    <div class="card-source">
+                        Source: <a href="https://www.gold.org/" target="_blank" rel="noopener noreferrer">WGC / Trade OSINT</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ──────────────────────────────────────────────── -->
+        <!-- STRATEGIC SUMMARY                                 -->
+        <!-- ──────────────────────────────────────────────── -->
+        <section class="strategic-summary" aria-labelledby="summary-heading">
+            <h2 id="summary-heading" data-i18n="summary-heading">
+                <span aria-hidden="true">📋</span> Strategic Summary
+            </h2>
+            <p data-i18n="summary-text">
+                The Hormuz disruption is acting as a catalyst, accelerating an existing structural trend
+                of dollar erosion and multi-polar reserve system formation. China&rsquo;s trade surplus
+                hit $105.4B in May 2026 — a record — while capital controls seal the exits. The RMB is
+                at 6.77, CFETS index at 101.41, and PBOC gold buying continues for the 18th consecutive
+                month. The key unknown: how long Hormuz stays closed.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- ════════════════════════════════════════════════════ -->
+    <!-- INLINE MOCK DATA (available immediately for JS)     -->
+    <!-- ════════════════════════════════════════════════════ -->
+    <script type="application/json" id="mock-dashboard-data">
+        {
+            "updated": "2026-06-10T09:30:00Z",
+            "layers": {
+                "1": {
+                    "id": "hormuz",
+                    "title": "Strait of Hormuz",
+                    "title_zh": "霍尔木兹海峡",
+                    "aggregate_status": "critical",
+                    "indicators": [
+                        {
+                            "id": "war-risk",
+                            "name": "War Risk Premium",
+                            "name_zh": "战争风险溢价",
+                            "value": "1.0%",
+                            "unit": "Baseline: 0.25%",
+                            "unit_zh": "基准: 0.25%",
+                            "trend": "up",
+                            "status": "critical",
+                            "threshold": ">0.5% critical",
+                            "threshold_zh": ">0.5% 临界",
+                            "source_name": "Lloyd's Market Bulletin",
+                            "source_url": "https://www.lloyds.com/market-data/market-bulletins"
+                        },
+                        {
+                            "id": "throughput",
+                            "name": "Strait Throughput",
+                            "name_zh": "海峡吞吐量",
+                            "value": "<0.5 mb/d",
+                            "unit": "Normal: 17 mb/d",
+                            "unit_zh": "正常: 17 mb/d",
+                            "trend": "down",
+                            "status": "critical",
+                            "threshold": "<5 mb/d critical",
+                            "threshold_zh": "<5 mb/d 临界",
+                            "source_name": "Vortexa Tanker Tracking",
+                            "source_url": "https://www.vortexa.com/"
+                        },
+                        {
+                            "id": "irgc",
+                            "name": "IRGC Statement Freq",
+                            "name_zh": "IRGC声明频率",
+                            "value": "8/week",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "up",
+                            "status": "warning",
+                            "threshold": ">5/week warning",
+                            "threshold_zh": ">5/周 警告",
+                            "source_name": "IRNA / OSINT monitoring",
+                            "source_url": "https://en.irna.ir/"
+                        },
+                        {
+                            "id": "5thfleet",
+                            "name": "US 5th Fleet",
+                            "name_zh": "美国第五舰队",
+                            "value": "Awaiting orders, at anchor Bahrain",
+                            "value_zh": "待命状态，锚泊巴林",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "flat",
+                            "status": "warning",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "US NAVCENT",
+                            "source_url": "https://www.cusnc.navy.mil/"
+                        },
+                        {
+                            "id": "gcc",
+                            "name": "Saudi / UAE Stance",
+                            "name_zh": "沙特/阿联酋立场",
+                            "value": "Pressing US for action, exploring alternatives",
+                            "value_zh": "施压美国采取行动，探索替代方案",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "up",
+                            "status": "warning",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "SPA / WAM",
+                            "source_url": "https://www.spa.gov.sa/en/"
+                        }
+                    ]
+                },
+                "2": {
+                    "id": "dollar",
+                    "title": "Dollar System",
+                    "title_zh": "美元体系",
+                    "aggregate_status": "warning",
+                    "indicators": [
+                        {
+                            "id": "auction",
+                            "name": "Treasury Auction Coverage",
+                            "name_zh": "国债拍卖覆盖率",
+                            "value": "Bid-to-cover ratio declining",
+                            "value_zh": "投标倍数下降",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "down",
+                            "status": "warning",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "TreasuryDirect",
+                            "source_url": "https://www.treasurydirect.gov/auctions/auction-query/"
+                        },
+                        {
+                            "id": "foreign-holdings",
+                            "name": "Foreign Treasury Holdings",
+                            "name_zh": "外国持有美债",
+                            "value": "$8.1T (estimate)",
+                            "value_zh": "$8.1T (估计)",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "down",
+                            "status": "warning",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "TIC Data",
+                            "source_url": "https://ticdata.treasury.gov/"
+                        },
+                        {
+                            "id": "cb-gold",
+                            "name": "Central Bank Gold Purchases",
+                            "name_zh": "央行黄金购买",
+                            "value": "17t (Apr), China +10t (May)",
+                            "value_zh": "17吨(4月)，中国+10吨(5月)",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "up",
+                            "status": "warning",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "World Gold Council",
+                            "source_url": "https://www.gold.org/goldhub/data/gold-reserves-by-country"
+                        },
+                        {
+                            "id": "dxy-oil",
+                            "name": "DXY–Oil Correlation",
+                            "name_zh": "DXY-石油相关性",
+                            "value": "Decoupling in progress",
+                            "value_zh": "脱钩进行中",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "down",
+                            "status": "warning",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "FRED DXY",
+                            "source_url": "https://fred.stlouisfed.org/series/DTWEXBGS"
+                        },
+                        {
+                            "id": "swift-rmb",
+                            "name": "SWIFT RMB Share",
+                            "name_zh": "SWIFT人民币份额",
+                            "value": "~5.5%",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "up",
+                            "status": "normal",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "SWIFT RMB Tracker",
+                            "source_url": "https://www.swift.com/our-solutions/compliance-and-shared-services/business-intelligence/renminbi/rmb-tracker"
+                        }
+                    ]
+                },
+                "3": {
+                    "id": "china",
+                    "title": "China Macro",
+                    "title_zh": "中国宏观",
+                    "aggregate_status": "normal",
+                    "indicators": [
+                        {
+                            "id": "trade-surplus",
+                            "name": "Monthly Trade Surplus",
+                            "name_zh": "月度贸易顺差",
+                            "value": "$105.4B",
+                            "unit": "May 2026",
+                            "unit_zh": "2026年5月",
+                            "trend": "up",
+                            "status": "normal",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "China Customs",
+                            "source_url": "https://www.customs.gov.cn/"
+                        },
+                        {
+                            "id": "industrial-profits",
+                            "name": "Industrial Profits",
+                            "name_zh": "工业利润",
+                            "value": "TBD (monthly)",
+                            "value_zh": "待定（月度）",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "unknown",
+                            "status": "nodata",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "NBS China",
+                            "source_url": "https://www.stats.gov.cn/english/"
+                        },
+                        {
+                            "id": "fx-settlement",
+                            "name": "FX Settlement Ratio",
+                            "name_zh": "结售汇率",
+                            "value": "Available from SAFE (monthly)",
+                            "value_zh": "待外汇管理局发布（月度）",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "unknown",
+                            "status": "nodata",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "SAFE",
+                            "source_url": "https://www.safe.gov.cn/en/"
+                        },
+                        {
+                            "id": "cfets",
+                            "name": "CFETS RMB Index",
+                            "name_zh": "CFETS人民币指数",
+                            "value": "101.41",
+                            "unit": "Jun 2, 2026",
+                            "unit_zh": "2026年6月2日",
+                            "trend": "up",
+                            "status": "normal",
+                            "threshold": ">104 intervention zone",
+                            "threshold_zh": ">104 干预区域",
+                            "source_name": "CFETS",
+                            "source_url": "https://www.chinamoney.com.cn/english/"
+                        },
+                        {
+                            "id": "ev-exports",
+                            "name": "China EV Exports",
+                            "name_zh": "中国电动汽车出口",
+                            "value": "Monthly data via CPCA",
+                            "value_zh": "月度数据（乘联会）",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "unknown",
+                            "status": "nodata",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "CPCA",
+                            "source_url": "https://www.cpcaauto.com/"
+                        }
+                    ]
+                },
+                "4": {
+                    "id": "ai-tech",
+                    "title": "AI & Tech",
+                    "title_zh": "人工智能与科技",
+                    "aggregate_status": "normal",
+                    "indicators": [
+                        {
+                            "id": "gpu-premium",
+                            "name": "GPU Black Market Premium",
+                            "name_zh": "GPU黑市溢价",
+                            "value": "H100 ~2–3× MSRP (grey market)",
+                            "value_zh": "H100 ~2-3倍建议零售价（灰市）",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "up",
+                            "status": "warning",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "Tom's Hardware / OSINT",
+                            "source_url": "https://www.tomshardware.com/"
+                        },
+                        {
+                            "id": "ai-adoption",
+                            "name": "China AI Adoption",
+                            "name_zh": "中国AI应用",
+                            "value": "DeepSeek R1, 通义, 文心 — rapid enterprise deployment",
+                            "value_zh": "DeepSeek R1、通义、文心 — 企业快速部署",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "up",
+                            "status": "normal",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "The Information / SCMP",
+                            "source_url": "https://www.theinformation.com/"
+                        },
+                        {
+                            "id": "nvda-asia",
+                            "name": "NVDA Asia Revenue",
+                            "name_zh": "英伟达亚洲收入",
+                            "value": "Next earnings: Aug 2026",
+                            "value_zh": "下一财报: 2026年8月",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "unknown",
+                            "status": "nodata",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "NVIDIA Investor Relations",
+                            "source_url": "https://investor.nvidia.com/"
+                        },
+                        {
+                            "id": "energy-intensity",
+                            "name": "China Energy Intensity",
+                            "name_zh": "中国能源强度",
+                            "value": "−3.2% YoY",
+                            "unit": "Est. Q2 2026",
+                            "unit_zh": "估计2026年Q2",
+                            "trend": "down",
+                            "status": "normal",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "IEA / NEA China",
+                            "source_url": "https://www.iea.org/"
+                        }
+                    ]
+                },
+                "5": {
+                    "id": "wild-signals",
+                    "title": "Wild Signals",
+                    "title_zh": "野信号",
+                    "aggregate_status": "warning",
+                    "indicators": [
+                        {
+                            "id": "mbs",
+                            "name": "MBS Travel",
+                            "name_zh": "MBS出行",
+                            "value": "Last visit: Beijing Apr 2026. Next: ?",
+                            "value_zh": "上次访问: 北京 2026年4月。下次: ？",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "unknown",
+                            "status": "nodata",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "SPA / Diplomatic OSINT",
+                            "source_url": "https://www.spa.gov.sa/en/"
+                        },
+                        {
+                            "id": "singapore",
+                            "name": "Singapore Stance",
+                            "name_zh": "新加坡立场",
+                            "value": "Officially neutral, quietly adjusting",
+                            "value_zh": "官方中立，悄然调整",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "flat",
+                            "status": "normal",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "MFA Singapore",
+                            "source_url": "https://www.mfa.gov.sg/"
+                        },
+                        {
+                            "id": "adb-rmb",
+                            "name": "ADB / WB RMB Loans",
+                            "name_zh": "亚行/世行人民币贷款",
+                            "value": "Annual data",
+                            "value_zh": "年度数据",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "unknown",
+                            "status": "nodata",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "ADB / World Bank",
+                            "source_url": "https://www.adb.org/"
+                        },
+                        {
+                            "id": "hkma",
+                            "name": "HKMA Interventions",
+                            "name_zh": "金管局干预",
+                            "value": "Monitor HKD weak-side touches",
+                            "value_zh": "监控港币弱方触碰",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "flat",
+                            "status": "nodata",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "HKMA",
+                            "source_url": "https://www.hkma.gov.hk/eng/"
+                        },
+                        {
+                            "id": "gold-route",
+                            "name": "China Gold Import Route",
+                            "name_zh": "中国黄金进口路线",
+                            "value": "Switching to direct Russia route?",
+                            "value_zh": "转向直接俄罗斯路线？",
+                            "unit": "",
+                            "unit_zh": "",
+                            "trend": "unknown",
+                            "status": "warning",
+                            "threshold": "",
+                            "threshold_zh": "",
+                            "source_name": "WGC / Trade OSINT",
+                            "source_url": "https://www.gold.org/"
+                        }
+                    ]
+                }
+            },
+            "strategic_summary": {
+                "en": "The Hormuz disruption is acting as a catalyst, accelerating an existing structural trend of dollar erosion and multi-polar reserve system formation. China's trade surplus hit $105.4B in May 2026 — a record — while capital controls seal the exits. The RMB is at 6.77, CFETS index at 101.41, and PBOC gold buying continues for the 18th consecutive month. The key unknown: how long Hormuz stays closed.",
+                "zh": "霍尔木兹海峡的中断正在作为催化剂，加速了美元侵蚀和多极储备体系形成的现有结构性趋势。中国贸易顺差在2026年5月达到1054亿美元——创历史新高——而资本管制封住了出口。人民币汇率在6.77，CFETS指数为101.41，中国人民银行连续第18个月增持黄金。关键未知因素：霍尔木兹海峡将关闭多久。"
+            }
+        }
+    </script>
+
+    <!-- ════════════════════════════════════════════════════ -->
+    <!-- APPLICATION SCRIPTS                                 -->
+    <!-- ════════════════════════════════════════════════════ -->
+    <script src="js/app.js" defer></script>
+
+</body>
+</html>

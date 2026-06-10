@@ -1,0 +1,82 @@
+{
+  "id": "layer1",
+  "title": "Layer 1: Hormuz Direct Indicators",
+  "title_zh": "第一层：霍尔木兹直射指标",
+  "desc": "Core variables driving the entire chain",
+  "desc_zh": "所有逻辑链的第一推动力",
+  "indicators": {
+    "warRiskPremium": {
+      "value": "1.0%",
+      "value_zh": "1.0%",
+      "unit": "% of hull value",
+      "unit_zh": "% 船体价值",
+      "baseline": "0.25%",
+      "trend": "rising",
+      "status": "critical",
+      "threshold": ">0.5% critical",
+      "threshold_zh": ">0.5% 危险",
+      "source": "Lloyd's / LMA",
+      "sourceUrl": "https://x.com/search?q=war+risk+premium+hormuz",
+      "note": "VLCC single transit ~$3-8M at current rates",
+      "note_zh": "VLCC单次航行保费约$3-8M"
+    },
+    "straitThroughput": {
+      "value": "<0.5 mb/d",
+      "value_zh": "<50万桶/天",
+      "unit": "million barrels/day",
+      "unit_zh": "百万桶/天",
+      "baseline": "17 mb/d",
+      "trend": "falling",
+      "status": "critical",
+      "threshold": "<5 critical",
+      "threshold_zh": "<5 危险",
+      "source": "Kpler / Vortexa",
+      "sourceUrl": "https://x.com/Kpler",
+      "note": "8 monitored crossings Jun 5-7 (normal: 135+/day)",
+      "note_zh": "6月5-7日仅8艘通过（正常每日135+）"
+    },
+    "irgcStatementFreq": {
+      "value": "8/week",
+      "value_zh": "8次/周",
+      "unit": "statements per week",
+      "unit_zh": "次/周",
+      "baseline": "2-3/week",
+      "trend": "rising",
+      "status": "warning",
+      "threshold": ">5 warning",
+      "threshold_zh": ">5 警惕",
+      "source": "OSINT / X monitoring",
+      "sourceUrl": "https://x.com/search?q=IRGC+statement+hormuz",
+      "note": "Escalation ladder: warning → action taken",
+      "note_zh": "升级阶梯：警告 → 已采取行动"
+    },
+    "fleetPosition": {
+      "value": "At anchor — Bahrain",
+      "value_zh": "锚泊中——巴林",
+      "unit": "",
+      "baseline": "Active patrol",
+      "trend": "stable",
+      "status": "warning",
+      "threshold": "Hesitation = deterrence failure",
+      "threshold_zh": "徘徊 = 威慑失效",
+      "source": "MarineTraffic / OSINT",
+      "sourceUrl": "https://x.com/search?q=US+5th+fleet+position",
+      "note": "Awaiting orders, no active escort missions reported",
+      "note_zh": "等待命令，无护航行动报告"
+    },
+    "saudiUaeStance": {
+      "value": "Pressing US, exploring alternatives",
+      "value_zh": "向美施压，探索替代方案",
+      "unit": "",
+      "baseline": "Full US coordination",
+      "trend": "rising",
+      "status": "warning",
+      "threshold": "Independent action = alliance strain",
+      "threshold_zh": "自行其是 = 同盟裂痕",
+      "source": "Reuters / Bloomberg",
+      "sourceUrl": "https://x.com/search?q=Saudi+Arabia+Hormuz+2026",
+      "note": "Saudi signaling willingness to use RMB for China oil sales",
+      "note_zh": "沙特释放信号：愿用人民币结算对华石油"
+    }
+  }
+}
