@@ -62,8 +62,8 @@
       "threshold_zh": "低于+0.2 = 美元不再被认为'最硬的资产'",
       "source": "Bloomberg / TradingView",
       "sourceUrl": "https://x.com/search?q=DXY+oil+correlation",
-      "note": "Historical: oil up → dollar up (petrodollar recycling). Breaking = significant",
-      "note_zh": "历史规律：油价涨→美元涨（石油美元循环）。打破此规律=重要信号"
+      "note": "Mixed signals — DXY stable, oil rising. Correlation regime ambiguous.",
+      "note_zh": "混合信号——DXY stable，油价 rising。相关模式不清晰。"
     },
     "swiftRmbShare": {
       "value": "~5.5% // $5.8T annual",
@@ -103,27 +103,57 @@
       "baseline": "7.00 (2025 avg)",
       "trend": "rising",
       "status": "normal",
-      "threshold": "<6.5 = significant appreciation",
-      "threshold_zh": "<6.5 = 显著升值",
+      "threshold": "<6.5 = significant appreciation; >7.2 = depreciation",
+      "threshold_zh": "<6.5 = 显著升值；>7.2 = 贬值",
       "source": "Frankfurter API / ECB",
       "sourceUrl": "https://api.frankfurter.app",
-      "note": "Daily spot rate. WMT 2026-06-10",
-      "note_zh": "每日即期汇率。更新于 2026-06-10"
+      "note": "RMB firm at 6.7807. Trade surplus and capital controls maintaining pressure.",
+      "note_zh": "人民币坚挺(6.7807)。贸易顺差和资本管制维持升值压力。"
     },
     "spotGold": {
-      "value": "$4,060",
-      "value_zh": "$4,060",
+      "value": "$4,058",
+      "value_zh": "$4,058",
       "unit": "USD/oz",
       "unit_zh": "美元/盎司",
       "baseline": "$2,350 (2025 avg)",
       "trend": "rising",
-      "status": "normal",
-      "threshold": ">$3,000 = panic pricing",
-      "threshold_zh": ">$3,000 = 恐慌定价",
+      "status": "critical",
+      "threshold": ">$3,000 = panic pricing; $2,500-3,000 = de-dollarization bid",
+      "threshold_zh": ">$3,000 = 恐慌定价；$2,500-3,000 = 去美元化溢价",
       "source": "Gold API",
       "sourceUrl": "https://www.gold-api.com",
-      "note": "Spot gold price. Updated 2026-06-10",
-      "note_zh": "现货黄金价格。更新于 2026-06-10"
+      "note": "Gold at record highs ($4,058/oz). De-dollarization panic — central banks accelerating purchases.",
+      "note_zh": "黄金创历史新高($4,058/盎司)。去美元化恐慌——央行加速购金。"
+    },
+    "wtiCrude": {
+      "value": "$92.72",
+      "value_zh": "$92.72",
+      "unit": "USD/bbl",
+      "unit_zh": "美元/桶",
+      "baseline": "$75 (2025 avg)",
+      "trend": "rising",
+      "status": "warning",
+      "threshold": ">$100 = supply crisis; $85-100 = geopolitical premium",
+      "threshold_zh": ">$100 = 供应危机；$85-100 = 地缘溢价",
+      "source": "Yahoo Finance (CL=F)",
+      "sourceUrl": "https://finance.yahoo.com/quote/CL=F/",
+      "note": "WTI at $92.72/bbl. Elevated on geopolitical premium.",
+      "note_zh": "WTI $92.72/桶。地缘溢价推高。"
+    },
+    "dxyIndex": {
+      "value": "102.34",
+      "value_zh": "102.34",
+      "unit": "DXY index points",
+      "unit_zh": "DXY 指数点",
+      "baseline": "100-105 (normal range)",
+      "trend": "stable",
+      "status": "normal",
+      "threshold": "<98 = structural weakness; <100 = accelerating decline",
+      "threshold_zh": "<98 = 结构性走弱；<100 = 加速下跌",
+      "source": "Frankfurter API / weighted basket",
+      "sourceUrl": "https://api.frankfurter.app",
+      "note": "DXY at 102.34. Dollar relatively stable against major pairs.",
+      "note_zh": "DXY 102.34。美元兑主要货币相对稳定。"
     }
   }
 }
