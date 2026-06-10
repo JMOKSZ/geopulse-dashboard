@@ -70,12 +70,12 @@
   "refresh": "Refresh dashboard data",
   "trend-heading": "US–China Trend Timeline",
   "ind-trade-share": "China Trade Share (Global)",
-  "ind-trade-share-val": "~14.5% of global merchandise trade",
-  "ind-trade-share-threshold": "Peak 15.5% (2021) — still structurally elevated",
-  "ind-trade-weight": "China Tradable Goods by Weight",
-  "ind-trade-weight-val": "~42% of global tradable tonnage",
-  "ind-trade-weight-threshold": "Steel 54% · Cement 60% · Coal 50% · Containers 80%",
+  "ind-trade-share-val": "~15% of world goods exports (2025)",
+  "ind-trade-share-threshold": "WTO: #1 exporter since 2009. Share rising despite tariff headwinds",
+  "ind-trade-weight": "China Heavy Industry Dominance",
+  "ind-trade-weight-val": "Steel 54% · Cement 60% · Coal 50% · Containers 80%",
+  "ind-trade-weight-threshold": "No single '% of global tonnage' stat — disaggregated by commodity",
   "ind-pew-fav": "Pew: US vs China Favorability",
-  "ind-pew-fav-val": "US ~62% · China ~32% (global median)",
-  "ind-pew-fav-threshold": "Europe US favorability dropping sharply since Jan 2026"
+  "ind-pew-fav-val": "US ~49% · China ~36% (2025, 25 countries)",
+  "ind-pew-fav-threshold": "2024: US 54% · China 35% (35 countries). Trend: US declining across allies"
 }

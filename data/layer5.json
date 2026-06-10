@@ -78,19 +78,19 @@
       "note_zh": "如果中国黄金进口从伦敦/瑞士转向直接向俄采购，结算币种也在变。"
     },
     "pewFavorability": {
-      "value": "US ~62% · China ~32% (global median)",
-      "value_zh": "美国约62% · 中国约32%（全球中位数）",
-      "unit": "% favorability",
-      "unit_zh": "好感度%",
-      "baseline": "US ~70% (2020) · China ~30% (2020)",
+      "value": "US ~49% · China ~36% (2025, 25 countries)",
+      "value_zh": "美国约49% · 中国约36%（2025年，25国中位数）",
+      "unit": "% favorability (median across surveyed countries)",
+      "unit_zh": "好感度%（受访国中位数）",
+      "baseline": "2024: US 54% · China 35% (35 countries)",
       "trend": "declining",
       "status": "warning",
-      "threshold": "Europe US favorability dropping sharply since Jan 2026",
-      "threshold_zh": "欧洲对美国好感度自2026年1月起急剧下降",
-      "source": "Pew Research Center",
+      "threshold": "US declining across allies; China stable-low but improving in Global South",
+      "threshold_zh": "美国在盟友中好感度持续下降；中国稳定偏低但在全球南方改善",
+      "source": "Pew Global Attitudes Survey 2024–2025",
       "sourceUrl": "https://www.pewresearch.org/global/",
-      "note": "US global approval declining under second Trump term. China stable-low but improving in Global South (Africa, SEA).",
-      "note_zh": "特朗普第二任期内美国全球好感度下降。中国稳定低值但在全球南方（非洲、东南亚）有所改善。"
+      "note": "Pew surveyed 35 countries in 2024 and 25 in spring 2025. US median favorable fell from 54% to ~49%. China rose from 35% to ~36%.",
+      "note_zh": "皮尤2024年调查35国、2025年春季调查25国。美国好感度中位数从54%降至约49%。中国从35%升至约36%。"
     }
   }
 }
