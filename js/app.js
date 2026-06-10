@@ -46,11 +46,26 @@
     STATE.dict = dict;
     if (!dict) return;
 
-    // data-i18n elements
+    // data-i18n elements — preserve child elements, only replace text nodes
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.dataset.i18n;
       let text = resolveKey(key, dict);
-      if (text) {
+      if (!text) return;
+
+      // Check if element has element children — if so, only update text nodes
+      const hasChildElements = Array.from(el.childNodes).some(n => n.nodeType === 1);
+      if (hasChildElements) {
+        // Walk text nodes and replace the first non-empty one
+        const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+        let first = true;
+        let node;
+        while (node = walker.nextNode()) {
+          if (node.textContent.trim()) {
+            node.textContent = first ? text : '';
+            first = false;
+          }
+        }
+      } else {
         el.textContent = text;
       }
     });
@@ -219,9 +234,56 @@
     });
 
     updateTimestamp();
+    generateSummary();
   }
 
-  /* ─── Init ─────────────────────────────────── */
+  /* ─── Auto-Generated Strategic Summary ──────── */
+
+  function getIndicatorValue(indicatorKey, field) {
+    // Read from the DOM — already updated with latest data
+    const card = document.querySelector(`.card[data-indicator="${indicatorKey}"]`);
+    if (!card) return null;
+    if (field === 'value') {
+      const el = card.querySelector('.card-value');
+      return el ? el.textContent.trim() : null;
+    }
+    if (field === 'trend') {
+      const el = card.querySelector('.card-trend');
+      return el ? el.textContent.trim() : null;
+    }
+    return null;
+  }
+
+  function generateSummary() {
+    const el = document.getElementById('summary-text');
+    if (!el) return;
+
+    const tradeSurplus = getIndicatorValue('chn-trade-surplus', 'value') || '$105.4B';
+    const cfets = getIndicatorValue('chn-cfets', 'value') || '101.41';
+    const throughput = getIndicatorValue('hrmz-throughput', 'value') || '<0.5 mb/d';
+    const throughputTrend = getIndicatorValue('hrmz-throughput', 'trend') || '↓';
+    const gold = getIndicatorValue('usd-cb-gold', 'value') || '17t+';
+    const gpuPremium = getIndicatorValue('ai-gpu-premium', 'value') || '2-3x MSRP';
+
+    // Determine dominant trend word
+    const isZh = STATE.lang === 'zh';
+
+    if (isZh) {
+      el.textContent =
+        `霍尔木兹通过量${throughputTrend}至${throughput}，封锁持续。` +
+        `中国5月顺差${tradeSurplus}创纪录，CFETS指数${cfets}近四年新高。` +
+        `央行购金${gold}持续，GPU黑市${gpuPremium}反映芯片瓶颈。` +
+        `当前阶段：美元中心秩序加速侵蚀，中国相对优势在扩大但尚未进入拐点。` +
+        `关键变量：霍尔木兹封锁持续时间。`;
+    } else {
+      el.textContent =
+        `Hormuz throughput ${throughputTrend} to ${throughput} — blockade persists. ` +
+        `China trade surplus hit ${tradeSurplus} (record), CFETS at ${cfets} (4yr high). ` +
+        `Central bank gold buying ${gold}, GPU black market ${gpuPremium}. ` +
+        `Phase: Accelerated erosion of dollar-centric order. China's relative advantage widening but not yet at inflection. ` +
+        `Key variable: duration of Hormuz closure.`;
+    }
+  }
 
   async function init() {
     // Init UI first (collapsible works without data)
@@ -249,6 +311,7 @@
         const newLang = STATE.lang === 'en' ? 'zh' : 'en';
         await applyLanguage(newLang);
         updateTimestamp();
+        generateSummary();
         // Re-render data in new language
         await refreshData();
       });
