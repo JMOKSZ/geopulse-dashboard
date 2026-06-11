@@ -53,14 +53,14 @@
     "dxyOilCorrelation": {
       "value": "Decoupling",
       "value_zh": "脱钩中",
-      "unit": "30-day rolling correlation",
-      "unit_zh": "30日滚动相关",
-      "baseline": "+0.4 to +0.6 (positive)",
+      "unit": "Qualitative assessment",
+      "unit_zh": "定性判断",
+      "baseline": "+0.4 to +0.6 (positive historically)",
       "trend": "falling",
       "status": "warning",
       "threshold": "Below +0.2 = dollar not 'hardest asset'",
       "threshold_zh": "低于+0.2 = 美元不再被认为'最硬的资产'",
-      "source": "Bloomberg / TradingView",
+      "source": "TradingView / Bloomberg",
       "sourceUrl": "https://x.com/search?q=DXY+oil+correlation",
       "note": "Decoupling — oil up while dollar soft. Petrodollar recycling under strain.",
       "note_zh": "脱钩——油价涨美元软。石油美元循环承压。"
@@ -101,7 +101,7 @@
       "unit": "CNY per USD",
       "unit_zh": "人民币/美元",
       "baseline": "7.00 (2025 avg)",
-      "trend": "rising",
+      "trend": "stable",
       "status": "normal",
       "threshold": "<6.5 significant appreciation; >7.2 depreciation",
       "threshold_zh": "<6.5 显著升值；>7.2 贬值",
@@ -126,8 +126,8 @@
       "note_zh": "黄金期货。更新于 2026-06-11"
     },
     "wtiCrude": {
-      "value": "$85.83",
-      "value_zh": "$85.83",
+      "value": "$86.08",
+      "value_zh": "$86.08",
       "unit": "USD/bbl",
       "unit_zh": "美元/桶",
       "baseline": "$75 (2025 avg)",
@@ -154,6 +154,21 @@
       "sourceUrl": "https://api.frankfurter.dev",
       "note": "Weighted DXY estimate. Updated 2026-06-11",
       "note_zh": "加权DXY估算。更新于 2026-06-11"
+    },
+    "brentCrude": {
+      "value": "$88.73",
+      "value_zh": "$88.73",
+      "unit": "USD/bbl",
+      "unit_zh": "美元/桶",
+      "baseline": "$78 (2025 avg)",
+      "trend": "rising",
+      "status": "warning",
+      "threshold": ">$100 supply crisis; $85-100 geopolitical premium",
+      "threshold_zh": ">$100 供应危机；$85-100 地缘溢价",
+      "source": "Yahoo Finance (BZ=F)",
+      "sourceUrl": "https://finance.yahoo.com/quote/BZ=F/",
+      "note": "Brent front-month. Updated 2026-06-11",
+      "note_zh": "布伦特近月合约。更新于 2026-06-11"
     }
   }
 }

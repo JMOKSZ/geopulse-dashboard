@@ -17,8 +17,8 @@
       "threshold_zh": "创纪录。持续>$1000亿=结构优势确认",
       "source": "China Customs (monthly)",
       "sourceUrl": "https://x.com/search?q=China+trade+surplus+May+2026",
-      "note": "May 2026: exports +19.4% YoY. Hormuz boosts relative competitiveness via energy cost gap.",
-      "note_zh": "2026年5月：出口同比+19.4%。霍尔木兹通过能源成本差距扩大相对竞争力。"
+      "note": "May 2026: exports +19.4% YoY. CSI 300: 4722. Updated 2026-06-11",
+      "note_zh": "2026年5月：出口同比+19.4%。沪深300：4722。更新于 2026-06-11"
     },
     "chinaTradeShare": {
       "value": "~15% of world goods exports (2025)",
@@ -86,14 +86,14 @@
       "unit": "points (2014=100)",
       "unit_zh": "点（2014=100）",
       "baseline": "~99 (Jan 2026)",
-      "trend": "rising",
+      "trend": "falling",
       "status": "normal",
       "threshold": ">104 = PBOC intervention likely; 102-104 = manageable",
       "threshold_zh": ">104 = 央行可能干预；102-104 = 温和可控",
       "source": "CFETS / Chinamoney",
       "sourceUrl": "https://x.com/search?q=CFETS+人民币汇率指数",
-      "note": "Jun 2, 2026: highest since Sep 2022 (~4yr high). Broad-based RMB strength.",
-      "note_zh": "2026年6月2日：2022年9月以来最高（近4年新高）。人民币全面走强。"
+      "note": "RMB at 6.7774 (daily). CFETS index last known: 101.41 (Jun 2). Updated 2026-06-11",
+      "note_zh": "人民币汇率6.7774（每日）。CFETS指数上次已知：101.41（6月2日）。更新于 2026-06-11"
     },
     "chinaEvExports": {
       "value": "Monthly via CPCA",
