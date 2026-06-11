@@ -111,8 +111,8 @@
       "note_zh": "每日即期汇率。更新于 2026-06-11"
     },
     "spotGold": {
-      "value": "$4,066",
-      "value_zh": "$4,066",
+      "value": "$4,070",
+      "value_zh": "$4,070",
       "unit": "USD/oz",
       "unit_zh": "美元/盎司",
       "baseline": "$2,350 (2025 avg)",
@@ -126,8 +126,8 @@
       "note_zh": "黄金期货。更新于 2026-06-11"
     },
     "wtiCrude": {
-      "value": "$92.57",
-      "value_zh": "$92.57",
+      "value": "$92.53",
+      "value_zh": "$92.53",
       "unit": "USD/bbl",
       "unit_zh": "美元/桶",
       "baseline": "$75 (2025 avg)",
