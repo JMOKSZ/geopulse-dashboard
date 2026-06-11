@@ -62,8 +62,8 @@
       "threshold_zh": "低于+0.2 = 美元不再被认为'最硬的资产'",
       "source": "Bloomberg / TradingView",
       "sourceUrl": "https://x.com/search?q=DXY+oil+correlation",
-      "note": "Decoupling confirmed — oil up while dollar trending soft. Petrodollar recycling mechanism under strain.",
-      "note_zh": "脱钩确认——油价上涨而美元走软。石油美元循环机制承压。"
+      "note": "Decoupling — oil up while dollar soft. Petrodollar recycling under strain.",
+      "note_zh": "脱钩——油价涨美元软。石油美元循环承压。"
     },
     "swiftRmbShare": {
       "value": "~5.5% // $5.8T annual",
@@ -103,42 +103,42 @@
       "baseline": "7.00 (2025 avg)",
       "trend": "rising",
       "status": "normal",
-      "threshold": "<6.5 = significant appreciation; >7.2 = depreciation",
-      "threshold_zh": "<6.5 = 显著升值；>7.2 = 贬值",
+      "threshold": "<6.5 significant appreciation; >7.2 depreciation",
+      "threshold_zh": "<6.5 显著升值；>7.2 贬值",
       "source": "Frankfurter API / ECB",
-      "sourceUrl": "https://api.frankfurter.app",
-      "note": "Daily spot. Updated 2026-06-10",
-      "note_zh": "每日即期汇率。更新于 2026-06-10"
+      "sourceUrl": "https://api.frankfurter.dev",
+      "note": "Daily spot. Updated 2026-06-11",
+      "note_zh": "每日即期汇率。更新于 2026-06-11"
     },
     "spotGold": {
-      "value": "$4,048",
-      "value_zh": "$4,048",
+      "value": "$4,068",
+      "value_zh": "$4,068",
       "unit": "USD/oz",
       "unit_zh": "美元/盎司",
       "baseline": "$2,350 (2025 avg)",
       "trend": "rising",
       "status": "critical",
-      "threshold": ">$3,000 = panic pricing; $2,500-3,000 = de-dollari-zation bid",
-      "threshold_zh": ">$3,000 = 恐慌定价；$2,500-3,000 = 去美元化溢价",
-      "source": "Gold API",
-      "sourceUrl": "https://www.gold-api.com",
-      "note": "Spot gold. Updated 2026-06-10",
-      "note_zh": "现货黄金价格。更新于 2026-06-10"
+      "threshold": ">$3,000 panic; $2,500-3,000 de-dollarization bid",
+      "threshold_zh": ">$3,000 恐慌；$2,500-3,000 去美元化溢价",
+      "source": "Yahoo Finance (GC=F)",
+      "sourceUrl": "https://finance.yahoo.com/quote/GC=F/",
+      "note": "Gold futures. Updated 2026-06-11",
+      "note_zh": "黄金期货。更新于 2026-06-11"
     },
     "wtiCrude": {
-      "value": "$92.95",
-      "value_zh": "$92.95",
+      "value": "$92.64",
+      "value_zh": "$92.64",
       "unit": "USD/bbl",
       "unit_zh": "美元/桶",
       "baseline": "$75 (2025 avg)",
       "trend": "rising",
       "status": "warning",
-      "threshold": ">$100 = supply crisis; $85-100 = geopolitical premium",
-      "threshold_zh": ">$100 = 供应危机；$85-100 = 地缘溢价",
+      "threshold": ">$100 supply crisis; $85-100 geopolitical premium",
+      "threshold_zh": ">$100 供应危机；$85-100 地缘溢价",
       "source": "Yahoo Finance (CL=F)",
       "sourceUrl": "https://finance.yahoo.com/quote/CL=F/",
-      "note": "WTI front-month. Updated 2026-06-10",
-      "note_zh": "WTI近月合约。更新于 2026-06-10"
+      "note": "WTI front-month. Updated 2026-06-11",
+      "note_zh": "WTI近月合约。更新于 2026-06-11"
     },
     "dxyIndex": {
       "value": "102.34",
@@ -148,12 +148,12 @@
       "baseline": "100-105 (normal range)",
       "trend": "stable",
       "status": "normal",
-      "threshold": "<98 = structural weakness; <100 = accelerating decline",
-      "threshold_zh": "<98 = 结构性走弱；<100 = 加速下跌",
+      "threshold": "<98 structural weakness; <100 accelerating decline",
+      "threshold_zh": "<98 结构性走弱；<100 加速下跌",
       "source": "Frankfurter / weighted basket",
-      "sourceUrl": "https://api.frankfurter.app",
-      "note": "Weighted DXY estimate. Updated 2026-06-10",
-      "note_zh": "加权DXY估算。更新于 2026-06-10"
+      "sourceUrl": "https://api.frankfurter.dev",
+      "note": "Weighted DXY estimate. Updated 2026-06-11",
+      "note_zh": "加权DXY估算。更新于 2026-06-11"
     }
   }
 }
