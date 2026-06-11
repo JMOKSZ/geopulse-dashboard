@@ -96,8 +96,8 @@
       "note_zh": "CIPS覆盖俄罗斯、中东、东盟的贸易，绕过SWIFT。真实的人民币国际化程度比SWIFT数据显示的要高。"
     },
     "usdCnyRate": {
-      "value": "6.7807",
-      "value_zh": "6.7807",
+      "value": "6.7774",
+      "value_zh": "6.7774",
       "unit": "CNY per USD",
       "unit_zh": "人民币/美元",
       "baseline": "7.00 (2025 avg)",
@@ -111,8 +111,8 @@
       "note_zh": "每日即期汇率。更新于 2026-06-11"
     },
     "spotGold": {
-      "value": "$4,070",
-      "value_zh": "$4,070",
+      "value": "$4,242",
+      "value_zh": "$4,242",
       "unit": "USD/oz",
       "unit_zh": "美元/盎司",
       "baseline": "$2,350 (2025 avg)",
@@ -126,8 +126,8 @@
       "note_zh": "黄金期货。更新于 2026-06-11"
     },
     "wtiCrude": {
-      "value": "$92.53",
-      "value_zh": "$92.53",
+      "value": "$85.83",
+      "value_zh": "$85.83",
       "unit": "USD/bbl",
       "unit_zh": "美元/桶",
       "baseline": "$75 (2025 avg)",
@@ -141,8 +141,8 @@
       "note_zh": "WTI近月合约。更新于 2026-06-11"
     },
     "dxyIndex": {
-      "value": "102.34",
-      "value_zh": "102.34",
+      "value": "102.28",
+      "value_zh": "102.28",
       "unit": "DXY index points",
       "unit_zh": "DXY 指数点",
       "baseline": "100-105 (normal range)",
