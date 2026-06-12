@@ -1,7 +1,7 @@
 {
   "dashboard": "Geopolitical Pulse / 地缘脉冲",
   "version": "1.0.0",
-  "lastUpdated": "2026-06-11T23:57:24Z",
+  "lastUpdated": "2026-06-12T22:00:25Z",
   "updateFrequency": {
     "marketData": "realtime",
     "xScraped": "daily",
@@ -29,18 +29,18 @@
     ]
   },
   "keyLevels": {
-    "usdCny": "6.7774",
-    "dxy": "102.28",
+    "usdCny": "6.7623",
+    "dxy": "102.53",
     "cfets": "101.41",
-    "gold": "$4,242/oz",
-    "wti": "$86.08/bbl",
+    "gold": "$4,240/oz",
+    "wti": "$84.29/bbl",
     "regime": "Accelerated De-Dollarization",
     "regime_zh": "去美元化加速",
     "gameProgression": "38%",
-    "brent": "$88.73/bbl",
-    "csi300": "4722.41",
-    "sse": "3987.01",
-    "sp500": "7394.3",
-    "us10y": "4.46%"
+    "brent": "$86.71/bbl",
+    "csi300": "4777.32",
+    "sse": "4031.51",
+    "sp500": "7431.46",
+    "us10y": "4.49%"
   }
 }
