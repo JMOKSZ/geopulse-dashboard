@@ -77,8 +77,8 @@
       "threshold_zh": "数据中心占全国电网比值>10%=结构性需求转移；>15%=瓶颈风险",
       "source": "IEA · NEA China · SemiAnalysis DC tracker",
       "sourceUrl": "https://x.com/search?q=China+data+center+power+consumption+2026",
-      "note": "S&P 500: 7431. China DC capacity ~85 GW. Updated 2026-06-12",
-      "note_zh": "标普500：7431。中国数据中心容量约85GW。更新于 2026-06-12"
+      "note": "S&P 500: 7431. China DC capacity ~85 GW. Updated 2026-06-13",
+      "note_zh": "标普500：7431。中国数据中心容量约85GW。更新于 2026-06-13"
     },
     "aiSpaceCapability": {
       "value": "68 orbital launches (2026 YTD) · 700+ satellites added · Tiangong fully crewed",
