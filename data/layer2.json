@@ -107,8 +107,8 @@
       "threshold_zh": "<6.5 显著升值；>7.2 贬值",
       "source": "Frankfurter API / ECB",
       "sourceUrl": "https://api.frankfurter.dev",
-      "note": "Daily spot. Updated 2026-06-13",
-      "note_zh": "每日即期汇率。更新于 2026-06-13"
+      "note": "Daily spot. Updated 2026-06-14",
+      "note_zh": "每日即期汇率。更新于 2026-06-14"
     },
     "spotGold": {
       "value": "$4,239",
@@ -122,8 +122,8 @@
       "threshold_zh": ">$3,000 恐慌；$2,500-3,000 去美元化溢价",
       "source": "Yahoo Finance (GC=F)",
       "sourceUrl": "https://finance.yahoo.com/quote/GC=F/",
-      "note": "Gold futures. Updated 2026-06-13",
-      "note_zh": "黄金期货。更新于 2026-06-13"
+      "note": "Gold futures. Updated 2026-06-14",
+      "note_zh": "黄金期货。更新于 2026-06-14"
     },
     "wtiCrude": {
       "value": "$84.88",
@@ -137,8 +137,8 @@
       "threshold_zh": ">$100 供应危机；$85-100 地缘溢价",
       "source": "Yahoo Finance (CL=F)",
       "sourceUrl": "https://finance.yahoo.com/quote/CL=F/",
-      "note": "WTI front-month. Updated 2026-06-13",
-      "note_zh": "WTI近月合约。更新于 2026-06-13"
+      "note": "WTI front-month. Updated 2026-06-14",
+      "note_zh": "WTI近月合约。更新于 2026-06-14"
     },
     "dxyIndex": {
       "value": "102.53",
@@ -152,8 +152,8 @@
       "threshold_zh": "<98 结构性走弱；<100 加速下跌",
       "source": "Frankfurter / weighted basket",
       "sourceUrl": "https://api.frankfurter.dev",
-      "note": "Weighted DXY estimate. Updated 2026-06-13",
-      "note_zh": "加权DXY估算。更新于 2026-06-13"
+      "note": "Weighted DXY estimate. Updated 2026-06-14",
+      "note_zh": "加权DXY估算。更新于 2026-06-14"
     },
     "brentCrude": {
       "value": "$87.33",
@@ -167,8 +167,8 @@
       "threshold_zh": ">$100 供应危机；$85-100 地缘溢价",
       "source": "Yahoo Finance (BZ=F)",
       "sourceUrl": "https://finance.yahoo.com/quote/BZ=F/",
-      "note": "Brent front-month. Updated 2026-06-13",
-      "note_zh": "布伦特近月合约。更新于 2026-06-13"
+      "note": "Brent front-month. Updated 2026-06-14",
+      "note_zh": "布伦特近月合约。更新于 2026-06-14"
     }
   }
 }

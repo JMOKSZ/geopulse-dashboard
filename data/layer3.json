@@ -17,8 +17,8 @@
       "threshold_zh": "创纪录。持续>$1000亿=结构优势确认",
       "source": "China Customs (monthly)",
       "sourceUrl": "https://x.com/search?q=China+trade+surplus+May+2026",
-      "note": "May 2026: exports +19.4% YoY. CSI 300: 4777. Updated 2026-06-13",
-      "note_zh": "2026年5月：出口同比+19.4%。沪深300：4777。更新于 2026-06-13"
+      "note": "May 2026: exports +19.4% YoY. CSI 300: 4777. Updated 2026-06-14",
+      "note_zh": "2026年5月：出口同比+19.4%。沪深300：4777。更新于 2026-06-14"
     },
     "chinaTradeShare": {
       "value": "~15% of world goods exports (2025)",
@@ -51,19 +51,19 @@
       "note_zh": "各商品类别的份额来自各自行业的统计数据。不存在可信的单一'总吨位占比'数据。"
     },
     "industrialProfits": {
-      "value": "TBD (Jun release)",
-      "value_zh": "待发布（6月发布）",
+      "value": "+24.7% (Apr) · +18.2% (Jan-Apr)",
+      "value_zh": "+24.7%（4月）· +18.2%（1-4月）",
       "unit": "% YoY",
       "unit_zh": "% 同比",
       "baseline": "+4.2% (Q1 2026)",
-      "trend": "stable",
-      "status": "unknown",
+      "trend": "rising",
+      "status": "normal",
       "threshold": "Positive = cost pass-through working; Negative = margin squeeze",
       "threshold_zh": "正数=成本传导能力ok；负数=利润被挤压",
       "source": "NBS (monthly, 2-3wk lag)",
       "sourceUrl": "https://x.com/search?q=China+industrial+profits",
-      "note": "Key: export sector profitability vs domestic. Watch sectoral breakdown.",
-      "note_zh": "关键看出口部门vs内销部门的利润率分布。"
+      "note": "Apr data: +24.7% YoY — fastest in >2 years. Tech & metals driven. Jan-Apr cumulative +18.2%. Updated 2026-06-14",
+      "note_zh": "4月数据：同比+24.7%——两年多来最快增速。科技与金属驱动。1-4月累计+18.2%。更新于 2026-06-14"
     },
     "fxSettlement": {
       "value": "Pending SAFE release",
@@ -92,23 +92,23 @@
       "threshold_zh": ">104 = 央行可能干预；102-104 = 温和可控",
       "source": "CFETS / Chinamoney",
       "sourceUrl": "https://x.com/search?q=CFETS+人民币汇率指数",
-      "note": "RMB at 6.7623 (daily). CFETS index last known: 101.41 (Jun 2). Updated 2026-06-13",
-      "note_zh": "人民币汇率6.7623（每日）。CFETS指数上次已知：101.41（6月2日）。更新于 2026-06-13"
+      "note": "RMB at 6.7623 (daily). CFETS index last known: 101.41 (Jun 2). Updated 2026-06-14",
+      "note_zh": "人民币汇率6.7623（每日）。CFETS指数上次已知：101.41（6月2日）。更新于 2026-06-14"
     },
     "chinaEvExports": {
-      "value": "Monthly via CPCA",
-      "value_zh": "月度数据待发布",
+      "value": "~809K cars total (May) · ~435K NEV · +73% YoY",
+      "value_zh": "5月总出口约80.9万辆 · 新能源约43.5万辆 · 同比+73%",
       "unit": "units/month",
       "unit_zh": "辆/月",
       "baseline": "~500K/mo (2025 avg)",
       "trend": "rising",
-      "status": "unknown",
+      "status": "normal",
       "threshold": "Monitor BYD + SAIC Middle East/SEA shipments",
       "threshold_zh": "关注比亚迪+上汽中东/东南亚出货量",
-      "source": "CPCA / company reports",
+      "source": "CAAM / CPCA",
       "sourceUrl": "https://x.com/search?q=China+EV+exports+2026",
-      "note": "Hormuz → competitor logistics cost up → China EV price gap widens",
-      "note_zh": "霍尔木兹→竞争对手物流成本上升→中国电动车价差扩大"
+      "note": "May: total car exports +73% YoY (~809K). NEV exports more than doubled (~435K). BYD 36.7% share. Fuel prices boost EV demand. UBS: '24 annual exports +40%, EVs +80%'. Updated 2026-06-14",
+      "note_zh": "5月：汽车总出口同比+73%（约80.9万辆）。新能源出口翻倍以上（约43.5万辆）。比亚迪占36.7%。油价推升电动车需求。UBS：2026全年出口+40%，电动车+80%。更新于 2026-06-14"
     }
   }
 }

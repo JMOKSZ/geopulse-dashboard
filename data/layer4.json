@@ -17,12 +17,12 @@
       "threshold_zh": "溢价下降=制裁在漏；溢价上升=瓶颈收紧",
       "source": "SemiAnalysis / grey market",
       "sourceUrl": "https://x.com/search?q=H100+black+market+China",
-      "note": "H100/B200 grey market premium. Monitor restrictions vs smuggling flows.",
-      "note_zh": "H100/B200灰市溢价。关注禁令与走私流量的博弈。"
+      "note": "Nvidia counts $50B China gap (lllegal supply). Jensen Huang declines Senate hearing. Smuggling via encrypted channels (Fortune, May 13). Premium stable at 2-3x. Updated 2026-06-14",
+      "note_zh": "英伟达面临$500亿中国缺口。黄仁勋拒绝参议院听证。加密渠道走私持续。溢价稳定在2-3倍。更新于 2026-06-14"
     },
     "chinaAiAdoption": {
-      "value": "114M+ tokens/day (DeepSeek) · 500K+ devs on 通义 · 200+ enterprise deployments (文心)",
-      "value_zh": "DeepSeek日均API调用1.14亿+ tokens · 通义灵码50万+开发者 · 文心200+企业落地",
+      "value": "541M visits/mo (DeepSeek, #5 globally) · 500K+ devs on 通义 · 200+ enterprise deployments (文心)",
+      "value_zh": "DeepSeek月访5.41亿次（全球第5）· 通义灵码50万+开发者 · 文心200+企业落地",
       "unit": "composite adoption index",
       "unit_zh": "综合渗透指数",
       "baseline": "~30M tokens/day (2025)",
@@ -32,8 +32,8 @@
       "threshold_zh": "关注：日均Token量增速、企业案例加速曲线",
       "source": "DeepSeek official · Alibaba Cloud · Baidu",
       "sourceUrl": "https://x.com/search?q=DeepSeek+API+China+2026",
-      "note": "Token usage is the single best proxy for real AI penetration — not 'enterprise adoption' headlines.",
-      "note_zh": "Token用量是衡量AI真实渗透率的最佳指标——比'企业加速部署'这种定性描述有说服力得多。"
+      "note": "DeepSeek 541M monthly visits (#5 globally). V4-Pro permanent 75% price cut. $59B fundraise target. WAIC 2026: Jul 3-5 Shanghai. Updated 2026-06-14",
+      "note_zh": "DeepSeek月访问量5.41亿（全球第5）。V4-Pro永久降价75%。$590亿融资目标。世界AI大会7月3-5日上海。更新于 2026-06-14"
     },
     "aiInferenceVolume": {
       "value": "~¥2.8B/qtr · 3.2× YoY",
@@ -77,12 +77,12 @@
       "threshold_zh": "数据中心占全国电网比值>10%=结构性需求转移；>15%=瓶颈风险",
       "source": "IEA · NEA China · SemiAnalysis DC tracker",
       "sourceUrl": "https://x.com/search?q=China+data+center+power+consumption+2026",
-      "note": "S&P 500: 7431. China DC capacity ~85 GW. Updated 2026-06-13",
-      "note_zh": "标普500：7431。中国数据中心容量约85GW。更新于 2026-06-13"
+      "note": "S&P 500: 7431. China DC capacity ~85 GW. Updated 2026-06-14",
+      "note_zh": "标普500：7431。中国数据中心容量约85GW。更新于 2026-06-14"
     },
     "aiSpaceCapability": {
-      "value": "68 orbital launches (2026 YTD) · 700+ satellites added · Tiangong fully crewed",
-      "value_zh": "2026年迄今68次轨道发射 · 新增700+卫星 · 天宫空间站满员运行",
+      "value": "68+ orbital launches (2026 YTD) · 700+ satellites added · Tiangong fully crewed",
+      "value_zh": "2026年迄今68+次轨道发射 · 新增700+卫星 · 天宫空间站满员运行",
       "unit": "launch & constellation scale",
       "unit_zh": "发射与星座规模",
       "baseline": "52 launches/year (2023)",
@@ -92,8 +92,8 @@
       "threshold_zh": "年发射>100次 + 万颗卫星星座 = 太空AI能力追平美国",
       "source": "CNSA · SpaceNews · Jonathan McDowell launch log",
       "sourceUrl": "https://x.com/search?q=China+orbital+launch+2026",
-      "note": "Qianfan (千帆) constellation competing with Starlink. Space AI = edge computing in orbit, autonomous rendezvous, ISR constellation coordination.",
-      "note_zh": "千帆星座对标Starlink。太空AI=在轨边缘计算、自主交会对接、侦察星座协同。"
+      "note": "Tianlong-3 Falcon-9-like debut (Jun 2). Zhuque-2E Jun 9. Long March 5 classified launch Jun 11. Qianfan constellation hits 200 sats. WAIC Jul 3-5. Updated 2026-06-14",
+      "note_zh": "天龙3号（类猎鹰9）首发6月2日。朱雀2E 6月9日发射。长五6月11日机密载荷。千帆星座达200星。世界AI大会7月3-5日。更新于 2026-06-14"
     },
     "nvdaAsiaRevenue": {
       "value": "Next: Aug 2026",

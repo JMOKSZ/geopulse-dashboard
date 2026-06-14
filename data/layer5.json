@@ -16,8 +16,8 @@
       "threshold_zh": "去北京多于华盛顿=战略偏移",
       "source": "X / news tracking",
       "sourceUrl": "https://x.com/search?q=MBS+travel+2026",
-      "note": "MBS itinerary = world's most honest thermometer of alignment. Track next destination.",
-      "note_zh": "MBS行程=世界上最诚实的温度计。追踪下一站去哪。"
+      "note": "MBS lifted Lebanon ban (Jun 11). Declined Evian meeting with France (Jun 12). Hosted Sudan's Burhan in Jeddah (Apr). No new foreign trip reported. Updated 2026-06-14",
+      "note_zh": "MBS解除黎巴嫩禁令（6月11日）。拒绝与法国在埃维昂会晤（6月12日）。吉达接待苏丹布尔汉（4月）。无新外访行程。更新于 2026-06-14"
     },
     "singaporeStance": {
       "value": "Officially neutral, adjusting quietly",
@@ -30,8 +30,8 @@
       "threshold_zh": "新加坡选边=其他亚洲盟友已经在做了",
       "source": "speeches / press conferences",
       "sourceUrl": "https://x.com/search?q=Singapore+stance+US+China+2026",
-      "note": "Singapore is the honest thermometer — they pick a side before others do.",
-      "note_zh": "新加坡是最诚实的温度计——它选边比别人都早。"
+      "note": "Singapore stands firm on freedom of navigation (Apr). Quad launches Indo-Pacific monitor plan (May). No new policy shift detected. Updated 2026-06-14",
+      "note_zh": "新加坡坚持航行自由（4月）。四方机制启动印太监测计划（5月）。未检测到新的立场转向。更新于 2026-06-14"
     },
     "adbLoanCurrency": {
       "value": "Annual data (Jun release)",
@@ -74,8 +74,8 @@
       "threshold_zh": "路径改变=结算体系去美元化在进行",
       "source": "Customs data / trade flows",
       "sourceUrl": "https://x.com/search?q=China+gold+import+Russia+2026",
-      "note": "If China gold imports shift from London/Switzerland to direct Russia procurement, settlement currency changes too.",
-      "note_zh": "如果中国黄金进口从伦敦/瑞士转向直接向俄采购，结算币种也在变。"
+      "note": "China buying gold at record pace (European Business Magazine, Jun 12). 'Gold's center of gravity has moved East' (GoldSilver, May 21). No confirmed route change data. Updated 2026-06-14",
+      "note_zh": "中国以创纪录速度购金（6月12日）。'黄金重心已东移'（5月21日）。无确凿的路线变更数据。更新于 2026-06-14"
     },
     "pewFavorability": {
       "value": "US ~49% · China ~36% (2025, 25 countries)",
