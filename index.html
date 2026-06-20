@@ -506,6 +506,46 @@
             font-weight: 700;
         }
 
+        /* ── Dimension breakdown ──────────────────────────── */
+        .dimension-panel {
+            margin: 1rem 0 1.25rem 0;
+            width: 100%;
+            max-width: 480px;
+        }
+        .dimension-row {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.35rem;
+            font-size: 0.72rem;
+        }
+        .dimension-label {
+            width: 7.5em;
+            text-align: right;
+            color: #5A4A3A;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        .dimension-track {
+            flex: 1;
+            height: 8px;
+            background: #F0E4D6;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .dimension-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.8s ease;
+        }
+        .dimension-value {
+            width: 2.5em;
+            text-align: left;
+            font-weight: 700;
+            color: #5A4A3A;
+            flex-shrink: 0;
+        }
+
         /* ── Responsive ───────────────────────────────────── */
         @media (max-width: 768px) {
             .dashboard-header {
@@ -721,6 +761,9 @@
                     <span class="milestone active">Now<br>~46%</span>
                     <span class="milestone">New equilibrium<br>~100%</span>
                 </div>
+            </div>
+            <div class="dimension-panel" id="dimension-panel">
+                <div id="dimension-bars"></div>
             </div>
             <p id="summary-text" data-i18n="summary-text">
                 The Hormuz disruption is acting as a catalyst, accelerating an existing structural trend
@@ -1729,6 +1772,53 @@
     <!-- APPLICATION SCRIPTS                                 -->
     <!-- ════════════════════════════════════════════════════ -->
     <script src="js/app.js?v=2" defer></script>
+
+    <script>
+    // Load dimension scores from metadata and render bars
+    (function() {
+        const DIM_LABELS = {
+            rmb_axis: 'RMB Axis',
+            gold_dedollar: 'Gold/De-dollar',
+            dollar_pressure: 'Dollar Pressure',
+            oil_chokepoint: 'Oil Chokepoint',
+            china_resil: 'China Resilience',
+            structural: 'Structural',
+            geopolitics: 'Geopolitical Temp'
+        };
+        const DIM_COLORS = {
+            rmb_axis: '#6B8EAB',
+            gold_dedollar: '#D4A843',
+            dollar_pressure: '#C84B31',
+            oil_chokepoint: '#8B4513',
+            china_resil: '#2E7D32',
+            structural: '#5B4A8A',
+            geopolitics: '#C0392B'
+        };
+        fetch('data/metadata.json')
+            .then(r => r.json())
+            .then(meta => {
+                const kl = meta.keyLevels || {};
+                const container = document.getElementById('dimension-bars');
+                if (!container) return;
+                let html = '';
+                Object.keys(DIM_LABELS).forEach(key => {
+                    const valStr = kl['dim_' + key];
+                    if (!valStr) return;
+                    const val = parseFloat(valStr);
+                    if (isNaN(val)) return;
+                    const pct = Math.min(val, 100);
+                    const color = DIM_COLORS[key] || '#888';
+                    html += '<div class="dimension-row">'
+                        + '<span class="dimension-label">' + DIM_LABELS[key] + '</span>'
+                        + '<div class="dimension-track"><div class="dimension-fill" style="width:' + pct + '%;background:' + color + '"></div></div>'
+                        + '<span class="dimension-value">' + val.toFixed(0) + '</span>'
+                        + '</div>';
+                });
+                container.innerHTML = html;
+            })
+            .catch(() => {});
+    })();
+    </script>
 
 </body>
 </html>
