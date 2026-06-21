@@ -16,8 +16,8 @@
       "threshold_zh": "去北京多于华盛顿=战略偏移",
       "source": "X / news tracking",
       "sourceUrl": "https://x.com/search?q=MBS+travel+2026",
-      "note": "MBS lifted Lebanon ban (Jun 11). Declined Evian meeting with France (Jun 12). Hosted Sudan's Burhan in Jeddah (Apr). No new foreign trip reported. Updated 2026-06-14",
-      "note_zh": "MBS解除黎巴嫩禁令（6月11日）。拒绝与法国在埃维昂会晤（6月12日）。吉达接待苏丹布尔汉（4月）。无新外访行程。更新于 2026-06-14"
+      "note": "MBS declined Evian meeting with France (Jun 12). Trump calls MBS a 'warrior'. Saudi played key role in US-Iran ceasefire MOU (Jun 17). MBS lifted Lebanon ban (Jun 11). Hosted Sudan's Burhan in Jeddah (Apr). No new foreign trip reported. Updated 2026-06-21",
+      "note_zh": "MBS拒绝与法国在埃维昂会晤（6月12日）。特朗普称MBS为'战士'。沙特在美伊停火MOU中发挥关键作用（6月17日）。MBS解除黎巴嫩禁令（6月11日）。吉达接待苏丹布尔汉（4月）。无新外访行程。更新于 2026-06-21"
     },
     "singaporeStance": {
       "value": "Officially neutral, adjusting quietly",
@@ -30,8 +30,8 @@
       "threshold_zh": "新加坡选边=其他亚洲盟友已经在做了",
       "source": "speeches / press conferences",
       "sourceUrl": "https://x.com/search?q=Singapore+stance+US+China+2026",
-      "note": "Singapore stands firm on freedom of navigation (Apr). Quad launches Indo-Pacific monitor plan (May). No new policy shift detected. Updated 2026-06-14",
-      "note_zh": "新加坡坚持航行自由（4月）。四方机制启动印太监测计划（5月）。未检测到新的立场转向。更新于 2026-06-14"
+      "note": "Both US and Chinese AI firms setting up shop in Singapore as 'Asia's neutral AI hub' (Fortune, Jun 20). 'Washington Is Testing Singapore's Patience' (Foreign Policy, Jun 5). No policy stance shift yet, but neutral AI hub role growing. Quad launches Indo-Pacific monitor plan (May). Updated 2026-06-21",
+      "note_zh": "中美AI企业均在狮城设点，新加坡成为'亚洲中立AI枢纽'（财富，6月20日）。'华盛顿在考验新加坡的耐心'（外交政策，6月5日）。政策立场未变，但中立AI枢纽角色在增长。四方机制启动印太监测计划（5月）。更新于 2026-06-21"
     },
     "adbLoanCurrency": {
       "value": "Annual data (Jun release)",
@@ -74,8 +74,8 @@
       "threshold_zh": "路径改变=结算体系去美元化在进行",
       "source": "Customs data / trade flows",
       "sourceUrl": "https://x.com/search?q=China+gold+import+Russia+2026",
-      "note": "China buying gold at record pace (European Business Magazine, Jun 12). 'Gold's center of gravity has moved East' (GoldSilver, May 21). No confirmed route change data. Updated 2026-06-14",
-      "note_zh": "中国以创纪录速度购金（6月12日）。'黄金重心已东移'（5月21日）。无确凿的路线变更数据。更新于 2026-06-14"
+      "note": "China buying gold at record pace. 'Gold's center of gravity has moved East' (GoldSilver). US/Canada plot more gold mines as China leads in production (Industrial Info, Jun 4). No confirmed route change data. EU sanctions compliance may constrain direct Russia purchases. Updated 2026-06-21",
+      "note_zh": "中国以创纪录速度购金。'黄金重心已东移'。美加规划更多金矿，中国产量领先（6月4日）。无确凿的路线变更数据。欧盟制裁合规可能限制对俄直接采购。更新于 2026-06-21"
     },
     "pewFavorability": {
       "value": "US ~49% · China ~36% (2025, 25 countries)",

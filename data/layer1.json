@@ -11,18 +11,18 @@
       "unit": "% of hull value",
       "unit_zh": "% 船体价值",
       "baseline": "0.25%",
-      "trend": "rising",
+      "trend": "stable",
       "status": "critical",
       "threshold": ">0.5% critical",
       "threshold_zh": ">0.5% 危险",
       "source": "Lloyd's / LMA",
       "sourceUrl": "https://x.com/search?q=war+risk+premium+hormuz",
-      "note": "Ships face ~4,000× higher insurance costs (The National). 'Ceasefire Won't Lower War-Risk Insurance Rates' (houseofsaud). Updated 2026-06-14",
-      "note_zh": "船只保费飙升约4000倍。'停火不会降低战争险费率'。更新于 2026-06-14"
+      "note": "Ships face ~4,000× higher insurance costs. 'Strait of Hormuz reopens: But can ships safety be assured?' (Al Jazeera, Jun 19). Premium stable at elevated levels — market cautious despite ceasefire MOU. Updated 2026-06-21",
+      "note_zh": "船只保费飙升约4000倍。'霍尔木兹海峡重开：但航行安全能保证吗？'溢价高位企稳——市场对停火MOU持谨慎态度。更新于 2026-06-21"
     },
     "straitThroughput": {
-      "value": "<0.5 mb/d",
-      "value_zh": "<50万桶/天",
+      "value": "<0.5 mb/d | disputed",
+      "value_zh": "<50万桶/天 | 有争议",
       "unit": "million barrels/day",
       "unit_zh": "百万桶/天",
       "baseline": "17 mb/d",
@@ -32,12 +32,12 @@
       "threshold_zh": "<5 危险",
       "source": "Kpler / Vortexa",
       "sourceUrl": "https://x.com/Kpler",
-      "note": "Iran formally closed strait entirely Jun 11. US claims 7M b/d, Chevron CEO rebuts. US-Iran deal nearing (Trump: 'agreement to be signed soon'). Updated 2026-06-14",
-      "note_zh": "伊朗6月11日正式宣布全面关闭海峡。美方声称日通航700万桶，雪佛龙CEO反驳。美伊和约接近达成。更新于 2026-06-14"
+      "note": "Ceasefire MOU signed Jun 17 — strait briefly reopened. Iran re-closed Jun 20 citing 'clear breach' of commitments. CENTCOM denies closure, insists traffic flowing. 'Shipping companies will decide when Hormuz is open' (Fortune, Jun 21). Trump threatens US tolls if no final deal in 60 days. Oil at 3-month low (Reuters, Jun 15). US-Iran talks in Switzerland Jun 21. Updated 2026-06-21",
+      "note_zh": "6月17日签署停火MOU——海峡短暂重开。伊朗6月20日以'明确违反承诺'为由再次关闭。CENTCOM否认关闭，坚称通航正常。'航运公司将决定海峡何时开放'。特朗普威胁若60天内无最终协议则征收美方通行费。油价跌至3个月低点。美伊谈判6月21日在瑞士进行。更新于 2026-06-21"
     },
     "irgcStatementFreq": {
-      "value": "12/week",
-      "value_zh": "12次/周",
+      "value": "15/week",
+      "value_zh": "15次/周",
       "unit": "statements per week",
       "unit_zh": "次/周",
       "baseline": "2-3/week",
@@ -47,12 +47,12 @@
       "threshold_zh": ">5 警惕",
       "source": "OSINT / X monitoring",
       "sourceUrl": "https://x.com/search?q=IRGC+statement+hormuz",
-      "note": "Iran formally closed strait Jun 11. Strikes on Bandar Abbas/Qeshm. US-Iran deal talks ongoing. Escalation ladder: formal closure >> negotiation. Updated 2026-06-14",
-      "note_zh": "伊朗6月11日正式关闭海峡。美军打击阿巴斯港/格什姆岛。美伊谈判进行中。升级阶梯：正式关闭>>谈判。更新于 2026-06-14"
+      "note": "Ceasefire MOU signed Jun 17, then Iran re-closed strait Jun 20 citing US violations. IRGC military command issued closure statement. US-Iran talks Jun 21 in Switzerland. MOU text published (NYT, Jun 21). Escalation ladder: MOU >> breach claim >> re-closure >> negotiations. Updated 2026-06-21",
+      "note_zh": "6月17日签署停火MOU，6月20日伊朗以美方违约为由再次关闭海峡。IRGC军事指挥部发布关闭声明。美伊6月21日在瑞士谈判。MOU文本已公布（纽约时报）。升级阶梯：MOU>>违约声明>>再次关闭>>谈判。更新于 2026-06-21"
     },
     "fleetPosition": {
-      "value": "At anchor — Bahrain",
-      "value_zh": "锚泊中——巴林",
+      "value": "At anchor — Bahrain | CENTCOM denial of closure",
+      "value_zh": "锚泊中——巴林 | CENTCOM否认关闭",
       "unit": "",
       "baseline": "Active patrol",
       "trend": "stable",
@@ -61,8 +61,8 @@
       "threshold_zh": "徘徊 = 威慑失效",
       "source": "MarineTraffic / OSINT",
       "sourceUrl": "https://x.com/search?q=US+5th+fleet+position",
-      "note": "Awaiting orders, no active escort missions. US strikes on Bandar Abbas/Qeshm confirmed. Updated 2026-06-14",
-      "note_zh": "等待命令，无护航行动。美军打击阿巴斯港/格什姆岛已确认。更新于 2026-06-14"
+      "note": "Naval blockade of Iran lifted per ceasefire MOU terms. CENTCOM strait denial vs Iran re-closure claim. US-Iran talks Sunday in Switzerland with Vance. Updated 2026-06-21",
+      "note_zh": "根据停火MOU条款解除对伊朗海上封锁。CENTCOM否认关闭vs伊朗声称重新关闭。万斯赴瑞士参加美伊谈判（6月21日）。更新于 2026-06-21"
     },
     "saudiUaeStance": {
       "value": "Pressing US, exploring alternatives",
@@ -75,8 +75,8 @@
       "threshold_zh": "自行其是 = 同盟裂痕",
       "source": "Reuters / Bloomberg",
       "sourceUrl": "https://x.com/search?q=Saudi+Arabia+Hormuz+2026",
-      "note": "Saudi jet fuel supply to Europe higher. OPEC+ 4th quota hike. Saudi energy minister visited Russia. MBS lifted Lebanon ban. 'Hormuz Shock Hits Gulf Economies, Saudi Takes Center Stage'. Updated 2026-06-14",
-      "note_zh": "沙特对欧航空燃油供应增加。OPEC+第四次增产。沙特能源部长访俄。MBS解除黎巴嫩禁令。'霍尔木兹冲击海湾经济，沙特站上C位'。更新于 2026-06-14"
+      "note": "MBS declined Evian G7 meeting with France (Jun 12). Trump calls MBS a 'warrior'. Saudi plays central role in Hormuz recovery. OPEC+ 4th quota hike. G7 summit (Jun 16-17) discussed Hormuz tolls. Trump-MBS relationship remains key to GCC cohesion. Updated 2026-06-21",
+      "note_zh": "MBS拒绝与法国在埃维昂会晤（6月12日）。特朗普称MBS为'战士'。沙特在霍尔木兹恢复中发挥核心作用。OPEC+第四次增产。G7峰会讨论海峡通行费。特朗普-MBS关系仍是GCC凝聚力关键。更新于 2026-06-21"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "dashboard": "Geopolitical Pulse / 地缘脉冲",
   "version": "1.0.0",
-  "lastUpdated": "2026-06-20T04:37:58Z",
+  "lastUpdated": "2026-06-21T22:01:11Z",
   "updateFrequency": {
     "marketData": "realtime",
     "xScraped": "daily",
@@ -48,7 +48,7 @@
     "dim_oil_chokepoint": "61%",
     "dim_china_resil": "73%",
     "dim_structural": "70%",
-    "dim_geopolitics": "66%"
+    "dim_geopolitics": "69%"
   },
   "gameScoreHistory": [
     {
@@ -74,6 +74,18 @@
       "china_resil": 72.9,
       "structural": 69.9,
       "geopolitics": 66.4
+    },
+    {
+      "date": "2026-06-21",
+      "score": 46,
+      "delta": 0,
+      "rmb_axis": 33.1,
+      "gold_dedollar": 43.6,
+      "dollar_pressure": 49.4,
+      "oil_chokepoint": 60.8,
+      "china_resil": 72.9,
+      "structural": 69.9,
+      "geopolitics": 69.1
     }
   ]
 }

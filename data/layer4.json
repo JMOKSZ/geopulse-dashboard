@@ -17,8 +17,8 @@
       "threshold_zh": "溢价下降=制裁在漏；溢价上升=瓶颈收紧",
       "source": "SemiAnalysis / grey market",
       "sourceUrl": "https://x.com/search?q=H100+black+market+China",
-      "note": "Nvidia counts $50B China gap (lllegal supply). Jensen Huang declines Senate hearing. Smuggling via encrypted channels (Fortune, May 13). Premium stable at 2-3x. Updated 2026-06-14",
-      "note_zh": "英伟达面临$500亿中国缺口。黄仁勋拒绝参议院听证。加密渠道走私持续。溢价稳定在2-3倍。更新于 2026-06-14"
+      "note": "Alibaba shipped 560K Zhenwu AI chips to 400 customers — China's Nvidia alternative (abhs.in, Jun 15). Premium stable at 2-3x. Domestic alternatives gaining traction. Nvidia $50B China gap unchanged. Updated 2026-06-21",
+      "note_zh": "阿里巴巴向400家客户交付56万颗'真武'AI芯片——中国的英伟达替代方案（6月15日）。溢价稳定在2-3倍。国产替代方案加速渗透。英伟达$500亿中国缺口不变。更新于 2026-06-21"
     },
     "chinaAiAdoption": {
       "value": "541M visits/mo (DeepSeek, #5 globally) · 500K+ devs on 通义 · 200+ enterprise deployments (文心)",
@@ -32,8 +32,8 @@
       "threshold_zh": "关注：日均Token量增速、企业案例加速曲线",
       "source": "DeepSeek official · Alibaba Cloud · Baidu",
       "sourceUrl": "https://x.com/search?q=DeepSeek+API+China+2026",
-      "note": "DeepSeek 541M monthly visits (#5 globally). V4-Pro permanent 75% price cut. $59B fundraise target. WAIC 2026: Jul 3-5 Shanghai. Updated 2026-06-14",
-      "note_zh": "DeepSeek月访问量5.41亿（全球第5）。V4-Pro永久降价75%。$590亿融资目标。世界AI大会7月3-5日上海。更新于 2026-06-14"
+      "note": "DeepSeek closed $7.4B round: state fund gets votes, others get none (Tech Times, Jun 16). Microsoft considering DeepSeek for low-cost Copilot (Seeking Alpha, Jun 17). DeepSeek leads Ramp's Trending Software Vendors Jun 2026. V4-Pro permanent 75% price cut. WAIC 2026: Jul 3-5 Shanghai. Updated 2026-06-21",
+      "note_zh": "DeepSeek完成$74亿融资：国资基金有投票权，其他投资人无（6月16日）。微软考虑用DeepSeek做低成本Copilot（6月17日）。DeepSeek领跑Ramp 2026年6月热门软件榜单。V4-Pro永久降价75%。世界AI大会7月3-5日上海。更新于 2026-06-21"
     },
     "aiInferenceVolume": {
       "value": "~¥2.8B/qtr · 3.2× YoY",
@@ -62,8 +62,8 @@
       "threshold_zh": "关注：自主蜂群测试、AI vs 人类兵棋推演结果、卫星AI边缘处理",
       "source": "PLA public disclosures · Janes · ASPI Critical Technology Tracker",
       "sourceUrl": "https://x.com/search?q=PLA+AI+drone+autonomous+2026",
-      "note": "China has more drone manufacturers than the rest of the world combined. AI target recognition + autonomous loitering = the real asymmetric advantage.",
-      "note_zh": "中国无人机厂商数量超过全球其他地区总和。AI目标识别+自主巡弋=真正的非对称优势。"
+      "note": "BREAKING: 'Fully autonomous drones have killed human soldiers for the first time' (New Scientist, Jun 10). Global milestone for AI warfare. China has more drone manufacturers than rest of world combined. Pentagon reviews autonomous weapons policy (DefenseScoop, Jun 15). AI target recognition + autonomous loitering = PLA asymmetric advantage. Updated 2026-06-21",
+      "note_zh": "重大突破：'全自主无人机首次杀死人类士兵'（新科学家，6月10日）。全球AI战争里程碑。中国无人机厂商数量超过全球其他地区总和。五角大楼重新审议自主武器政策（6月15日）。AI目标识别+自主巡弋=PLA非对称优势。更新于 2026-06-21"
     },
     "aiComputePower": {
       "value": "~85 GW data center capacity · 35% YoY growth · 8% of national grid",
@@ -77,12 +77,12 @@
       "threshold_zh": "数据中心占全国电网比值>10%=结构性需求转移；>15%=瓶颈风险",
       "source": "IEA · NEA China · SemiAnalysis DC tracker",
       "sourceUrl": "https://x.com/search?q=China+data+center+power+consumption+2026",
-      "note": "S&P 500: 7501. China DC capacity ~85 GW. Updated 2026-06-20",
-      "note_zh": "标普500：7501。中国数据中心容量约85GW。更新于 2026-06-20"
+      "note": "S&P 500: 7501. China DC capacity ~85 GW. Updated 2026-06-21",
+      "note_zh": "标普500：7501。中国数据中心容量约85GW。更新于 2026-06-21"
     },
     "aiSpaceCapability": {
-      "value": "68+ orbital launches (2026 YTD) · 700+ satellites added · Tiangong fully crewed",
-      "value_zh": "2026年迄今68+次轨道发射 · 新增700+卫星 · 天宫空间站满员运行",
+      "value": "72+ orbital launches (2026 YTD) · 700+ satellites added · Tiangong fully crewed",
+      "value_zh": "2026年迄今72+次轨道发射 · 新增700+卫星 · 天宫空间站满员运行",
       "unit": "launch & constellation scale",
       "unit_zh": "发射与星座规模",
       "baseline": "52 launches/year (2023)",
@@ -92,8 +92,8 @@
       "threshold_zh": "年发射>100次 + 万颗卫星星座 = 太空AI能力追平美国",
       "source": "CNSA · SpaceNews · Jonathan McDowell launch log",
       "sourceUrl": "https://x.com/search?q=China+orbital+launch+2026",
-      "note": "Tianlong-3 Falcon-9-like debut (Jun 2). Zhuque-2E Jun 9. Long March 5 classified launch Jun 11. Qianfan constellation hits 200 sats. WAIC Jul 3-5. Updated 2026-06-14",
-      "note_zh": "天龙3号（类猎鹰9）首发6月2日。朱雀2E 6月9日发射。长五6月11日机密载荷。千帆星座达200星。世界AI大会7月3-5日。更新于 2026-06-14"
+      "note": "China conducted 4 launches in 3 days (Jun 15-17): LM-12 Guowang batch, Kuaizhou-11 (SpaceNews, Jun 17). Guowang constellation now ~177 satellites. Chinese rocket broke apart near Starlink (Ars Technica, Jun 16). Tianlong-3 Falcon-9-like debut (Jun 2). Zhuque-2E Jun 9. LM-5 classified Jun 11. WAIC Jul 3-5. Updated 2026-06-21",
+      "note_zh": "中国3天完成4次发射（6月15-17日）：长征12号国网批次、快舟11号（太空新闻，6月17日）。国网星座已达约177颗卫星。中国火箭碎片接近星链轨道（Ars Technica，6月16日）。天龙3号（类猎鹰9）首发（6月2日）。朱雀2E（6月9日）。长五机密载荷（6月11日）。世界AI大会7月3-5日。更新于 2026-06-21"
     },
     "nvdaAsiaRevenue": {
       "value": "Next: Aug 2026",
@@ -122,8 +122,8 @@
       "threshold_zh": "持续-3%以上=AI+制造效率在抵扣能源成本",
       "source": "NBS (quarterly, 1Q lag)",
       "sourceUrl": "https://x.com/search?q=China+energy+intensity+2026",
-      "note": "Key competitiveness metric: China efficiency gains vs rivals' pure fuel cost exposure",
-      "note_zh": "关键竞争力指标：中国效率提升vs竞争对手的纯燃料成本暴露"
+      "note": "Carbon Brief (Jun 4): China CO2 climbs 2% in early 2026, driven by AI data center demand & 'wasted' wind/solar curtailment. 15th FYP targets 17% carbon intensity cut by 2030. AI data center energy demand (CATL, Panasonic entering AIDC storage race — CarbonCredits.com, Jun 18) may slow intensity improvement. Updated 2026-06-21",
+      "note_zh": "Carbon Brief（6月4日）：中国2026年初CO2排放上升2%，受AI数据中心需求和'弃风弃光'推动。十五五计划目标2030年碳强度降低17%。AI数据中心能源需求可能放缓强度降速（CATL、松下入局AIDC储能竞赛——6月18日）。更新于 2026-06-21"
     }
   }
 }
