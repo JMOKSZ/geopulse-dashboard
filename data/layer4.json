@@ -6,19 +6,19 @@
   "desc_zh": "技术作为长期结构性变量",
   "indicators": {
     "gpuBlackMarket": {
-      "value": "2-3x MSRP",
-      "value_zh": "MSRP的2-3倍",
+      "value": "2-3x MSRP · B200 racks at 50% premium",
+      "value_zh": "MSRP的2-3倍 · B200机柜溢价50%",
       "unit": "premium above MSRP",
       "unit_zh": "高于官方定价",
       "baseline": "~1.5x (2025)",
-      "trend": "stable",
+      "trend": "rising",
       "status": "warning",
       "threshold": "Premium falling = sanctions leaking; Premium rising = bottleneck tightening",
       "threshold_zh": "溢价下降=制裁在漏；溢价上升=瓶颈收紧",
       "source": "SemiAnalysis / grey market",
       "sourceUrl": "https://x.com/search?q=H100+black+market+China",
-      "note": "Alibaba shipped 560K Zhenwu AI chips to 400 customers — China's Nvidia alternative (abhs.in, Jun 15). Premium stable at 2-3x. Domestic alternatives gaining traction. Nvidia $50B China gap unchanged. Updated 2026-06-21",
-      "note_zh": "阿里巴巴向400家客户交付56万颗'真武'AI芯片——中国的英伟达替代方案（6月15日）。溢价稳定在2-3倍。国产替代方案加速渗透。英伟达$500亿中国缺口不变。更新于 2026-06-21"
+      "note": "Nvidia B200 racks now fetching 50% premiums on China black market (Crypto Briefing, Jun 24). China plans $295B AI grid locking out Nvidia (abhs.in, Jun 24). Alibaba shipped 560K Zhenwu AI chips. Nvidia pitches Arm-based Vera CPUs to Chinese clients targeting Aug shipments (MLQ.ai, Jun 14). H100 premium stable at 2-3x, but market attention shifting to B200 pricing. Updated 2026-06-28",
+      "note_zh": "Nvidia B200机柜在中国黑市溢价50%（6月24日）。中国计划$2950亿AI算力网排挤Nvidia（6月24日）。阿里巴巴交付56万颗真武芯片。Nvidia向中国客户推Arm架构Vera CPU（MLQ.ai，6月14日）。H100溢价稳定2-3倍，但市场关注转向B200定价。更新于 2026-06-28"
     },
     "chinaAiAdoption": {
       "value": "541M visits/mo (DeepSeek, #5 globally) · 500K+ devs on 通义 · 200+ enterprise deployments (文心)",
@@ -32,8 +32,8 @@
       "threshold_zh": "关注：日均Token量增速、企业案例加速曲线",
       "source": "DeepSeek official · Alibaba Cloud · Baidu",
       "sourceUrl": "https://x.com/search?q=DeepSeek+API+China+2026",
-      "note": "DeepSeek closed $7.4B round: state fund gets votes, others get none (Tech Times, Jun 16). Microsoft considering DeepSeek for low-cost Copilot (Seeking Alpha, Jun 17). DeepSeek leads Ramp's Trending Software Vendors Jun 2026. V4-Pro permanent 75% price cut. WAIC 2026: Jul 3-5 Shanghai. Updated 2026-06-21",
-      "note_zh": "DeepSeek完成$74亿融资：国资基金有投票权，其他投资人无（6月16日）。微软考虑用DeepSeek做低成本Copilot（6月17日）。DeepSeek领跑Ramp 2026年6月热门软件榜单。V4-Pro永久降价75%。世界AI大会7月3-5日上海。更新于 2026-06-21"
+      "note": "US holds off blacklisting DeepSeek, more than 100 firms deemed security risks (Reuters, Jun 17). 'China is having another AI moment' (The Economist, Jun 22). Microsoft considers hosting DeepSeek for low-cost Copilot (Cybernews, Jun 22). More US firms turn to China's DeepSeek over pricey Silicon Valley AI (SCMP, Jun 4). DeepSeek $7.4B round closed. China plans $295B AI grid. WAIC 2026 Jul 3-5 Shanghai. Updated 2026-06-28",
+      "note_zh": "美国暂缓制裁DeepSeek，100+企业被认定安全风险（路透，6月17日）。'中国迎来又一个AI时刻'（经济学人，6月22日）。微软考虑用DeepSeek做低成本Copilot（6月22日）。更多美国企业转向DeepSeek替代硅谷高价AI（南华早报，6月4日）。DeepSeek $74亿融资完成。中国计划$2950亿AI算力网。世界AI大会7月3-5日上海。更新于 2026-06-28"
     },
     "aiInferenceVolume": {
       "value": "~¥2.8B/qtr · 3.2× YoY",
@@ -62,8 +62,8 @@
       "threshold_zh": "关注：自主蜂群测试、AI vs 人类兵棋推演结果、卫星AI边缘处理",
       "source": "PLA public disclosures · Janes · ASPI Critical Technology Tracker",
       "sourceUrl": "https://x.com/search?q=PLA+AI+drone+autonomous+2026",
-      "note": "BREAKING: 'Fully autonomous drones have killed human soldiers for the first time' (New Scientist, Jun 10). Global milestone for AI warfare. China has more drone manufacturers than rest of world combined. Pentagon reviews autonomous weapons policy (DefenseScoop, Jun 15). AI target recognition + autonomous loitering = PLA asymmetric advantage. Updated 2026-06-21",
-      "note_zh": "重大突破：'全自主无人机首次杀死人类士兵'（新科学家，6月10日）。全球AI战争里程碑。中国无人机厂商数量超过全球其他地区总和。五角大楼重新审议自主武器政策（6月15日）。AI目标识别+自主巡弋=PLA非对称优势。更新于 2026-06-21"
+      "note": "'Fully autonomous drones have killed human soldiers for the first time' (New Scientist, Jun 10) — global milestone. AI target recognition + autonomous loitering = PLA asymmetric advantage. Pentagon reviews autonomous weapons policy (DefenseScoop, Jun 15). Military AI governance under strain: US-China dialogue (IISS, Jun 11). No new major autonomous warfare events in past week. Updated 2026-06-28",
+      "note_zh": "'全自主无人机首次杀死人类士兵'（6月10日）——全球AI战争里程碑。AI目标识别+自主巡弋=PLA非对称优势。五角大楼审阅自主武器政策（6月15日）。美中军事AI治理对话面临压力。过去一周无新的自主战争重大事件。更新于 2026-06-28"
     },
     "aiComputePower": {
       "value": "~85 GW data center capacity · 35% YoY growth · 8% of national grid",
@@ -77,8 +77,8 @@
       "threshold_zh": "数据中心占全国电网比值>10%=结构性需求转移；>15%=瓶颈风险",
       "source": "IEA · NEA China · SemiAnalysis DC tracker",
       "sourceUrl": "https://x.com/search?q=China+data+center+power+consumption+2026",
-      "note": "S&P 500: 7501. China DC capacity ~85 GW. Updated 2026-06-21",
-      "note_zh": "标普500：7501。中国数据中心容量约85GW。更新于 2026-06-21"
+      "note": "S&P 500: 7354. China DC capacity ~85 GW. Updated 2026-06-28",
+      "note_zh": "标普500：7354。中国数据中心容量约85GW。更新于 2026-06-28"
     },
     "aiSpaceCapability": {
       "value": "72+ orbital launches (2026 YTD) · 700+ satellites added · Tiangong fully crewed",
@@ -92,8 +92,8 @@
       "threshold_zh": "年发射>100次 + 万颗卫星星座 = 太空AI能力追平美国",
       "source": "CNSA · SpaceNews · Jonathan McDowell launch log",
       "sourceUrl": "https://x.com/search?q=China+orbital+launch+2026",
-      "note": "China conducted 4 launches in 3 days (Jun 15-17): LM-12 Guowang batch, Kuaizhou-11 (SpaceNews, Jun 17). Guowang constellation now ~177 satellites. Chinese rocket broke apart near Starlink (Ars Technica, Jun 16). Tianlong-3 Falcon-9-like debut (Jun 2). Zhuque-2E Jun 9. LM-5 classified Jun 11. WAIC Jul 3-5. Updated 2026-06-21",
-      "note_zh": "中国3天完成4次发射（6月15-17日）：长征12号国网批次、快舟11号（太空新闻，6月17日）。国网星座已达约177颗卫星。中国火箭碎片接近星链轨道（Ars Technica，6月16日）。天龙3号（类猎鹰9）首发（6月2日）。朱雀2E（6月9日）。长五机密载荷（6月11日）。世界AI大会7月3-5日。更新于 2026-06-21"
+      "note": "Chinese spaceplane released object into orbit (SpaceNews, Jun 23). Long March 7A completed 16th flight: classified GEO rocket (Tech Times, Jun 23). China launched communications tech test satellite (Jun 23). Guowang constellation ~177 satellites (Jun 15-17 batch). WAIC Jul 3-5. Updated 2026-06-28",
+      "note_zh": "中国太空飞机在轨释放物体（6月23日）。长七A完成第16次发射：机密GEO火箭（6月23日）。中国发射通信技术试验卫星（6月23日）。国网星座约177颗卫星（6月15-17日批次）。世界AI大会7月3-5日。更新于 2026-06-28"
     },
     "nvdaAsiaRevenue": {
       "value": "Next: Aug 2026",

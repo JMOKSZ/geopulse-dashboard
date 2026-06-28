@@ -16,12 +16,12 @@
       "threshold_zh": "去北京多于华盛顿=战略偏移",
       "source": "X / news tracking",
       "sourceUrl": "https://x.com/search?q=MBS+travel+2026",
-      "note": "MBS declined Evian meeting with France (Jun 12). Trump calls MBS a 'warrior'. Saudi played key role in US-Iran ceasefire MOU (Jun 17). MBS lifted Lebanon ban (Jun 11). Hosted Sudan's Burhan in Jeddah (Apr). No new foreign trip reported. Updated 2026-06-21",
-      "note_zh": "MBS拒绝与法国在埃维昂会晤（6月12日）。特朗普称MBS为'战士'。沙特在美伊停火MOU中发挥关键作用（6月17日）。MBS解除黎巴嫩禁令（6月11日）。吉达接待苏丹布尔汉（4月）。无新外访行程。更新于 2026-06-21"
+      "note": "MBS declined Evian meeting with France (Jun 12). Trump calls MBS a 'warrior'. Saudi Cabinet chaired by MBS welcomed original US-Iran agreement (Jun 17). Now with collapsed ceasefire, Saudi facing direct security threat (Iranian drones targeted Bahrain). MBS lifted Lebanon ban (Jun 11). Hosted Sudan's Burhan in Jeddah (Apr). No new foreign trip reported. Hajj 2026 ongoing — potential security concerns. Updated 2026-06-28",
+      "note_zh": "MBS拒绝与法国在埃维昂会晤（6月12日）。特朗普称MBS为'战士'。MBS主持内阁欢迎美伊初步协议（6月17日）。现停火崩溃，沙特面临直接安全威胁（伊朗无人机攻击巴林）。MBS解除黎巴嫩禁令（6月11日）。吉达接待苏丹布尔汉（4月）。无新外访行程。2026年朝觐进行中——潜在安全担忧。更新于 2026-06-28"
     },
     "singaporeStance": {
-      "value": "Officially neutral, adjusting quietly",
-      "value_zh": "官方中立，暗中调整",
+      "value": "Officially neutral, adjusting quietly — AI hub role growing",
+      "value_zh": "官方中立，暗中调整——AI枢纽角色增长",
       "unit": "",
       "baseline": "Strict non-alignment",
       "trend": "stable",
@@ -30,8 +30,8 @@
       "threshold_zh": "新加坡选边=其他亚洲盟友已经在做了",
       "source": "speeches / press conferences",
       "sourceUrl": "https://x.com/search?q=Singapore+stance+US+China+2026",
-      "note": "Both US and Chinese AI firms setting up shop in Singapore as 'Asia's neutral AI hub' (Fortune, Jun 20). 'Washington Is Testing Singapore's Patience' (Foreign Policy, Jun 5). No policy stance shift yet, but neutral AI hub role growing. Quad launches Indo-Pacific monitor plan (May). Updated 2026-06-21",
-      "note_zh": "中美AI企业均在狮城设点，新加坡成为'亚洲中立AI枢纽'（财富，6月20日）。'华盛顿在考验新加坡的耐心'（外交政策，6月5日）。政策立场未变，但中立AI枢纽角色在增长。四方机制启动印太监测计划（5月）。更新于 2026-06-21"
+      "note": "Both US and Chinese AI firms setting up shop in Singapore as 'Asia's neutral AI hub' (Fortune, Jun 19). 'Washington Is Testing Singapore's Patience' (Foreign Policy, Jun 5). No policy stance shift yet. Michael Baumgartner visits Singapore amid US-China competition (Jun 3). Quad launches Indo-Pacific monitor plan (May). Updated 2026-06-28",
+      "note_zh": "中美AI企业均在狮城设点，新加坡成为'亚洲中立AI枢纽'（财富，6月19日）。'华盛顿在考验新加坡的耐心'（外交政策，6月5日）。政策立场未变。美议员访问新加坡。四方机制启动印太监测计划（5月）。更新于 2026-06-28"
     },
     "adbLoanCurrency": {
       "value": "Annual data (Jun release)",
@@ -45,8 +45,8 @@
       "threshold_zh": "显著增长(>2%)=多边机构对RMB的实质接受",
       "source": "ADB / World Bank",
       "sourceUrl": "https://x.com/search?q=ADB+loan+currency+RMB",
-      "note": "Operational acceptance of RMB at multilateral level — slower but more real than SWIFT data",
-      "note_zh": "多边层面RMB的操作性接受——比SWIFT数据慢但更真实"
+      "note": "ADB annual report expected late June. EU Trade Chief to meet China's Commerce Minister in Brussels Jun 29 — trade finance implications. No new ADB data found this cycle. Updated 2026-06-28",
+      "note_zh": "亚行年报预计6月底发布。欧盟贸易代表6月29日与中商务部长在布鲁塞尔会晤——贸易金融影响。本周期未发现亚行新数据。更新于 2026-06-28"
     },
     "hkmaInterventions": {
       "value": "Monitor HKD weak-side",
@@ -60,22 +60,22 @@
       "threshold_zh": "持续触碰弱方=亚洲资本外流压力",
       "source": "HKMA daily data",
       "sourceUrl": "https://x.com/search?q=HKMA+intervention+2026",
-      "note": "HKMA interventions = pressure gauge for capital flows from/to Asia",
-      "note_zh": "金管局干预频率=亚洲资本流动的压力计"
+      "note": "No major HKMA intervention reported this week. However, with US-Iran military escalation, capital flight from Gulf/MENA to safe havens may affect HKD peg. Monitor for weak-side touches. Updated 2026-06-28",
+      "note_zh": "本周未报告金管局重大干预。但美伊军事升级可能导致海湾/中东资本逃向避险资产，影响港币联系汇率。关注弱方兑换触发。更新于 2026-06-28"
     },
     "chinaGoldImportPath": {
-      "value": "Switching to direct Russia?",
-      "value_zh": "转向直接对俄采购？",
+      "value": "Hong Kong/Dubai route surging; direct Russia unclear",
+      "value_zh": "香港/迪拜路线激增；对俄直购不明",
       "unit": "",
       "baseline": "London/Switzerland route",
-      "trend": "stable",
+      "trend": "rising",
       "status": "warning",
       "threshold": "Route change = settlement system de-dollarization in motion",
       "threshold_zh": "路径改变=结算体系去美元化在进行",
       "source": "Customs data / trade flows",
       "sourceUrl": "https://x.com/search?q=China+gold+import+Russia+2026",
-      "note": "China buying gold at record pace. 'Gold's center of gravity has moved East' (GoldSilver). US/Canada plot more gold mines as China leads in production (Industrial Info, Jun 4). No confirmed route change data. EU sanctions compliance may constrain direct Russia purchases. Updated 2026-06-21",
-      "note_zh": "中国以创纪录速度购金。'黄金重心已东移'。美加规划更多金矿，中国产量领先（6月4日）。无确凿的路线变更数据。欧盟制裁合规可能限制对俄直接采购。更新于 2026-06-21"
+      "note": "China's gold imports rise to highest in more than 2 years, up 76% YTD (Seeking Alpha, Jun 24). 'Gold rush: Hong Kong bullion imports from Dubai jump amid US-Iran war' (SCMP, May 4) — suggesting route shift via Dubai/Hong Kong, not direct Russia. Russia sold 22 tonnes of gold this year (KITCO, Apr 21). 'Gold's center of gravity has moved East' (GoldSilver, May 21). No confirmed direct Russia route data. Updated 2026-06-28",
+      "note_zh": "中国黄金进口创两年多新高，YTD增长76%（Seeking Alpha，6月24日）。'黄金热潮：美伊战争下香港从迪拜的黄金进口激增'（南华早报，5月4日）——表明路径经迪拜/香港而非直接对俄。俄罗斯今年售出22吨黄金（KITCO，4月21日）。'黄金重心已东移'（GoldSilver，5月21日）。无确认的对俄直购路径数据。更新于 2026-06-28"
     },
     "pewFavorability": {
       "value": "US ~49% · China ~36% (2025, 25 countries)",

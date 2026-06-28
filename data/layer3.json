@@ -17,8 +17,8 @@
       "threshold_zh": "创纪录。持续>$1000亿=结构优势确认",
       "source": "China Customs (monthly)",
       "sourceUrl": "https://x.com/search?q=China+trade+surplus+May+2026",
-      "note": "May 2026: exports +19.4% YoY. CSI 300: 4942. Updated 2026-06-21",
-      "note_zh": "2026年5月：出口同比+19.4%。沪深300：4942。更新于 2026-06-21"
+      "note": "May 2026: exports +19.4% YoY. CSI 300: 4868. Updated 2026-06-28",
+      "note_zh": "2026年5月：出口同比+19.4%。沪深300：4868。更新于 2026-06-28"
     },
     "chinaTradeShare": {
       "value": "~15% of world goods exports (2025)",
@@ -51,8 +51,8 @@
       "note_zh": "各商品类别的份额来自各自行业的统计数据。不存在可信的单一'总吨位占比'数据。"
     },
     "industrialProfits": {
-      "value": "+24.7% (Apr) · +18.2% (Jan-Apr)",
-      "value_zh": "+24.7%（4月）· +18.2%（1-4月）",
+      "value": "+18.8% (Jan-May 2026)",
+      "value_zh": "+18.8%（2026年1-5月）",
       "unit": "% YoY",
       "unit_zh": "% 同比",
       "baseline": "+4.2% (Q1 2026)",
@@ -62,8 +62,8 @@
       "threshold_zh": "正数=成本传导能力ok；负数=利润被挤压",
       "source": "NBS (monthly, 2-3wk lag)",
       "sourceUrl": "https://x.com/search?q=China+industrial+profits",
-      "note": "Apr data: +24.7% YoY — fastest in >2 years (CNBC, Reuters, May 26). May data expected around Jun 27. Tech & metals driven. ING: 'Bouncing back after 3-year downtrend'. Updated 2026-06-21",
-      "note_zh": "4月数据：同比+24.7%——两年多来最快增速（CNBC/路透，5月26日）。5月数据预计6月27日左右发布。科技与金属驱动。ING：'三年下行后反弹'。更新于 2026-06-21"
+      "note": "Jan-May 2026: +18.8% YoY (NBS, Jun 27). May alone ~+20% but showing signs of slowing from Apr's +24.7% pace. CNBC: 'China industrial profits stay resilient as economy leans on factories, exports'. Times of India: 'Weak domestic demand bites'. Tech & metals continue to drive gains. Updated 2026-06-28",
+      "note_zh": "2026年1-5月：同比+18.8%（统计局，6月27日）。5月单月约+20%，但增速较4月的+24.7%有所放缓。科技与金属仍为驱动。更新于 2026-06-28"
     },
     "fxSettlement": {
       "value": "Pending SAFE release",
@@ -92,12 +92,12 @@
       "threshold_zh": ">104 = 央行可能干预；102-104 = 温和可控",
       "source": "CFETS / Chinamoney",
       "sourceUrl": "https://x.com/search?q=CFETS+人民币汇率指数",
-      "note": "RMB at 6.7693 (daily). CFETS index last known: 101.41 (Jun 2). Updated 2026-06-21",
-      "note_zh": "人民币汇率6.7693（每日）。CFETS指数上次已知：101.41（6月2日）。更新于 2026-06-21"
+      "note": "RMB at 6.7982 (daily). CFETS index last known: 101.41 (Jun 2). Updated 2026-06-28",
+      "note_zh": "人民币汇率6.7982（每日）。CFETS指数上次已知：101.41（6月2日）。更新于 2026-06-28"
     },
     "chinaEvExports": {
-      "value": "~809K cars total (May) · ~435K NEV · +73% YoY",
-      "value_zh": "5月总出口约80.9万辆 · 新能源约43.5万辆 · 同比+73%",
+      "value": "448K passenger EVs (May) · $9.2B · Record high",
+      "value_zh": "5月乘用新能源车出口44.8万辆 · $92亿 · 创纪录",
       "unit": "units/month",
       "unit_zh": "辆/月",
       "baseline": "~500K/mo (2025 avg)",
@@ -107,8 +107,8 @@
       "threshold_zh": "关注比亚迪+上汽中东/东南亚出货量",
       "source": "CAAM / CPCA",
       "sourceUrl": "https://x.com/search?q=China+EV+exports+2026",
-      "note": "May: total car exports +73% YoY (~809K). NEV exports more than doubled (~435K). BYD 36.7% share. Global EV sales hit 1.8M in May (Electrek, Jun 16). CleanTechnica: 'China EV price war drove innovation' (Jun 20). CAAM: NEV exports offset domestic slump. Chinese EVs may hit US within a few years (CNBC, Jun 6). Updated 2026-06-21",
-      "note_zh": "5月：汽车总出口同比+73%（约80.9万辆）。新能源出口翻倍以上（约43.5万辆）。比亚迪占36.7%。全球EV销量5月达180万辆（Electrek，6月16日）。CleanTechnica：'中国EV价格战推动了创新'（6月20日）。CAAM：新能源车出口抵消国内疲软。中国电动车数年或进入美国市场（CNBC，6月6日）。更新于 2026-06-21"
+      "note": "May: record 448K passenger EVs, worth $9.2B (EV Infrastructure News, Jun 26). China's EV exports smash another record as SEA goes electric (Electrek, Jun 25). China's Jan-May battery exports reach $40B (Benchmark Mineral Intelligence, Jun 24). BYD 36.7% share. ASEAN demand surges amid energy security concerns. Updated 2026-06-28",
+      "note_zh": "5月：乘用新能源车出口创纪录44.8万辆，价值$92亿（6月26日）。东南亚电动化推动中国EV出口再破纪录。1-5月电池出口达$400亿（6月24日）。比亚迪占36.7%。东盟需求因能源安全担忧激增。更新于 2026-06-28"
     }
   }
 }

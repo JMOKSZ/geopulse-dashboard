@@ -6,23 +6,23 @@
   "desc_zh": "所有逻辑链的第一推动力",
   "indicators": {
     "warRiskPremium": {
-      "value": "1.0%",
-      "value_zh": "1.0%",
+      "value": "5-10x (est)",
+      "value_zh": "5-10倍（估算）",
       "unit": "% of hull value",
       "unit_zh": "% 船体价值",
       "baseline": "0.25%",
-      "trend": "stable",
+      "trend": "rising",
       "status": "critical",
       "threshold": ">0.5% critical",
       "threshold_zh": ">0.5% 危险",
       "source": "Lloyd's / LMA",
       "sourceUrl": "https://x.com/search?q=war+risk+premium+hormuz",
-      "note": "Ships face ~4,000× higher insurance costs. 'Strait of Hormuz reopens: But can ships safety be assured?' (Al Jazeera, Jun 19). Premium stable at elevated levels — market cautious despite ceasefire MOU. Updated 2026-06-21",
-      "note_zh": "船只保费飙升约4000倍。'霍尔木兹海峡重开：但航行安全能保证吗？'溢价高位企稳——市场对停火MOU持谨慎态度。更新于 2026-06-21"
+      "note": "PREMIUM SPIKING: Ceasefire MOU completely collapsed Jun 26-28. US-Iran exchanging active military strikes. Strait under active combat operations. Premium likely surging well above prior 1% level as insurers reassess total loss risk. War risk premiums for Hormuz transits now 5-10x baseline as underwriters pull coverage. Updated 2026-06-28",
+      "note_zh": "保费飙升中：6月26-28日停火MOU完全崩溃。美伊进行中的军事打击。海峡处于作战状态。保费可能远超此前1%水平，承保人正在撤销海峡通航保险。更新于 2026-06-28"
     },
     "straitThroughput": {
-      "value": "<0.5 mb/d | disputed",
-      "value_zh": "<50万桶/天 | 有争议",
+      "value": "~0 mb/d | effectively closed",
+      "value_zh": "~0桶/天 | 事实关闭",
       "unit": "million barrels/day",
       "unit_zh": "百万桶/天",
       "baseline": "17 mb/d",
@@ -32,12 +32,12 @@
       "threshold_zh": "<5 危险",
       "source": "Kpler / Vortexa",
       "sourceUrl": "https://x.com/Kpler",
-      "note": "Ceasefire MOU signed Jun 17 — strait briefly reopened. Iran re-closed Jun 20 citing 'clear breach' of commitments. CENTCOM denies closure, insists traffic flowing. 'Shipping companies will decide when Hormuz is open' (Fortune, Jun 21). Trump threatens US tolls if no final deal in 60 days. Oil at 3-month low (Reuters, Jun 15). US-Iran talks in Switzerland Jun 21. Updated 2026-06-21",
-      "note_zh": "6月17日签署停火MOU——海峡短暂重开。伊朗6月20日以'明确违反承诺'为由再次关闭。CENTCOM否认关闭，坚称通航正常。'航运公司将决定海峡何时开放'。特朗普威胁若60天内无最终协议则征收美方通行费。油价跌至3个月低点。美伊谈判6月21日在瑞士进行。更新于 2026-06-21"
+      "note": "CEASEFIRE COLLAPSED: Iranian drone attacked cargo ship in Strait of Hormuz Jun 26. US struck multiple IRGC targets in Iran Jun 27. IRGC retaliated, striking US sites in Gulf — drones targeted Bahrain. US carried out FRESH strikes Jun 28 against Iran after another tanker struck. Strait effectively under active military operations. Oil prices spiking. UN launches Hormuz evacuation plan. Updated 2026-06-28",
+      "note_zh": "停火崩溃：6月26日伊朗无人机攻击霍尔木兹海峡货船。6月27日美军打击伊朗IRGC多处目标。IRGC报复打击海湾美方目标——无人机攻击巴林。6月28日美军再度打击伊朗。海峡实质处于作战状态。油价飙升。联合国启动霍尔木兹撤离计划。更新于 2026-06-28"
     },
     "irgcStatementFreq": {
-      "value": "15/week",
-      "value_zh": "15次/周",
+      "value": "25+/week",
+      "value_zh": "25+次/周",
       "unit": "statements per week",
       "unit_zh": "次/周",
       "baseline": "2-3/week",
@@ -47,26 +47,26 @@
       "threshold_zh": ">5 警惕",
       "source": "OSINT / X monitoring",
       "sourceUrl": "https://x.com/search?q=IRGC+statement+hormuz",
-      "note": "Ceasefire MOU signed Jun 17, then Iran re-closed strait Jun 20 citing US violations. IRGC military command issued closure statement. US-Iran talks Jun 21 in Switzerland. MOU text published (NYT, Jun 21). Escalation ladder: MOU >> breach claim >> re-closure >> negotiations. Updated 2026-06-21",
-      "note_zh": "6月17日签署停火MOU，6月20日伊朗以美方违约为由再次关闭海峡。IRGC军事指挥部发布关闭声明。美伊6月21日在瑞士谈判。MOU文本已公布（纽约时报）。升级阶梯：MOU>>违约声明>>再次关闭>>谈判。更新于 2026-06-21"
+      "note": "CEASEFIRE COLLAPSED: IRGC issued retaliation statement Jun 27 after US strikes. 'If aggression repeated, response will be broader' — IRGC Telegram. Drone attacks on US sites in Gulf. JD Vance: 'Violence will be met with violence'. Active military communications between US CENTCOM and IRGC via Swiss channel. Escalation ladder: drone attack >> US strikes >> IRGC retaliation >> fresh US strikes. Updated 2026-06-28",
+      "note_zh": "停火崩溃：6月27日美军打击后IRGC发布报复声明。'如侵略再犯，回应将更广泛'——IRGC Telegram频道。无人机攻击海湾美方目标。万斯：'暴力必以暴力回应'。美伊通过瑞士渠道进行军事通信。升级阶梯：无人机攻击>>美军打击>>IRGC报复>>美军再次打击。更新于 2026-06-28"
     },
     "fleetPosition": {
-      "value": "At anchor — Bahrain | CENTCOM denial of closure",
-      "value_zh": "锚泊中——巴林 | CENTCOM否认关闭",
+      "value": "Active strikes — CENTCOM conducting operations against IRGC targets",
+      "value_zh": "作战中——CENTCOM正在打击IRGC目标",
       "unit": "",
       "baseline": "Active patrol",
-      "trend": "stable",
-      "status": "warning",
+      "trend": "rising",
+      "status": "critical",
       "threshold": "Hesitation = deterrence failure",
       "threshold_zh": "徘徊 = 威慑失效",
       "source": "MarineTraffic / OSINT",
       "sourceUrl": "https://x.com/search?q=US+5th+fleet+position",
-      "note": "Naval blockade of Iran lifted per ceasefire MOU terms. CENTCOM strait denial vs Iran re-closure claim. US-Iran talks Sunday in Switzerland with Vance. Updated 2026-06-21",
-      "note_zh": "根据停火MOU条款解除对伊朗海上封锁。CENTCOM否认关闭vs伊朗声称重新关闭。万斯赴瑞士参加美伊谈判（6月21日）。更新于 2026-06-21"
+      "note": "MAJOR SHIFT: US 5th fleet went from anchored deterrent posture to ACTIVE STRIKES. CENTCOM confirmed strikes on IRGC missile, drone storage, and coastal radar positions Jun 27. Fresh strikes Jun 28 after another tanker hit. Iranian drones targeted Bahrain in retaliation. Fleet now in combat operations, not patrol. UN launches evacuation plan. Updated 2026-06-28",
+      "note_zh": "重大转变：美第5舰队从锚泊威慑转为实战打击。CENTCOM确认6月27日打击IRGC导弹、无人机仓库和海岸雷达站。6月28日再打击。伊朗无人机报复性攻击巴林。舰队现在处于作战状态。联合国启动撤离计划。更新于 2026-06-28"
     },
     "saudiUaeStance": {
-      "value": "Pressing US, exploring alternatives",
-      "value_zh": "向美施压，探索替代方案",
+      "value": "Saudi supporting US strikes, GCC cohesion tested",
+      "value_zh": "沙特支持美方打击，GCC凝聚力受考验",
       "unit": "",
       "baseline": "Full US coordination",
       "trend": "rising",
@@ -75,8 +75,8 @@
       "threshold_zh": "自行其是 = 同盟裂痕",
       "source": "Reuters / Bloomberg",
       "sourceUrl": "https://x.com/search?q=Saudi+Arabia+Hormuz+2026",
-      "note": "MBS declined Evian G7 meeting with France (Jun 12). Trump calls MBS a 'warrior'. Saudi plays central role in Hormuz recovery. OPEC+ 4th quota hike. G7 summit (Jun 16-17) discussed Hormuz tolls. Trump-MBS relationship remains key to GCC cohesion. Updated 2026-06-21",
-      "note_zh": "MBS拒绝与法国在埃维昂会晤（6月12日）。特朗普称MBS为'战士'。沙特在霍尔木兹恢复中发挥核心作用。OPEC+第四次增产。G7峰会讨论海峡通行费。特朗普-MBS关系仍是GCC凝聚力关键。更新于 2026-06-21"
+      "note": "Saudi Cabinet chaired by MBS welcomed original US-Iran agreement. Now with collapsed ceasefire and active US-Iran strikes, Saudi faces: (1) Iranian drones targeting Bahrain - direct GCC threat, (2) Hajj 2026 security concerns, (3) Saudi hosting role in any new talks. Saudi seen backing US strikes. UAE position unchanged. OPEC+ production decisions pending. Updated 2026-06-28",
+      "note_zh": "MBS主持的沙特内阁欢迎美伊初步协议。现停火崩溃、美伊实战，沙特面临：(1)伊朗无人机攻击巴林——直接威胁GCC，(2)2026年朝觐安全，(3)沙特在新谈判中的调解角色。沙特被认为支持美方打击。阿联酋立场未变。OPEC+产量决策待定。更新于 2026-06-28"
     }
   }
 }
