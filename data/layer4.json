@@ -21,8 +21,8 @@
       "note_zh": "Nvidia B200机柜在中国黑市溢价50%（6月24日）。中国计划$2950亿AI算力网排挤Nvidia（6月24日）。阿里巴巴交付56万颗真武芯片。Nvidia向中国客户推Arm架构Vera CPU（MLQ.ai，6月14日）。H100溢价稳定2-3倍，但市场关注转向B200定价。更新于 2026-06-28"
     },
     "chinaAiAdoption": {
-      "value": "541M visits/mo (DeepSeek, #5 globally) · 500K+ devs on 通义 · 200+ enterprise deployments (文心)",
-      "value_zh": "DeepSeek月访5.41亿次（全球第5）· 通义灵码50万+开发者 · 文心200+企业落地",
+      "value": "541M visits/mo (DeepSeek, #5 globally) · DeepSeek V4 released · 500K+ devs on 通义 · 200+ enterprise deployments (文心)",
+      "value_zh": "DeepSeek月访5.41亿次（全球第5）· DeepSeek V4发布 · 通义灵码50万+开发者 · 文心200+企业落地",
       "unit": "composite adoption index",
       "unit_zh": "综合渗透指数",
       "baseline": "~30M tokens/day (2025)",
@@ -32,8 +32,8 @@
       "threshold_zh": "关注：日均Token量增速、企业案例加速曲线",
       "source": "DeepSeek official · Alibaba Cloud · Baidu",
       "sourceUrl": "https://x.com/search?q=DeepSeek+API+China+2026",
-      "note": "US holds off blacklisting DeepSeek, more than 100 firms deemed security risks (Reuters, Jun 17). 'China is having another AI moment' (The Economist, Jun 22). Microsoft considers hosting DeepSeek for low-cost Copilot (Cybernews, Jun 22). More US firms turn to China's DeepSeek over pricey Silicon Valley AI (SCMP, Jun 4). DeepSeek $7.4B round closed. China plans $295B AI grid. WAIC 2026 Jul 3-5 Shanghai. Updated 2026-06-28",
-      "note_zh": "美国暂缓制裁DeepSeek，100+企业被认定安全风险（路透，6月17日）。'中国迎来又一个AI时刻'（经济学人，6月22日）。微软考虑用DeepSeek做低成本Copilot（6月22日）。更多美国企业转向DeepSeek替代硅谷高价AI（南华早报，6月4日）。DeepSeek $74亿融资完成。中国计划$2950亿AI算力网。世界AI大会7月3-5日上海。更新于 2026-06-28"
+      "note": "DeepSeek V4 RELEASED (Mashable, Jul 4) — comparing favorably with ChatGPT, Claude, Gemini. DeepSeek raises $7.4B for domestic computing infrastructure (Pandaily, Jul 1). New Chinese AI model catching up with Anthropic/OpenAI on home turf (Reuters, Jul 2). WAIC 2026 Jul 3-5 Shanghai. Job ads show DeepSeek aims for AI agent with cybersecurity capabilities (ASPI, Jul 2). Chinese AI models gaining US customers (NY Post, Jun 22). Updated 2026-07-05",
+      "note_zh": "DeepSeek V4已发布（Mashable，7月4日）——与ChatGPT、Claude、Gemini对标表现亮眼。DeepSeek融资$74亿用于国产算力基础设施（Pandaily，7月1日）。新国产AI模型在对手主场追赶Anthropic/OpenAI（路透，7月2日）。世界AI大会7月3-5日上海。招聘信息显示DeepSeek瞄准AI网络安全代理（ASPI，7月2日）。中文AI模型获美国客户（纽约邮报，6月22日）。更新于 2026-07-05"
     },
     "aiInferenceVolume": {
       "value": "~¥2.8B/qtr · 3.2× YoY",
@@ -62,8 +62,8 @@
       "threshold_zh": "关注：自主蜂群测试、AI vs 人类兵棋推演结果、卫星AI边缘处理",
       "source": "PLA public disclosures · Janes · ASPI Critical Technology Tracker",
       "sourceUrl": "https://x.com/search?q=PLA+AI+drone+autonomous+2026",
-      "note": "'Fully autonomous drones have killed human soldiers for the first time' (New Scientist, Jun 10) — global milestone. AI target recognition + autonomous loitering = PLA asymmetric advantage. Pentagon reviews autonomous weapons policy (DefenseScoop, Jun 15). Military AI governance under strain: US-China dialogue (IISS, Jun 11). No new major autonomous warfare events in past week. Updated 2026-06-28",
-      "note_zh": "'全自主无人机首次杀死人类士兵'（6月10日）——全球AI战争里程碑。AI目标识别+自主巡弋=PLA非对称优势。五角大楼审阅自主武器政策（6月15日）。美中军事AI治理对话面临压力。过去一周无新的自主战争重大事件。更新于 2026-06-28"
+      "note": "aiMilitaryDeployment unchanged. No new autonomous warfare events this week. WAIC Jul 3-5 may produce new PLA AI disclosures. Updated 2026-07-05",
+      "note_zh": "aiMilitaryDeployment不变。本周无新的自主战争事件。世界AI大会（7月3-5日）可能有新PLA AI信息披露。更新于 2026-07-05"
     },
     "aiComputePower": {
       "value": "~85 GW data center capacity · 35% YoY growth · 8% of national grid",
@@ -77,12 +77,12 @@
       "threshold_zh": "数据中心占全国电网比值>10%=结构性需求转移；>15%=瓶颈风险",
       "source": "IEA · NEA China · SemiAnalysis DC tracker",
       "sourceUrl": "https://x.com/search?q=China+data+center+power+consumption+2026",
-      "note": "S&P 500: 7354. China DC capacity ~85 GW. Updated 2026-06-28",
-      "note_zh": "标普500：7354。中国数据中心容量约85GW。更新于 2026-06-28"
+      "note": "S&P 500: 7483. China DC capacity ~85 GW. Updated 2026-07-05",
+      "note_zh": "标普500：7483。中国数据中心容量约85GW。更新于 2026-07-05"
     },
     "aiSpaceCapability": {
-      "value": "72+ orbital launches (2026 YTD) · 700+ satellites added · Tiangong fully crewed",
-      "value_zh": "2026年迄今72+次轨道发射 · 新增700+卫星 · 天宫空间站满员运行",
+      "value": "75+ orbital launches (2026 YTD) · ~715+ satellites added · Tiangong fully crewed",
+      "value_zh": "2026年迄今75+次轨道发射 · 新增约715+颗卫星 · 天宫满员运行",
       "unit": "launch & constellation scale",
       "unit_zh": "发射与星座规模",
       "baseline": "52 launches/year (2023)",
@@ -92,8 +92,8 @@
       "threshold_zh": "年发射>100次 + 万颗卫星星座 = 太空AI能力追平美国",
       "source": "CNSA · SpaceNews · Jonathan McDowell launch log",
       "sourceUrl": "https://x.com/search?q=China+orbital+launch+2026",
-      "note": "Chinese spaceplane released object into orbit (SpaceNews, Jun 23). Long March 7A completed 16th flight: classified GEO rocket (Tech Times, Jun 23). China launched communications tech test satellite (Jun 23). Guowang constellation ~177 satellites (Jun 15-17 batch). WAIC Jul 3-5. Updated 2026-06-28",
-      "note_zh": "中国太空飞机在轨释放物体（6月23日）。长七A完成第16次发射：机密GEO火箭（6月23日）。中国发射通信技术试验卫星（6月23日）。国网星座约177颗卫星（6月15-17日批次）。世界AI大会7月3-5日。更新于 2026-06-28"
+      "note": "NEW LAUNCHES THIS WEEK: Qianfan polar-orbit 13 satellites (CGTN, Jul 4). Group of communications satellites (China Daily, Jul 4). Oceanographic satellite for enhanced marine monitoring (Xinhua, Jul 2). Long March 10B recovery attempt scheduled (SpaceNews, Jun 25). YTD launches now ~75+. China schedules first Long March 10B rocket landing attempt. WAIC Jul 3-5 Shanghai. Updated 2026-07-05",
+      "note_zh": "本周新发射：千帆极轨13星（CGTN，7月4日）。通信卫星组（中国日报，7月4日）。海洋观测卫星（新华社，7月2日）。长征十号B回收测试计划中。年初至今约75+次发射。世界AI大会7月3-5日上海。更新于 2026-07-05"
     },
     "nvdaAsiaRevenue": {
       "value": "Next: Aug 2026",
@@ -107,8 +107,8 @@
       "threshold_zh": "亚洲占比上升=芯片仍在流通",
       "source": "NVDA IR / SEC filings",
       "sourceUrl": "https://x.com/search?q=NVDA+earnings+Asia+revenue",
-      "note": "Quarterly earnings. Check 'China' and 'Singapore' revenue breakdowns.",
-      "note_zh": "季度财报。关注'中国'和'新加坡'的收入拆分。"
+      "note": "Quarterly earnings. Check 'China' and 'Singapore' revenue breakdowns. Next earnings Aug 2026. Updated 2026-07-05",
+      "note_zh": "季度财报。关注'中国'和'新加坡'的收入拆分。下次财报2026年8月。更新于 2026-07-05"
     },
     "chinaEnergyIntensity": {
       "value": "-3.2% YoY (est)",
@@ -122,8 +122,8 @@
       "threshold_zh": "持续-3%以上=AI+制造效率在抵扣能源成本",
       "source": "NBS (quarterly, 1Q lag)",
       "sourceUrl": "https://x.com/search?q=China+energy+intensity+2026",
-      "note": "Carbon Brief (Jun 4): China CO2 climbs 2% in early 2026, driven by AI data center demand & 'wasted' wind/solar curtailment. 15th FYP targets 17% carbon intensity cut by 2030. AI data center energy demand (CATL, Panasonic entering AIDC storage race — CarbonCredits.com, Jun 18) may slow intensity improvement. Updated 2026-06-21",
-      "note_zh": "Carbon Brief（6月4日）：中国2026年初CO2排放上升2%，受AI数据中心需求和'弃风弃光'推动。十五五计划目标2030年碳强度降低17%。AI数据中心能源需求可能放缓强度降速（CATL、松下入局AIDC储能竞赛——6月18日）。更新于 2026-06-21"
+      "note": "Carbon Brief (Jun 4): China CO2 climbs 2% in early 2026, driven by AI data center demand & wind/solar curtailment. 15th FYP targets 17% carbon intensity cut by 2030. WAIC Jul 3-5: China AI infrastructure plans may increase DC energy demands. No new NBS data this cycle. Updated 2026-07-05",
+      "note_zh": "Carbon Brief（6月4日）：中国2026年初CO2排放上升2%，受AI数据中心需求和弃风弃光推动。十五五目标2030年碳强度降低17%。世界AI大会可能公布AI基建计划加大DC能源需求。本周期无新统计局数据。更新于 2026-07-05"
     }
   }
 }

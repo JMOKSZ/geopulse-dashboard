@@ -17,8 +17,8 @@
       "threshold_zh": "创纪录。持续>$1000亿=结构优势确认",
       "source": "China Customs (monthly)",
       "sourceUrl": "https://x.com/search?q=China+trade+surplus+May+2026",
-      "note": "May 2026: exports +19.4% YoY. CSI 300: 4868. Updated 2026-06-28",
-      "note_zh": "2026年5月：出口同比+19.4%。沪深300：4868。更新于 2026-06-28"
+      "note": "May 2026: exports +19.4% YoY. CSI 300: 4842. Updated 2026-07-05",
+      "note_zh": "2026年5月：出口同比+19.4%。沪深300：4842。更新于 2026-07-05"
     },
     "chinaTradeShare": {
       "value": "~15% of world goods exports (2025)",
@@ -62,8 +62,8 @@
       "threshold_zh": "正数=成本传导能力ok；负数=利润被挤压",
       "source": "NBS (monthly, 2-3wk lag)",
       "sourceUrl": "https://x.com/search?q=China+industrial+profits",
-      "note": "Jan-May 2026: +18.8% YoY (NBS, Jun 27). May alone ~+20% but showing signs of slowing from Apr's +24.7% pace. CNBC: 'China industrial profits stay resilient as economy leans on factories, exports'. Times of India: 'Weak domestic demand bites'. Tech & metals continue to drive gains. Updated 2026-06-28",
-      "note_zh": "2026年1-5月：同比+18.8%（统计局，6月27日）。5月单月约+20%，但增速较4月的+24.7%有所放缓。科技与金属仍为驱动。更新于 2026-06-28"
+      "note": "Jan-May 2026: +18.8% YoY (NBS, Jun 27). No new June data. EU trade imbalance with China record €1B/day (Guardian). China Shock 2.0 narrative rising at G7. Checked 2026-07-05",
+      "note_zh": "2026年1-5月：同比+18.8%（统计局，6月27日）。无6月新数据。欧盟对华贸易逆差创纪录€10亿/天（卫报）。中国冲击2.0叙事在G7升温。核实于 2026-07-05"
     },
     "fxSettlement": {
       "value": "Pending SAFE release",
@@ -77,8 +77,8 @@
       "threshold_zh": ">70%=出口商看好RMB；<60%=囤美元",
       "source": "SAFE (monthly)",
       "sourceUrl": "https://x.com/search?q=China+FX+settlement+SAFE",
-      "note": "Lagging indicator but critical for RMB direction conviction",
-      "note_zh": "滞后指标，但对RMB方向判断至关重要"
+      "note": "Lagging indicator but critical for RMB direction conviction. SAFE data still pending for June. Checked 2026-07-05",
+      "note_zh": "滞后指标，但对RMB方向判断至关重要。6月外管局数据仍未发布。核实于 2026-07-05"
     },
     "cfetsIndex": {
       "value": "101.41",
@@ -92,8 +92,8 @@
       "threshold_zh": ">104 = 央行可能干预；102-104 = 温和可控",
       "source": "CFETS / Chinamoney",
       "sourceUrl": "https://x.com/search?q=CFETS+人民币汇率指数",
-      "note": "RMB at 6.7982 (daily). CFETS index last known: 101.41 (Jun 2). Updated 2026-06-28",
-      "note_zh": "人民币汇率6.7982（每日）。CFETS指数上次已知：101.41（6月2日）。更新于 2026-06-28"
+      "note": "RMB at 6.7814 (daily). CFETS index last known: 101.41 (Jun 2). Updated 2026-07-05",
+      "note_zh": "人民币汇率6.7814（每日）。CFETS指数上次已知：101.41（6月2日）。更新于 2026-07-05"
     },
     "chinaEvExports": {
       "value": "448K passenger EVs (May) · $9.2B · Record high",
@@ -107,8 +107,8 @@
       "threshold_zh": "关注比亚迪+上汽中东/东南亚出货量",
       "source": "CAAM / CPCA",
       "sourceUrl": "https://x.com/search?q=China+EV+exports+2026",
-      "note": "May: record 448K passenger EVs, worth $9.2B (EV Infrastructure News, Jun 26). China's EV exports smash another record as SEA goes electric (Electrek, Jun 25). China's Jan-May battery exports reach $40B (Benchmark Mineral Intelligence, Jun 24). BYD 36.7% share. ASEAN demand surges amid energy security concerns. Updated 2026-06-28",
-      "note_zh": "5月：乘用新能源车出口创纪录44.8万辆，价值$92亿（6月26日）。东南亚电动化推动中国EV出口再破纪录。1-5月电池出口达$400亿（6月24日）。比亚迪占36.7%。东盟需求因能源安全担忧激增。更新于 2026-06-28"
+      "note": "May: record 448K passenger EVs, worth $9.2B (EV Infrastructure News, Jun 26). No new June data yet. Checked 2026-07-05",
+      "note_zh": "5月：乘用新能源车出口创纪录44.8万辆，价值$92亿（6月26日）。6月数据尚未发布。核实于 2026-07-05"
     }
   }
 }

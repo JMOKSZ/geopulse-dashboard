@@ -6,8 +6,8 @@
   "desc_zh": "这些不在头条里，但比任何高级指标都准",
   "indicators": {
     "mbsItinerary": {
-      "value": "Beijing Apr 2026. Next: ?",
-      "value_zh": "2026年4月访京。下一站：？",
+      "value": "Beijing Apr 2026. Stayed in Saudi during Hormuz crisis. Next: ?",
+      "value_zh": "2026年4月访京。霍尔木兹危机期间留守沙特。下一站：？",
       "unit": "",
       "baseline": "Balanced US-China visits",
       "trend": "stable",
@@ -16,8 +16,8 @@
       "threshold_zh": "去北京多于华盛顿=战略偏移",
       "source": "X / news tracking",
       "sourceUrl": "https://x.com/search?q=MBS+travel+2026",
-      "note": "MBS declined Evian meeting with France (Jun 12). Trump calls MBS a 'warrior'. Saudi Cabinet chaired by MBS welcomed original US-Iran agreement (Jun 17). Now with collapsed ceasefire, Saudi facing direct security threat (Iranian drones targeted Bahrain). MBS lifted Lebanon ban (Jun 11). Hosted Sudan's Burhan in Jeddah (Apr). No new foreign trip reported. Hajj 2026 ongoing — potential security concerns. Updated 2026-06-28",
-      "note_zh": "MBS拒绝与法国在埃维昂会晤（6月12日）。特朗普称MBS为'战士'。MBS主持内阁欢迎美伊初步协议（6月17日）。现停火崩溃，沙特面临直接安全威胁（伊朗无人机攻击巴林）。MBS解除黎巴嫩禁令（6月11日）。吉达接待苏丹布尔汉（4月）。无新外访行程。2026年朝觐进行中——潜在安全担忧。更新于 2026-06-28"
+      "note": "MBS has not traveled abroad since Hormuz crisis escalation. Stayed in Saudi for Hajj 2026 season. No new foreign trip reported. Notably, MBS did not attend any international summits during Jun 28-Jul 5 period. Continued to chair Saudi Cabinet in Riyadh. Updated 2026-07-05",
+      "note_zh": "MBS留守沙特，未出访。霍尔木兹危机期间未参加任何国际峰会。继续在利雅得主持沙特内阁。更新于 2026-07-05"
     },
     "singaporeStance": {
       "value": "Officially neutral, adjusting quietly — AI hub role growing",
@@ -30,8 +30,8 @@
       "threshold_zh": "新加坡选边=其他亚洲盟友已经在做了",
       "source": "speeches / press conferences",
       "sourceUrl": "https://x.com/search?q=Singapore+stance+US+China+2026",
-      "note": "Both US and Chinese AI firms setting up shop in Singapore as 'Asia's neutral AI hub' (Fortune, Jun 19). 'Washington Is Testing Singapore's Patience' (Foreign Policy, Jun 5). No policy stance shift yet. Michael Baumgartner visits Singapore amid US-China competition (Jun 3). Quad launches Indo-Pacific monitor plan (May). Updated 2026-06-28",
-      "note_zh": "中美AI企业均在狮城设点，新加坡成为'亚洲中立AI枢纽'（财富，6月19日）。'华盛顿在考验新加坡的耐心'（外交政策，6月5日）。政策立场未变。美议员访问新加坡。四方机制启动印太监测计划（5月）。更新于 2026-06-28"
+      "note": "Both US and Chinese AI firms setting up shop in Singapore as 'Asia's neutral AI hub' (Fortune, Jun 19). No policy stance shift yet. Singapore continues neutral posture as US-Iran tensions shift to diplomacy. Updated 2026-07-05",
+      "note_zh": "中美AI企业均在狮城设点，新加坡为'亚洲中立AI枢纽'（财富，6月19日）。政策立场未变。美伊关系转向外交轨道过程中新加坡保持中立。更新于 2026-07-05"
     },
     "adbLoanCurrency": {
       "value": "Annual data (Jun release)",
@@ -45,8 +45,8 @@
       "threshold_zh": "显著增长(>2%)=多边机构对RMB的实质接受",
       "source": "ADB / World Bank",
       "sourceUrl": "https://x.com/search?q=ADB+loan+currency+RMB",
-      "note": "ADB annual report expected late June. EU Trade Chief to meet China's Commerce Minister in Brussels Jun 29 — trade finance implications. No new ADB data found this cycle. Updated 2026-06-28",
-      "note_zh": "亚行年报预计6月底发布。欧盟贸易代表6月29日与中商务部长在布鲁塞尔会晤——贸易金融影响。本周期未发现亚行新数据。更新于 2026-06-28"
+      "note": "ADB annual report still pending. EU Trade Chief met China's Commerce Minister in Brussels Jun 29 — trade finance implications for RMB loans. No new ADB data observed this cycle. Checked 2026-07-05",
+      "note_zh": "亚行年报仍未发布。欧盟贸易代表6月29日与中商务部长布鲁塞尔会晤——贸易金融影响RMB贷款。本周期无亚行新数据。核实于 2026-07-05"
     },
     "hkmaInterventions": {
       "value": "Monitor HKD weak-side",
@@ -60,8 +60,8 @@
       "threshold_zh": "持续触碰弱方=亚洲资本外流压力",
       "source": "HKMA daily data",
       "sourceUrl": "https://x.com/search?q=HKMA+intervention+2026",
-      "note": "No major HKMA intervention reported this week. However, with US-Iran military escalation, capital flight from Gulf/MENA to safe havens may affect HKD peg. Monitor for weak-side touches. Updated 2026-06-28",
-      "note_zh": "本周未报告金管局重大干预。但美伊军事升级可能导致海湾/中东资本逃向避险资产，影响港币联系汇率。关注弱方兑换触发。更新于 2026-06-28"
+      "note": "No major HKMA intervention reported this cycle. Gulf capital flight to safe havens may affect HKD peg but no evidence of sustained weak-side touches yet. Monitor for capital flow changes as Hormuz situation shifts to diplomacy. Updated 2026-07-05",
+      "note_zh": "本周未报告金管局重大干预。海湾资本逃向避险资产或影响港币联系汇率，但暂无持续弱方兑换触发证据。霍尔木兹转向外交轨道后监测资本流向变化。更新于 2026-07-05"
     },
     "chinaGoldImportPath": {
       "value": "Hong Kong/Dubai route surging; direct Russia unclear",
@@ -74,8 +74,8 @@
       "threshold_zh": "路径改变=结算体系去美元化在进行",
       "source": "Customs data / trade flows",
       "sourceUrl": "https://x.com/search?q=China+gold+import+Russia+2026",
-      "note": "China's gold imports rise to highest in more than 2 years, up 76% YTD (Seeking Alpha, Jun 24). 'Gold rush: Hong Kong bullion imports from Dubai jump amid US-Iran war' (SCMP, May 4) — suggesting route shift via Dubai/Hong Kong, not direct Russia. Russia sold 22 tonnes of gold this year (KITCO, Apr 21). 'Gold's center of gravity has moved East' (GoldSilver, May 21). No confirmed direct Russia route data. Updated 2026-06-28",
-      "note_zh": "中国黄金进口创两年多新高，YTD增长76%（Seeking Alpha，6月24日）。'黄金热潮：美伊战争下香港从迪拜的黄金进口激增'（南华早报，5月4日）——表明路径经迪拜/香港而非直接对俄。俄罗斯今年售出22吨黄金（KITCO，4月21日）。'黄金重心已东移'（GoldSilver，5月21日）。无确认的对俄直购路径数据。更新于 2026-06-28"
+      "note": "China's gold imports rise to highest in more than 2 years, up 76% YTD (Seeking Alpha, Jun 24). World Gold Council: Central Bank Gold Buying Hits Second-Highest Monthly Total in May 2026 (Yesterday). Hong Kong/Dubai route surging (SCMP, May 4). Iran's envoy to China says Beijing to get Hormuz concessions — potential gold-for-oil settlement mechanism. No confirmed direct Russia route. China ramps up Hong Kong gold hub efforts (KITCO, Mar). Updated 2026-07-05",
+      "note_zh": "中国黄金进口创两年多新高，YTD增长76%（Seeking Alpha，6月24日）。世界黄金协会：2026年5月央行购金创历史第二高月度总量（昨日）。香港/迪拜路线激增（南华早报，5月4日）。伊朗驻华大使称北京将获海峡权益——或为黄金换石油结算机制铺垫。无确认的对俄直购路径。中国加速建设香港黄金枢纽。更新于 2026-07-05"
     },
     "pewFavorability": {
       "value": "US ~49% · China ~36% (2025, 25 countries)",
@@ -89,8 +89,8 @@
       "threshold_zh": "美国在盟友中好感度持续下降；中国稳定偏低但在全球南方改善",
       "source": "Pew Global Attitudes Survey 2024–2025",
       "sourceUrl": "https://www.pewresearch.org/global/",
-      "note": "Pew surveyed 35 countries in 2024 and 25 in spring 2025. US median favorable fell from 54% to ~49%. China rose from 35% to ~36%.",
-      "note_zh": "皮尤2024年调查35国、2025年春季调查25国。美国好感度中位数从54%降至约49%。中国从35%升至约36%。"
+      "note": "Pew surveyed 35 countries in 2024 and 25 in spring 2025. US median favorable fell from 54% to ~49%. China rose from 35% to ~36%. No new Pew data published this cycle. Checked 2026-07-05",
+      "note_zh": "皮尤2024年调查35国、2025年春季调查25国。美国好感度中位数从54%降至约49%。中国从35%升至约36%。本周期无新皮尤数据。核实于 2026-07-05"
     }
   }
 }
