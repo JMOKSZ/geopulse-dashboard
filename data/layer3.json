@@ -17,8 +17,8 @@
       "threshold_zh": "创纪录。持续>$1000亿=结构优势确认",
       "source": "China Customs (monthly)",
       "sourceUrl": "https://x.com/search?q=China+trade+surplus+May+2026",
-      "note": "May 2026: exports +19.4% YoY. CSI 300: 4842. Updated 2026-07-05",
-      "note_zh": "2026年5月：出口同比+19.4%。沪深300：4842。更新于 2026-07-05"
+      "note": "May 2026: exports +19.4% YoY. CSI 300: 4781. Updated 2026-07-12",
+      "note_zh": "2026年5月：出口同比+19.4%。沪深300：4781。更新于 2026-07-12"
     },
     "chinaTradeShare": {
       "value": "~15% of world goods exports (2025)",
@@ -62,8 +62,8 @@
       "threshold_zh": "正数=成本传导能力ok；负数=利润被挤压",
       "source": "NBS (monthly, 2-3wk lag)",
       "sourceUrl": "https://x.com/search?q=China+industrial+profits",
-      "note": "Jan-May 2026: +18.8% YoY (NBS, Jun 27). No new June data. EU trade imbalance with China record €1B/day (Guardian). China Shock 2.0 narrative rising at G7. Checked 2026-07-05",
-      "note_zh": "2026年1-5月：同比+18.8%（统计局，6月27日）。无6月新数据。欧盟对华贸易逆差创纪录€10亿/天（卫报）。中国冲击2.0叙事在G7升温。核实于 2026-07-05"
+      "note": "Jan-May 2026: +18.8% YoY (NBS, Jun 27). No new June data. EU trade imbalance with China record €1B/day (Guardian). China Shock 2.0 narrative rising at G7. Hormuz crisis amplifying China's export advantage vs competitors. Checked 2026-07-12",
+      "note_zh": "2026年1-5月：同比+18.8%（统计局，6月27日）。无6月新数据。欧盟对华贸易逆差创纪录€10亿/天（卫报）。中国冲击2.0叙事在G7升温。霍尔木兹危机放大中国出口优势。核实于 2026-07-12"
     },
     "fxSettlement": {
       "value": "Pending SAFE release",
@@ -77,8 +77,8 @@
       "threshold_zh": ">70%=出口商看好RMB；<60%=囤美元",
       "source": "SAFE (monthly)",
       "sourceUrl": "https://x.com/search?q=China+FX+settlement+SAFE",
-      "note": "Lagging indicator but critical for RMB direction conviction. SAFE data still pending for June. Checked 2026-07-05",
-      "note_zh": "滞后指标，但对RMB方向判断至关重要。6月外管局数据仍未发布。核实于 2026-07-05"
+      "note": "Lagging indicator but critical for RMB direction conviction. SAFE data still pending for June. Hormuz crisis → increased oil costs may shift FX dynamics. Checked 2026-07-12",
+      "note_zh": "滞后指标，但对RMB方向判断至关重要。6月外管局数据仍未发布。霍尔木兹危机→油价上涨可能改变结汇动态。核实于 2026-07-12"
     },
     "cfetsIndex": {
       "value": "101.41",
@@ -92,8 +92,8 @@
       "threshold_zh": ">104 = 央行可能干预；102-104 = 温和可控",
       "source": "CFETS / Chinamoney",
       "sourceUrl": "https://x.com/search?q=CFETS+人民币汇率指数",
-      "note": "RMB at 6.7814 (daily). CFETS index last known: 101.41 (Jun 2). Updated 2026-07-05",
-      "note_zh": "人民币汇率6.7814（每日）。CFETS指数上次已知：101.41（6月2日）。更新于 2026-07-05"
+      "note": "RMB at 6.7745 (daily). CFETS index last known: 101.41 (Jun 2). Updated 2026-07-12",
+      "note_zh": "人民币汇率6.7745（每日）。CFETS指数上次已知：101.41（6月2日）。更新于 2026-07-12"
     },
     "chinaEvExports": {
       "value": "448K passenger EVs (May) · $9.2B · Record high",
@@ -107,8 +107,8 @@
       "threshold_zh": "关注比亚迪+上汽中东/东南亚出货量",
       "source": "CAAM / CPCA",
       "sourceUrl": "https://x.com/search?q=China+EV+exports+2026",
-      "note": "May: record 448K passenger EVs, worth $9.2B (EV Infrastructure News, Jun 26). No new June data yet. Checked 2026-07-05",
-      "note_zh": "5月：乘用新能源车出口创纪录44.8万辆，价值$92亿（6月26日）。6月数据尚未发布。核实于 2026-07-05"
+      "note": "May: record 448K passenger EVs, worth $9.2B (EV Infrastructure News, Jun 26). No new June data yet. BYD gaining market share in SEA and Middle East despite Hormuz shipping disruption. Checked 2026-07-12",
+      "note_zh": "5月：乘用新能源车出口创纪录44.8万辆，价值$92亿（6月26日）。6月数据尚未发布。比亚迪在东南亚和中东市场份额继续增长，尽管霍尔木兹航运中断。核实于 2026-07-12"
     }
   }
 }
