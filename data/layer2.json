@@ -171,8 +171,8 @@
       "note_zh": "布伦特近月合约。更新于 2026-06-14"
     },
     "gameDimensionScores": {
-      "value": "{\"rmb_axis\": \"33\", \"gold_dedollar\": \"44\", \"dollar_pressure\": \"50\", \"oil_chokepoint\": \"54\", \"china_resil\": \"68\", \"structural\": \"62\", \"geopolitics\": \"62\"}",
-      "value_zh": "{\"rmb_axis\": \"33\", \"gold_dedollar\": \"44\", \"dollar_pressure\": \"50\", \"oil_chokepoint\": \"54\", \"china_resil\": \"68\", \"structural\": \"62\", \"geopolitics\": \"62\"}",
+      "value": "{\"rmb_axis\": \"33\", \"gold_dedollar\": \"44\", \"dollar_pressure\": \"50\", \"oil_chokepoint\": \"62\", \"china_resil\": \"68\", \"structural\": \"57\", \"geopolitics\": \"62\"}",
+      "value_zh": "{\"rmb_axis\": \"33\", \"gold_dedollar\": \"44\", \"dollar_pressure\": \"50\", \"oil_chokepoint\": \"62\", \"china_resil\": \"68\", \"structural\": \"57\", \"geopolitics\": \"62\"}",
       "unit": "score (0-100)",
       "unit_zh": "得分（0-100）",
       "baseline": "5-dim legacy",
@@ -180,8 +180,8 @@
       "status": "normal",
       "source": "Geopulse v2 model",
       "sourceUrl": "",
-      "note": "7-dimension US-China Game Progression. Updated 2026-07-12",
-      "note_zh": "7维美中博弈进程模型。更新于 2026-07-12"
+      "note": "7-dimension US-China Game Progression. Updated 2026-07-19",
+      "note_zh": "7维美中博弈进程模型。更新于 2026-07-19"
     }
   }
 }

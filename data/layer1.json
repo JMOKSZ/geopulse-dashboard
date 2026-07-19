@@ -6,8 +6,8 @@
   "desc_zh": "所有逻辑链的第一推动力",
   "indicators": {
     "warRiskPremium": {
-      "value": "8-15x (est, spiking)",
-      "value_zh": "8-15倍（估算，飙升中）",
+      "value": "8-15x (est, worst case scenario)",
+      "value_zh": "8-15倍（估算，最坏情形）",
       "unit": "% of hull value",
       "unit_zh": "% 船体价值",
       "baseline": "0.25%",
@@ -15,14 +15,14 @@
       "status": "critical",
       "threshold": ">0.5% critical",
       "threshold_zh": ">0.5% 危险",
-      "source": "Lloyd's / LMA",
-      "sourceUrl": "https://x.com/search?q=war+risk+premium+hormuz",
-      "note": "PREMIUM SPIKING: Doha diplomatic track collapsed. Khamenei funeral period (Jul 4-6) shifted Iran posture under Mojtaba Khamenei. Jul 7: Tanker attacks resume in Hormuz. Jul 8: Trump threatens to bomb Iran. Jul 9: Tanker traffic slows, mediators scramble. Jul 10: Analysis confirms deal failure. Jul 11: IRGC declares Strait closed, Trump threatens to 'decimate' Iran (CNBC). Jul 12: US launches fresh strikes after Cyprus-flagged vessel attack. Iran says Strait of Hormuz closed 'until further notice' (BBC, Jul 12). War risk premiums spiking sharply from the ~3-8x level to an estimated 8-15x as fighting resumes. Updated 2026-07-12",
-      "note_zh": "保费飙升：多哈外交轨道崩溃。哈梅内伊葬礼期间（7月4-6日）穆杰塔巴·哈梅内伊改变伊朗姿态。7月7日：油轮在霍尔木兹遭攻击。7月8日：特朗普威胁轰炸伊朗。7月9日：油轮运输放缓。7月10日：分析确认协议破裂。7月11日：IRGC宣布海峡关闭，特朗普威胁'摧毁'伊朗。7月12日：美国发动新一轮打击。伊朗称海峡'直至另行通知前'关闭。战争险保费从3-8倍水平急剧飙升至8-15倍。更新于 2026-07-12"
+      "source": "Lloyd's / LMA / CNBC",
+      "sourceUrl": "https://www.cnbc.com/world/",
+      "note": "PREMIUM AT 'WORST CASE SCENARIO': CNBC Jul 18: Maritime risk CEO says oil tankers face 'worst case scenario' in Hormuz as Iran steps up attacks. War risk premiums sustained at 8-15x level. Major escalation: Two US service members killed in Jordan, Iran formally calls off interim peace agreement (MoU suspended). Trump declares peace deal over ~10 days ago. 50 killed in US strikes in July. Iraq and Syria agree to restore oil pipeline as alternative to Hormuz. Lack of diplomatic off-ramp means premiums unlikely to ease. Updated 2026-07-19",
+      "note_zh": "保费维持'最坏情形'：CNBC 7月18日报道海事风险CEO称油轮面临'最坏情形'，伊朗加大攻击。战争险保费维持8-15倍水平。重大升级：两名美军士兵在约旦阵亡，伊朗正式叫停临时和平协议（谅解备忘录暂停）。特朗普约10天前宣布和约作废。7月美军打击已造成50人死亡。伊拉克和叙利亚同意恢复输油管道作为霍尔木兹替代路线。缺乏外交出路意味着保费短期内难以回落。更新于 2026-07-19"
     },
     "straitThroughput": {
-      "value": "~0-1 mb/d | CLOSED — US strikes underway",
-      "value_zh": "约0-1桶/天 | 关闭——美军打击中",
+      "value": "~0-1 mb/d | CLOSED — MoU cancelled, US strikes continue",
+      "value_zh": "约0-1桶/天 | 关闭——谅解备忘录取消，美军持续打击",
       "unit": "million barrels/day",
       "unit_zh": "百万桶/天",
       "baseline": "17 mb/d",
@@ -30,14 +30,14 @@
       "status": "critical",
       "threshold": "<5 critical",
       "threshold_zh": "<5 危险",
-      "source": "Kpler / Vortexa",
-      "sourceUrl": "https://x.com/Kpler",
-      "note": "STRAIT CLOSED: Diplomatic track completely collapsed. Jul 7: Attacks on tankers in Strait. US revokes Iran oil sales authorization (CNBC, Jul 7). Jul 8: Trump threatens to bomb Iran and reimpose naval blockade. Jul 9: Tanker traffic slows significantly (CNBC, Jul 9). Jul 10: IEA says world oil demand faces first annual decline since 2020. Jul 11: IRGC declares Strait of Hormuz closed; Trump threatens to 'decimate' Iran. Jul 12: US launches fresh strikes after Cyprus-flagged vessel attack; Iran says Strait closed 'until further notice' (BBC, Al Jazeera, CNBC multiple sources). Throughput effectively near zero for commercial traffic. Oil prices volatile with supply disruption risk. Updated 2026-07-12",
-      "note_zh": "海峡关闭：外交轨道完全崩溃。7月7日：油轮遭攻击，美国撤销伊朗石油销售授权。7月8日：特朗普威胁轰炸伊朗。7月9日：油轮运输显著放缓。7月10日：IEA称全球石油需求将面临2020年以来首次年度下降。7月11日：IRGC宣布海峡关闭，特朗普威胁'摧毁'伊朗。7月12日：美军发动新一轮打击；伊朗称海峡'直至另行通知前'关闭。商业通行量实际为零。油价受供应中断风险影响剧烈波动。更新于 2026-07-12"
+      "source": "Kpler / Vortexa / CNBC",
+      "sourceUrl": "https://www.cnbc.com/world/",
+      "note": "STRAIT REMAINS CLOSED — DIPLOMATIC OFF-RAMP GONE. Jul 13-17: US strikes on Iran continue. Jul 17: Two US service members killed in Jordan, one missing — worst US casualty event in this escalation. Jul 18: Iran formally calls off interim peace agreement (MoU suspended). Mojtaba Khamenei warns US of 'unforgettable lessons'. CNBC reports oil tankers face 'worst case scenario'. ~50 killed in US strikes in July. Iraq and Syria agree to restore oil pipeline as alternative to Hormuz — potential structural bypass. Throughput remains effectively zero for commercial traffic. Diplomatic path fully closed. Updated 2026-07-19",
+      "note_zh": "海峡持续关闭——外交出路完全消失。7月13-17日：美军持续打击伊朗。7月17日：两名美军士兵在约旦阵亡，一人失踪——本次升级中最严重的美军伤亡事件。7月18日：伊朗正式叫停临时和平协议（谅解备忘录暂停）。穆杰塔巴·哈梅内伊警告美国将付出'难忘的代价'。CNBC报道油轮面临'最坏情形'。7月美军打击约造成50人死亡。伊拉克和叙利亚同意恢复输油管道作为霍尔木兹替代路线——潜在的结构性绕行。商业通行量实际为零。外交途径完全关闭。更新于 2026-07-19"
     },
     "irgcStatementFreq": {
-      "value": "20-30/week (crisis level)",
-      "value_zh": "20-30次/周（危机水平）",
+      "value": "20-30/week (crisis level, MoU cancelled)",
+      "value_zh": "20-30次/周（危机水平，谅解备忘录取消）",
       "unit": "statements per week",
       "unit_zh": "次/周",
       "baseline": "2-3/week",
@@ -45,38 +45,38 @@
       "status": "critical",
       "threshold": ">5 warning",
       "threshold_zh": ">5 警惕",
-      "source": "OSINT / X monitoring",
-      "sourceUrl": "https://x.com/search?q=IRGC+statement+hormuz",
-      "note": "IRGC statement frequency spiked to crisis levels as hostilities resumed. Mojtaba Khamenei consolidated as new Supreme Leader. Jul 11: IRGC formally declares Strait of Hormuz closed. Jul 10-12: Multiple IRGC statements threatening US and allies. Iran's top negotiator continues Omani FM talks (Al Jazeera, Jul 11) but military posture hardened. Warning shot fired at Cyprus-flagged vessel (BBC, Jul 12). Revenge rhetoric from funeral period now translated into military action. Updated 2026-07-12",
-      "note_zh": "IRGC声明频率随冲突重启升至危机水平。穆杰塔巴·哈梅内伊巩固为新最高领袖。7月11日：IRGC正式宣布海峡关闭。7月10-12日：多次IRGC声明威胁美国及盟友。伊朗首席谈判代表仍在与阿曼外长会谈（AJ，7月11日）但军事姿态强硬。向塞浦路斯旗船只鸣枪警告（BBC，7月12日）。葬礼期间的复仇言论已转化为军事行动。更新于 2026-07-12"
+      "source": "OSINT / CNBC / Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/",
+      "note": "IRGC statement frequency sustained at crisis level. Jul 17-18: Major escalation — Mojtaba Khamenei warns US of 'unforgettable lessons' (Al Jazeera, Jul 18). Iran formally calls off interim peace agreement (MoU suspended). Supreme Leader says Trump's signature is 'worthless', calls bullying core of US foreign policy. Two US service members killed in Jordan. 50+ killed in July US strikes. IRGC rhetoric at maximum escalation. Updated 2026-07-19",
+      "note_zh": "IRGC声明频率维持在危机水平。7月17-18日：重大升级——穆杰塔巴·哈梅内伊警告美国将付出'难忘的代价'。伊朗正式叫停临时和平协议（谅解备忘录暂停）。最高领袖称特朗普签名'一文不值'，称霸凌是美国外交政策核心。两名美军在约旦阵亡。7月美军打击已造成50+人死亡。IRGC言辞达到最高升级水平。更新于 2026-07-19"
     },
     "fleetPosition": {
-      "value": "Active combat operations resumed — fresh strikes Jul 12",
-      "value_zh": "实战行动恢复——7月12日新一轮打击",
+      "value": "Active combat operations — 2 US killed in Jordan, MoU cancelled",
+      "value_zh": "实战行动——2名美军在约旦阵亡，谅解备忘录取消",
       "unit": "",
       "baseline": "Active patrol",
       "trend": "rising",
       "status": "critical",
       "threshold": "Hesitation = deterrence failure",
       "threshold_zh": "徘徊 = 威慑失效",
-      "source": "MarineTraffic / OSINT",
-      "sourceUrl": "https://x.com/search?q=US+5th+fleet+position",
-      "note": "COMPLETE PHASE REVERSAL: US 5th fleet transitioned back to active combat ops. Jul 7: Iran-backed tanker attacks in Hormuz. US revokes Iran oil sales authorization. Jul 8: Trump threatens to bomb Iran. Jul 9: Tanker traffic slows under threat. Jul 10: Mediators scramble to contain escalation (CNBC). Jul 11: IRGC declares Strait closed. Jul 12: US launches fresh strikes on Iran after Cyprus-flagged vessel attacked. CENTCOM posture is aggressive. Diplomatic window from Doha talks (Jul 2-3) fully closed. Strike operations are now the primary posture. Updated 2026-07-12",
-      "note_zh": "完全反转：美第5舰队回到实战行动。7月7日：伊朗支持攻击霍尔木兹油轮，美国撤销伊朗石油销售授权。7月8日：特朗普威胁轰炸伊朗。7月9日：油轮运输放缓。7月10日：调解者紧急控制升级。7月11日：IRGC宣布海峡关闭。7月12日：美军对伊朗发动新一轮打击。CENTCOM姿态激进。多哈会谈（7月2-3日）的外交窗口完全关闭。打击行动为当前主要姿态。更新于 2026-07-12"
+      "source": "CNBC / Al Jazeera / CENTCOM",
+      "sourceUrl": "https://www.cnbc.com/world/",
+      "note": "ESCALATION WITH CASUALTIES: Jul 17: Two US service members killed in Jordan, one missing — worst US casualty event. Jul 18: Iran calls off interim peace deal (MoU suspended). ~50 killed in total in US strikes since Jul 7. CENTCOM posture remains aggressive with continuous strike operations. US strikes ongoing as tit-for-tat cycle intensifies. No diplomatic off-ramp visible. Iraq-Syria pipeline alternative announced as Gulf states hedge. Updated 2026-07-19",
+      "note_zh": "出现伤亡的升级：7月17日：两名美军士兵在约旦阵亡，一人失踪——美军在本轮升级中最严重伤亡。7月18日：伊朗叫停临时和平协议。自7月7日以来美军打击共造成约50人死亡。CENTCOM姿态持续激进，打击行动持续。报复循环加剧。无外交出路可见。伊拉克-叙利亚管道替代方案公布——海湾国家开始对冲。更新于 2026-07-19"
     },
     "saudiUaeStance": {
-      "value": "Saudi and GCC in crisis — diplomacy collapsed, security threat elevated",
-      "value_zh": "沙特及GCC陷入危机——外交崩溃，安全威胁升级",
+      "value": "Saudi/GCC in crisis — Iraq-Syria pipeline alternative emerging; MoU dead",
+      "value_zh": "沙特/GCC陷入危机——伊拉克-叙利亚管道替代方案浮现；谅解备忘录死亡",
       "unit": "",
       "baseline": "Full US coordination",
       "trend": "falling",
       "status": "critical",
       "threshold": "Independent action = alliance strain",
       "threshold_zh": "自行其是 = 同盟裂痕",
-      "source": "Reuters / Bloomberg",
-      "sourceUrl": "https://x.com/search?q=Saudi+Arabia+Hormuz+2026",
-      "note": "GCC POSITION CRITICAL: Oman's fee plan for Strait transit rendered moot as hostilities resumed. Jul 7-12: Tanker attacks and US strikes collapse the Doha diplomatic framework. Saudi faces direct security threat as Hormuz closure impacts Saudi oil exports via alternative routes (Yanbu pipeline). MBS stayed in Saudi throughout. OPEC+ production policy in turmoil. Hajj 2026 security managed but region destabilized. Saudi may seek independent security arrangements as US-Iran tit-for-tat escalates. Iran envoy to China claims Beijing will get Hormuz concessions — potential China role emerging. Updated 2026-07-12",
-      "note_zh": "GCC立场危急：阿曼海峡通行费方案因冲突重启而失效。沙特面临直接安全威胁——海峡关闭影响沙特经替代路线（延布管道）的石油出口。MBS留守沙特。OPEC+产量政策陷入混乱。朝觐安全可控但地区动荡。美伊报复升级中沙特或寻求独立安全安排。伊朗驻华大使称北京将获海峡权益——中国角色可能浮现。更新于 2026-07-12"
+      "source": "CNBC / Reuters / Bloomberg",
+      "sourceUrl": "https://www.cnbc.com/world/",
+      "note": "GCC HEDGING: CRITICAL NEW DEVELOPMENT — Iraq and Syria agree to restore oil pipeline as alternative to Hormuz (CNBC, Jul 18). This is a structural bypass of the Strait. Iran calls off interim MoU. Oman's fee plan permanently moot. MBS stayed in Saudi throughout crisis. Saudi faces direct security threat. OPEC+ in turmoil. Iraq-Syria pipeline deal signals regional hedging against Hormuz dependence. China role in Hormuz post-crisis emerging. Updated 2026-07-19",
+      "note_zh": "GCC对冲中：关键新发展——伊拉克和叙利亚同意恢复输油管道作为霍尔木兹替代路线（CNBC，7月18日）。这是对海峡的结构性绕行。伊朗叫停临时谅解备忘录。阿曼通行费方案永久失效。MBS全程留守沙特。沙特面临直接安全威胁。OPEC+混乱。伊拉克-叙利亚管道协议表明地区对冲霍尔木兹依赖。中国在霍尔木兹危机后角色正在浮现。更新于 2026-07-19"
     }
   }
 }
