@@ -17,12 +17,12 @@
       "threshold_zh": ">0.5% 危险",
       "source": "Lloyd's / LMA / CNBC",
       "sourceUrl": "https://www.cnbc.com/world/",
-      "note": "PREMIUM AT 'WORST CASE SCENARIO': CNBC Jul 18: Maritime risk CEO says oil tankers face 'worst case scenario' in Hormuz as Iran steps up attacks. War risk premiums sustained at 8-15x level. Major escalation: Two US service members killed in Jordan, Iran formally calls off interim peace agreement (MoU suspended). Trump declares peace deal over ~10 days ago. 50 killed in US strikes in July. Iraq and Syria agree to restore oil pipeline as alternative to Hormuz. Lack of diplomatic off-ramp means premiums unlikely to ease. Updated 2026-07-19",
-      "note_zh": "保费维持'最坏情形'：CNBC 7月18日报道海事风险CEO称油轮面临'最坏情形'，伊朗加大攻击。战争险保费维持8-15倍水平。重大升级：两名美军士兵在约旦阵亡，伊朗正式叫停临时和平协议（谅解备忘录暂停）。特朗普约10天前宣布和约作废。7月美军打击已造成50人死亡。伊拉克和叙利亚同意恢复输油管道作为霍尔木兹替代路线。缺乏外交出路意味着保费短期内难以回落。更新于 2026-07-19"
+      "note": "ESCALATION RESUMED — DIPLOMATIC TRACK COLLAPSED: Jul 31: US media report US and Israel may be imminently launching extensive attacks on Iran's civilian infrastructure including power plants and petrochemicals — operation could last up to two weeks and aim to cut electricity across Tehran; Trump has yet to give final authorisation (Al Jazeera, Aug 1). Israel Defense Minister Katz: 'we very much want to strike Iran's energy targets' — US not approving at present over concern Iran would strike neighbours and trigger global oil crisis. Iran's wartime military command (Gen Abdollahi): 'flames of war' warning; Tasnim: armed forces prepared retaliation plan against US/Israel vital infrastructure. CSIS: US Patriot inventories under 1,000, THAAD ~250 — interceptor depletion. Oil: Brent above $90/bbl (strongest month since March), WTI ~$83. War-risk premium shock (~1,000%+) sustained. Updated 2026-08-02",
+      "note_zh": "升级恢复——外交轨道崩溃：7月31日：美国媒体报道美以可能即将对伊朗民用基础设施（发电厂、石化厂）发动大规模打击——行动可能持续两周，旨在切断德黑兰电力；特朗普尚未最终授权（半岛电视台，8月1日）。以色列防长卡茨：'我们非常想打击伊朗能源目标'——美国因担心伊朗报复邻国、引发全球石油危机而暂未批准。伊朗战时军事指挥部（阿卜杜拉希将军）：'战争之火'警告；塔斯尼姆：武装部队已准备针对美以关键基础设施的报复计划。CSIS：美国爱国者拦截弹库存降至1000枚以下、THAAD约250枚——拦截弹枯竭。油价：布伦特突破$90/桶（3月以来最强月度），WTI约$83。战争险溢价冲击（约1000%+）持续。更新于 2026-08-02"
     },
     "straitThroughput": {
       "value": "~0-1 mb/d | CLOSED — MoU cancelled, US strikes continue",
-      "value_zh": "约0-1桶/天 | 关闭——谅解备忘录取消，美军持续打击",
+      "value_zh": "约0-1百万桶/天 | 关闭——谅解备忘录取消，美军持续打击",
       "unit": "million barrels/day",
       "unit_zh": "百万桶/天",
       "baseline": "17 mb/d",
@@ -32,8 +32,8 @@
       "threshold_zh": "<5 危险",
       "source": "Kpler / Vortexa / CNBC",
       "sourceUrl": "https://www.cnbc.com/world/",
-      "note": "STRAIT REMAINS CLOSED — DIPLOMATIC OFF-RAMP GONE. Jul 13-17: US strikes on Iran continue. Jul 17: Two US service members killed in Jordan, one missing — worst US casualty event in this escalation. Jul 18: Iran formally calls off interim peace agreement (MoU suspended). Mojtaba Khamenei warns US of 'unforgettable lessons'. CNBC reports oil tankers face 'worst case scenario'. ~50 killed in US strikes in July. Iraq and Syria agree to restore oil pipeline as alternative to Hormuz — potential structural bypass. Throughput remains effectively zero for commercial traffic. Diplomatic path fully closed. Updated 2026-07-19",
-      "note_zh": "海峡持续关闭——外交出路完全消失。7月13-17日：美军持续打击伊朗。7月17日：两名美军士兵在约旦阵亡，一人失踪——本次升级中最严重的美军伤亡事件。7月18日：伊朗正式叫停临时和平协议（谅解备忘录暂停）。穆杰塔巴·哈梅内伊警告美国将付出'难忘的代价'。CNBC报道油轮面临'最坏情形'。7月美军打击约造成50人死亡。伊拉克和叙利亚同意恢复输油管道作为霍尔木兹替代路线——潜在的结构性绕行。商业通行量实际为零。外交途径完全关闭。更新于 2026-07-19"
+      "note": "STRAIT RE-CLOSED — DIPLOMATIC PAUSE COLLAPSED: Aug 1: Iran announces Strait of Hormuz 'closed once again' (News On AIR/IRNA); Khatam al-Anbiya HQ says waterway remains closed to traffic not approved by IRGC; 4 ships turned back. Two tanker incidents off Oman in 24h (UKMTO): GasLog LNG carrier damaged exiting Hormuz, tanker engine room hit by unknown projectile. Iran warns continued US maritime blockade could shut Hormuz and other waterways (Anadolu, Aug 1). US attacked at least five Iranian provinces overnight into Thursday (IRGC command centres, missile/drone facilities, coastal surveillance, air-defence, maritime). Iran state media: 'smoke of mistakenly trusting the US' promises of safe passage. Trump threatens harder strikes; White House warns Tehran over Hormuz attacks and truce violations. Oil: Brent above $90, strongest month since March. Iraq-Syria pipeline alternative structural. Updated 2026-08-02",
+      "note_zh": "海峡重新关闭——外交暂停崩溃：8月1日：伊朗宣布霍尔木兹海峡'再次关闭'（新闻AIR/IRNA）；哈塔姆安比亚总部称水道仍对未经IRGC批准的船只关闭；4艘船被劝返。24小时内阿曼附近两起油轮事件（UKMTO）：GasLog液化天然气船出海峡时受损，油轮机舱被不明射弹击中。伊朗警告美国持续海上封锁可能导致霍尔木兹及其他水道关闭（阿纳多卢，8月1日）。美国周四凌晨前至少打击伊朗五个省份（IRGC指挥中心、导弹/无人机设施、海岸监视、防空、海上能力）。伊朗官方媒体：'误信美国'安全通行承诺的'烟雾'。特朗普威胁更严厉打击；白宫警告德黑兰在霍尔木兹的攻击和停火违规。油价：布伦特突破$90，3月以来最强月度。伊拉克-叙利亚管道替代方案结构性。更新于 2026-08-02"
     },
     "irgcStatementFreq": {
       "value": "20-30/week (crisis level, MoU cancelled)",
@@ -47,8 +47,8 @@
       "threshold_zh": ">5 警惕",
       "source": "OSINT / CNBC / Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/",
-      "note": "IRGC statement frequency sustained at crisis level. Jul 17-18: Major escalation — Mojtaba Khamenei warns US of 'unforgettable lessons' (Al Jazeera, Jul 18). Iran formally calls off interim peace agreement (MoU suspended). Supreme Leader says Trump's signature is 'worthless', calls bullying core of US foreign policy. Two US service members killed in Jordan. 50+ killed in July US strikes. IRGC rhetoric at maximum escalation. Updated 2026-07-19",
-      "note_zh": "IRGC声明频率维持在危机水平。7月17-18日：重大升级——穆杰塔巴·哈梅内伊警告美国将付出'难忘的代价'。伊朗正式叫停临时和平协议（谅解备忘录暂停）。最高领袖称特朗普签名'一文不值'，称霸凌是美国外交政策核心。两名美军在约旦阵亡。7月美军打击已造成50+人死亡。IRGC言辞达到最高升级水平。更新于 2026-07-19"
+      "note": "IRGC statement frequency sustained at crisis level. NEW: Iran's wartime military command warns US 'moving at accelerating pace to fan flames of full-scale regional war' — countries serving as US defensive shield 'will burn in flames of war' (Al Jazeera, Aug 1). Tasnim: armed forces prepared extensive retaliation plan against US/Israel 'vital infrastructure'. Iran targets US base in Kuwait — Kuwait air defences destroy multiple Iranian drones, some damage to government facilities (Aug 1). IRGC/army strikes extend to energy infrastructure in Israel, Saudi Arabia, UAE, Qatar, Kuwait, Bahrain, Oman. Iran warns continued US maritime blockade could shut Hormuz and other waterways. Iran: 'we have been victorious. But the victories of this war must be solidified' (Ghalibaf). Updated 2026-08-02",
+      "note_zh": "IRGC声明频率维持在危机水平。新：伊朗战时军事指挥部警告美国'正加速煽动全面地区战争之火'——充当美国防御盾牌的国家'将葬身战火'（半岛电视台，8月1日）。塔斯尼姆：武装部队已准备针对美以'关键基础设施'的全面报复计划。伊朗打击科威特美军基地——科威特防空系统摧毁多架伊朗无人机，政府设施受损（8月1日）。IRGC/军队打击扩展至以色列、沙特、阿联酋、卡塔尔、科威特、巴林、阿曼的能源基础设施。伊朗警告美国持续海上封锁可能导致霍尔木兹及其他水道关闭。伊朗：'我们已经胜利。但必须巩固战争的胜利成果'（卡利巴夫）。更新于 2026-08-02"
     },
     "fleetPosition": {
       "value": "Active combat operations — 2 US killed in Jordan, MoU cancelled",
@@ -61,12 +61,12 @@
       "threshold_zh": "徘徊 = 威慑失效",
       "source": "CNBC / Al Jazeera / CENTCOM",
       "sourceUrl": "https://www.cnbc.com/world/",
-      "note": "ESCALATION WITH CASUALTIES: Jul 17: Two US service members killed in Jordan, one missing — worst US casualty event. Jul 18: Iran calls off interim peace deal (MoU suspended). ~50 killed in total in US strikes since Jul 7. CENTCOM posture remains aggressive with continuous strike operations. US strikes ongoing as tit-for-tat cycle intensifies. No diplomatic off-ramp visible. Iraq-Syria pipeline alternative announced as Gulf states hedge. Updated 2026-07-19",
-      "note_zh": "出现伤亡的升级：7月17日：两名美军士兵在约旦阵亡，一人失踪——美军在本轮升级中最严重伤亡。7月18日：伊朗叫停临时和平协议。自7月7日以来美军打击共造成约50人死亡。CENTCOM姿态持续激进，打击行动持续。报复循环加剧。无外交出路可见。伊拉克-叙利亚管道替代方案公布——海湾国家开始对冲。更新于 2026-07-19"
+      "note": "ESCALATION RESUMED — US STRIKES CONTINUE, ENERGY TARGETS NEXT?: Overnight into Thursday Jul 30: US military attacked at least five Iranian provinces — IRGC command centres, missile and drone facilities, coastal surveillance, air-defence, maritime capabilities; multiple civilian casualties including a 2-year-old killed on Qeshm (Al Jazeera, Aug 1). Aug 1: Kuwait's army destroys multiple Iranian drones; Iran targeted US base in Kuwait. US embassies urge citizens to 'consider departing' region (France 24, Aug 1). Trump threatens more strikes; White House warns Tehran over Hormuz attacks and truce violations (AP, Aug 1). US/Israel reportedly preparing major strikes on Iran's energy infrastructure; Trump has yet to give final authorisation (Anadolu/AJ, Aug 1). CSIS: Patriot inventories under 1,000, THAAD ~250. US blockade of Iranian ports continues. Netanyahu-Trump meeting pending. Updated 2026-08-02",
+      "note_zh": "升级恢复——美军打击持续，能源目标或下一步？：7月30日周四凌晨前：美军至少打击伊朗五个省份——IRGC指挥中心、导弹/无人机设施、海岸监视、防空、海上能力；多名平民伤亡，包括格什姆岛一名2岁儿童遇难（半岛电视台，8月1日）。8月1日：科威特军队摧毁多架伊朗无人机；伊朗打击科威特美军基地。美国使馆敦促公民'考虑撤离'该地区（法国24，8月1日）。特朗普威胁更多打击；白宫警告德黑兰在霍尔木兹的攻击和停火违规（美联社，8月1日）。美以据报道准备对伊朗能源基础设施发动重大打击；特朗普尚未最终授权（阿纳多卢/半岛，8月1日）。CSIS：爱国者拦截弹库存低于1000枚、THAAD约250枚。美国对伊朗港口的封锁持续。内塔尼亚胡-特朗普会晤待定。更新于 2026-08-02"
     },
     "saudiUaeStance": {
-      "value": "Saudi/GCC in crisis — Iraq-Syria pipeline alternative emerging; MoU dead",
-      "value_zh": "沙特/GCC陷入危机——伊拉克-叙利亚管道替代方案浮现；谅解备忘录死亡",
+      "value": "Saudi military strikes Houthi Hodeidah — conflict spreads to Yemen front",
+      "value_zh": "沙特打击胡塞武装荷台达——冲突扩展至也门战线",
       "unit": "",
       "baseline": "Full US coordination",
       "trend": "falling",
@@ -75,8 +75,8 @@
       "threshold_zh": "自行其是 = 同盟裂痕",
       "source": "CNBC / Reuters / Bloomberg",
       "sourceUrl": "https://www.cnbc.com/world/",
-      "note": "GCC HEDGING: CRITICAL NEW DEVELOPMENT — Iraq and Syria agree to restore oil pipeline as alternative to Hormuz (CNBC, Jul 18). This is a structural bypass of the Strait. Iran calls off interim MoU. Oman's fee plan permanently moot. MBS stayed in Saudi throughout crisis. Saudi faces direct security threat. OPEC+ in turmoil. Iraq-Syria pipeline deal signals regional hedging against Hormuz dependence. China role in Hormuz post-crisis emerging. Updated 2026-07-19",
-      "note_zh": "GCC对冲中：关键新发展——伊拉克和叙利亚同意恢复输油管道作为霍尔木兹替代路线（CNBC，7月18日）。这是对海峡的结构性绕行。伊朗叫停临时谅解备忘录。阿曼通行费方案永久失效。MBS全程留守沙特。沙特面临直接安全威胁。OPEC+混乱。伊拉克-叙利亚管道协议表明地区对冲霍尔木兹依赖。中国在霍尔木兹危机后角色正在浮现。更新于 2026-07-19"
+      "note": "GCC CONFLICT EXPANDS TO MULTIPLE FRONTS: Houthis fire at Saudi oil facilities — 'New front in US-Iran war escalates' (Al Jazeera, Aug 1). Houthis announce Saudi naval blockade (Reuters, Jul 21); ships turn around in Red Sea after Bab al-Mandeb threats (Forbes, Jul 22). Riyadh attempting to form international coalition to counter Red Sea disruptions. US and Saudi Arabia jointly attacked Iraqi bases aligned with Tehran, killing at least 20 fighters and multiple IRGC advisers (AJ, Aug 1). Saudi military strikes Houthi-held Hodeidah (CNBC, Jul 25). Iran struck energy infrastructure in Saudi, UAE, Qatar, Kuwait, Bahrain, Oman (AJ, Aug 1). Saudi now directly engaged on Yemen + Red Sea fronts while Hormuz closed. Oman talking with Tehran on Hormuz navigation mechanisms. Updated 2026-08-02",
+      "note_zh": "GCC冲突扩展至多条战线：胡塞武装袭击沙特石油设施——'美伊战争新战线升级'（半岛电视台，8月1日）。胡塞武装宣布对沙特海上封锁（路透社，7月21日）；曼德海峡威胁后红海船只掉头（福布斯，7月22日）。利雅得正试图组建国际联盟应对红海中断。美国和沙特联合打击与德黑兰结盟的伊拉克基地，至少20名武装分子和多名IRGC顾问被杀（半岛，8月1日）。沙特打击胡塞武装控制的荷台达（CNBC，7月25日）。伊朗打击沙特、阿联酋、卡塔尔、科威特、巴林、阿曼的能源基础设施（半岛，8月1日）。霍尔木兹关闭之际，沙特在也门+红海战线直接参战。阿曼与伊朗就霍尔木兹航行机制进行会谈。更新于 2026-08-02"
     }
   }
 }

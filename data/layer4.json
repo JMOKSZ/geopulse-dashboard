@@ -17,8 +17,8 @@
       "threshold_zh": "溢价下降=制裁在漏；溢价上升=瓶颈收紧",
       "source": "SemiAnalysis / grey market",
       "sourceUrl": "https://x.com/search?q=H100+black+market+China",
-      "note": "Nvidia B200 racks now fetching 50% premiums on China black market (Crypto Briefing, Jun 24). China plans $295B AI grid locking out Nvidia. Alibaba shipped 560K Zhenwu AI chips. Nvidia pitches Arm-based Vera CPUs to Chinese clients targeting Aug shipments. Trump admin eases export controls for UAE (CNBC, Jul 10) — UAE is known transshipment hub for China chips. NEW: CNBC Jul 17 — 'Trump administration is dictating access to frontier AI models'. ASML 'walk tightrope between sales and geopolitics' (CNBC, Jul 17). H100 premium stable at 2-3x. B200 premium at 50%. Checked 2026-07-19",
-      "note_zh": "Nvidia B200机柜在中国黑市溢价50%。中国计划$2950亿AI算力网排挤Nvidia。阿里巴巴交付56万颗真武芯片。Nvidia向中国客户推Arm架构Vera CPU。特朗普政府放松对UAE出口管制（CNBC，7月10日）——UAE是已知中国芯片转运枢纽。新：CNBC 7月17日报道'特朗普政府在限制前沿AI模型获取'。ASML'在销售与地缘政治间走钢丝'（CNBC，7月17日）。H100溢价稳定2-3倍。B200溢价50%。核实于 2026-07-19"
+      "note": "No new premium data this cycle; H100 stable at 2-3x, B200 racks ~50% premium. NEW: China plans to let top AI firms buy limited Nvidia H200 chips (Reuters/The Information, Jul 9) — controlled legal channel may pressure grey market. DeepSeek developing own AI chip (Reuters, Jul 9) — long-term domestic substitution. Nvidia locks down memory supply from SK Hynix as part of $500B AI deal (CNBC, Jul 25). Nvidia readying B30A accelerator for Chinese market (Tom's Hardware). China $295B AI grid plan locking out Nvidia. Updated 2026-08-02",
+      "note_zh": "本周期无新溢价数据；H100稳定在2-3倍，B200机柜约50%溢价。新：中国计划允许顶级AI公司购买限量Nvidia H200芯片（路透/The Information，7月9日）——受控合法渠道可能压制灰市。DeepSeek自研AI芯片（路透，7月9日）——长期国产替代。Nvidia锁定SK海力士存储供应作为$5000亿AI交易的一部分（CNBC，7月25日）。Nvidia为中国市场准备B30A加速器（Tom's Hardware）。中国$2950亿AI算力网排挤Nvidia。更新于 2026-08-02"
     },
     "chinaAiAdoption": {
       "value": "541M visits/mo (DeepSeek, #5 globally) · DeepSeek V4 released · 500K+ devs on 通义 · 200+ enterprise deployments (文心)",
@@ -32,8 +32,8 @@
       "threshold_zh": "关注：日均Token量增速、企业案例加速曲线",
       "source": "DeepSeek official · Alibaba Cloud · Baidu",
       "sourceUrl": "https://x.com/search?q=DeepSeek+API+China+2026",
-      "note": "DeepSeek V4 RELEASED (Mashable, Jul 4) — comparing favorably with ChatGPT, Claude, Gemini. DeepSeek raises $7.4B for domestic computing infrastructure (Pandaily, Jul 1). WAIC 2026 Jul 3-5 Shanghai: multiple Chinese AI model releases. CNBC (Jul 10) reports 'AI race shifting from bigger models to cheaper, smarter systems' — benefit Chinese cost-efficient approach. NEW: CNBC Jul 17 'Chinese AI has leveled up and brought a new focus on the open weight model shift'. Xi Jingping 'pitches China as AI partner to developing world' at WAIC. Job ads show DeepSeek aims for AI agent with cybersecurity capabilities (ASPI, Jul 2). Updated 2026-07-19",
-      "note_zh": "DeepSeek V4已发布（Mashable，7月4日）——与ChatGPT、Claude、Gemini对标表现亮眼。DeepSeek融资$74亿用于国产算力基础设施（Pandaily，7月1日）。世界AI大会7月3-5日上海：多个中国AI模型发布。CNBC（7月10日）报道'AI竞赛从大模型转向更便宜、更智能的系统'——利好中国性价比路线。新：CNBC 7月17日'中国AI已升级，推动开源权重模型转型'。习近平在世界AI大会'向发展中国家推介中国AI合作伙伴'。招聘信息显示DeepSeek瞄准AI网络安全代理（ASPI，7月2日）。更新于 2026-07-19"
+      "note": "DeepSeek releases official V4-Flash model as China's AI race intensifies (Caixin, Jul 31). DeepSeek developing massive AI data center in Inner Mongolia (Japan Times, Aug 1). DeepSeek developing its own AI chip (Reuters, Jul 9). China plans to let top AI firms buy limited Nvidia H200 chips (Reuters/The Information, Jul 9). China's Moonshot, Z.AI, DeepSeek challenging US AI labs — and beating them on cost (Fortune, Jul 27). DeepSeek V4 (Jul 4) comparing favorably with ChatGPT/Claude/Gemini; 541M visits/mo. Xi 'pitches China as AI partner to developing world' at WAIC. Open-weight model shift benefits Chinese cost-efficient approach. Updated 2026-08-02",
+      "note_zh": "DeepSeek发布官方V4-Flash模型，中国AI竞赛加剧（财新，7月31日）。DeepSeek在内蒙古建设大规模AI数据中心（日本时报，8月1日）。DeepSeek自研AI芯片（路透，7月9日）。中国计划允许顶级AI公司购买限量Nvidia H200芯片（路透/The Information，7月9日）。中国月之暗面、智谱、DeepSeek挑战美国AI实验室——并在成本上击败它们（财富，7月27日）。DeepSeek V4（7月4日）与ChatGPT/Claude/Gemini对标表现亮眼；月访问5.41亿。习近平在世界AI大会'向发展中国家推介中国AI合作伙伴'。开源权重模型转型利好中国性价比路线。更新于 2026-08-02"
     },
     "aiInferenceVolume": {
       "value": "~¥2.8B/qtr · 3.2× YoY",
@@ -62,8 +62,8 @@
       "threshold_zh": "关注：自主蜂群测试、AI vs 人类兵棋推演结果、卫星AI边缘处理",
       "source": "PLA public disclosures · Janes · ASPI Critical Technology Tracker",
       "sourceUrl": "https://x.com/search?q=PLA+AI+drone+autonomous+2026",
-      "note": "aiMilitaryDeployment unchanged. No new autonomous warfare events this week. WAIC Jul 3-5 may produce new PLA AI disclosures. SK Hynix 13% Nasdaq debut (CNBC, Jul 10) signals chip demand bullish — military AI chip access possible. Updated 2026-07-12",
-      "note_zh": "aiMilitaryDeployment不变。本周无新的自主战争事件。世界AI大会（7月3-5日）可能有新PLA AI信息披露。SK海力士纳斯达克首日涨13%（CNBC，7月10日）预示芯片需求强劲——军事AI芯片获取可能。更新于 2026-07-12"
+      "note": "aiMilitaryDeployment unchanged — no major new autonomous warfare disclosures this week. Business Insider Africa (Aug 1): US restrictions failed to stop China using American AI to strengthen its military; Beijing expands arms sales across Africa. UK commits £5B to autonomous drones (Tech Times, Jul 1). DOD seeks ~$30B for AI supercomputing in FY2027. AI warfare implications in Hormuz: both US and Iran increasingly using unmanned systems — Iran drones intercepted over Kuwait, US strikes on Iranian drone facilities. Updated 2026-08-02",
+      "note_zh": "aiMilitaryDeployment不变——本周无重大自主作战新披露。Business Insider Africa（8月1日）：美国限制未能阻止中国利用美国AI强化军事；北京扩大对非洲军售。英国承诺£50亿用于自主无人机（Tech Times，7月1日）。五角大楼寻求2027财年约$300亿用于AI超算。霍尔木兹AI战争影响：美伊均越来越多使用无人系统——伊朗无人机在科威特被拦截，美军打击伊朗无人机设施。更新于 2026-08-02"
     },
     "aiComputePower": {
       "value": "~85 GW data center capacity · 35% YoY growth · 8% of national grid",
@@ -77,8 +77,8 @@
       "threshold_zh": "数据中心占全国电网比值>10%=结构性需求转移；>15%=瓶颈风险",
       "source": "IEA · NEA China · SemiAnalysis DC tracker",
       "sourceUrl": "https://x.com/search?q=China+data+center+power+consumption+2026",
-      "note": "S&P 500: 7458. China DC capacity ~85 GW. Updated 2026-07-19",
-      "note_zh": "标普500：7458。中国数据中心容量约85GW。更新于 2026-07-19"
+      "note": "S&P 500 ends with first July decline since 2014 (MarketWatch, Jul 31). China DC capacity ~85 GW. Bond market anxiety over AI capex budgets continues (CNBC, Jul 24); Moody's: AI spending threatens credit quality of Amazon, Meta, Alphabet. DeepSeek building massive AI data center in Inner Mongolia (Japan Times, Aug 1) — China domestic compute expansion continues despite export controls. AI distillation/cost-efficiency trend may temper US DC expansion while China builds out. Updated 2026-08-02",
+      "note_zh": "标普500录得2014年以来首次7月下跌（MarketWatch，7月31日）。中国数据中心容量约85GW。债券市场对AI资本支出预算的担忧持续（CNBC，7月24日）；穆迪：AI支出威胁亚马逊、Meta、Alphabet信用质量。DeepSeek在内蒙古建设大规模AI数据中心（日本时报，8月1日）——中国国产算力扩张在出口管制下继续。AI蒸馏/性价比趋势可能抑制美国数据中心扩张，而中国持续建设。更新于 2026-08-02"
     },
     "aiSpaceCapability": {
       "value": "75+ orbital launches (2026 YTD) · ~715+ satellites added · Tiangong fully crewed",
@@ -92,8 +92,8 @@
       "threshold_zh": "年发射>100次 + 万颗卫星星座 = 太空AI能力追平美国",
       "source": "CNSA · SpaceNews · Jonathan McDowell launch log",
       "sourceUrl": "https://x.com/search?q=China+orbital+launch+2026",
-      "note": "NEW LAUNCHES THIS WEEK: Qianfan polar-orbit 13 satellites (CGTN, Jul 4), Group of communications satellites (China Daily, Jul 4), Oceanographic satellite (Xinhua, Jul 2). YTD launches now ~75+. China schedules first Long March 10B rocket landing attempt. WAIC Jul 3-5 Shanghai included space AI applications. SpaceX stock down ~23% since Nasdaq-100 inclusion (CNBC, Jul 17). SpaceX aborts Starship test flight (CNBC, Jul 16). Updated 2026-07-19",
-      "note_zh": "本周新发射：千帆极轨13星（CGTN，7月4日）、通信卫星组（中国日报，7月4日）、海洋观测卫星（新华社，7月2日）。年初至今约75+次发射。长征十号B首次回收尝试计划中。世界AI大会（7月3-5日上海）包含太空AI应用。SpaceX股价自纳入纳斯达克100以来下跌约23%（CNBC，7月17日）。SpaceX星舰试飞中止（CNBC，7月16日）。更新于 2026-07-19"
+      "note": "NEW LAUNCHES THIS WEEK: Long March 7A 17th flight with classified payload (Tech Times, Jul 29) — TJS fleet stalks US satellites. CAS Space Kinetica 1 15th mission (Tech Times, Jul 25) — monthly rideshare cadence locked in. Qianfan constellation deployment hits 200 satellites (SpaceNews, Jun 5). Long March 10B launch and recovery attempt scheduled (SpaceNews, Jun 25). YTD launches ~75+. SpaceX 13th Starship test Jul 24 deployed 20 Starlink V3 sats. SpaceX developing 'Starmind' orbital data centers. Updated 2026-08-02",
+      "note_zh": "本周新发射：长征七号甲第17次飞行，载荷保密（Tech Times，7月29日）——天枢系列卫星监视美国卫星。中科宇航力箭一号第15次任务（Tech Times，7月25日）——月度拼车发射节奏锁定。千帆星座部署达200颗卫星（SpaceNews，6月5日）。长征十号B发射与回收尝试已排期（SpaceNews，6月25日）。年初至今约75+次发射。SpaceX第13次星舰试飞7月24日部署20颗Starlink V3卫星。SpaceX开发'星脑'轨道数据中心。更新于 2026-08-02"
     },
     "nvdaAsiaRevenue": {
       "value": "Next: Aug 2026",
@@ -107,8 +107,8 @@
       "threshold_zh": "亚洲占比上升=芯片仍在流通",
       "source": "NVDA IR / SEC filings",
       "sourceUrl": "https://x.com/search?q=NVDA+earnings+Asia+revenue",
-      "note": "Quarterly earnings. Check 'China' and 'Singapore' revenue breakdowns. Next earnings Aug 2026. SK Hynix 13% Nasdaq debut (Jul 10) — chip demand signal. SoftBank sinks >9% as Asia chip stocks track Wall Street AI sell-off (CNBC, Jul 17). S&P 500 chip stocks sell-off continues. Checked 2026-07-19",
-      "note_zh": "季度财报。关注'中国'和'新加坡'的收入拆分。下次财报2026年8月。SK海力士纳斯达克首日涨13%（7月10日）——芯片需求信号。软银跌超9%，亚洲芯片股跟随华尔街AI抛售（CNBC，7月17日）。标普500芯片股抛售持续。核实于 2026-07-19"
+      "note": "Quarterly earnings. Check 'China' and 'Singapore' revenue breakdowns. Next earnings Aug 2026. No new earnings data this cycle. NEW: China plans to let top AI firms buy limited Nvidia H200 chips (Reuters, Jul 9) — if formalized, China revenue share may stabilize. Nvidia locks down SK Hynix memory as part of $500B AI deal (CNBC, Jul 25). S&P 500 chip sell-off continues; S&P 500 first July decline since 2014 (MarketWatch, Jul 31). Nvidia under pressure from broader AI capex concerns. Updated 2026-08-02",
+      "note_zh": "季度财报。关注'中国'和'新加坡'的收入拆分。下次财报2026年8月。本周期无新财报数据。新：中国计划允许顶级AI公司购买限量Nvidia H200芯片（路透，7月9日）——若正式化，中国收入占比可能企稳。Nvidia锁定SK海力士存储作为$5000亿AI交易的一部分（CNBC，7月25日）。标普500芯片股抛售持续；标普500录得2014年以来首次7月下跌（MarketWatch，7月31日）。Nvidia受更广泛AI资本支出担忧压力。更新于 2026-08-02"
     },
     "chinaEnergyIntensity": {
       "value": "-3.2% YoY (est)",
@@ -122,8 +122,23 @@
       "threshold_zh": "持续-3%以上=AI+制造效率在抵扣能源成本",
       "source": "NBS (quarterly, 1Q lag)",
       "sourceUrl": "https://x.com/search?q=China+energy+intensity+2026",
-      "note": "Carbon Brief (Jun 4): China CO2 climbs 2% in early 2026, driven by AI data center demand & wind/solar curtailment. 15th FYP targets 17% carbon intensity cut by 2030. Hormuz crisis → higher oil prices may accelerate China's renewable deployment. No new NBS data this cycle. Updated 2026-07-12",
-      "note_zh": "Carbon Brief（6月4日）：中国2026年初CO2排放上升2%，受AI数据中心需求和弃风弃光推动。十五五目标2030年碳强度降低17%。霍尔木兹危机→油价上涨可能加速中国可再生能源部署。本周期无新统计局数据。更新于 2026-07-12"
+      "note": "Carbon Brief (Jun 4): China CO2 climbs 2% in early 2026, driven by AI data center demand & wind/solar curtailment. 15th FYP targets 17% carbon intensity cut by 2030. No new NBS data this cycle. Hormuz crisis → higher oil prices may accelerate China's renewable deployment. DeepSeek massive Inner Mongolia data center adds AI-driven power demand (Japan Times, Aug 1). AI distillation trend could reduce energy intensity faster than expected. Updated 2026-08-02",
+      "note_zh": "Carbon Brief（6月4日）：中国2026年初CO2排放上升2%，受AI数据中心需求和弃风弃光推动。十五五目标2030年碳强度降低17%。本周期无新统计局数据。霍尔木兹危机→油价上涨可能加速中国可再生能源部署。DeepSeek内蒙古大型数据中心增加AI驱动电力需求（日本时报，8月1日）。AI蒸馏趋势可能使能源强度下降快于预期。更新于 2026-08-02"
+    },
+    "chinaAiVoiceAgent": {
+      "value": "Qwen Audio Agent 1.77K⭐ (7d) · full-duplex voice · ACP native for Hermes/OpenClaw/OpenCode",
+      "value_zh": "Qwen Audio Agent 1.77K⭐（7天）· 全双工语音 · Hermes/OpenClaw/OpenCode 原生 ACP",
+      "unit": "China open-source AI signal",
+      "unit_zh": "中国开源AI信号",
+      "baseline": "N/A (new project)",
+      "trend": "rising",
+      "status": "normal",
+      "threshold": "Watch: voice-agent runtime adoption outside China; local speech-to-speech v1.3.0 removes cloud dependency",
+      "threshold_zh": "关注：语音Agent运行时海外采纳度；v1.3.0全本地speech-to-speech消除云依赖",
+      "source": "GitHub · QwenAudio (Alibaba)",
+      "sourceUrl": "https://github.com/QwenAudio/qwen-audio-agent",
+      "note": "NEW: Alibaba QwenAudio released qwen-audio-agent (2026-07-27) — realtime voice runtime for AI agents. Full-duplex voice with natural interruption; foreground conversation runs in parallel with background agent tasks (spawn_thinking → FIFO queue → fixed agent session → natural callback '已经好了'). Supports WebUI/TUI/macOS desktop orb. Native ACP integration: OpenCode/OpenClaw/Qoder ★★★★★, Hermes ★★★★☆, Codex/Claude Code via external ACP. Local user profile + cross-session memory in ~/.config/qwaudio/. v1.3.0 testing HuggingFace speech-to-speech fully local frontend (VAD/STT/LLM/TTS via mlx-lm) — China data-residency relevant. Apache-2.0. 1.77K⭐/111 forks in 7 days. Updated 2026-08-02",
+      "note_zh": "新：阿里QwenAudio发布qwen-audio-agent（2026-07-27）——AI Agent实时语音运行时。全双工语音+自然打断；前台对话与后台Agent任务并行（spawn_thinking→FIFO队列→固定Agent会话→自然回调'已经好了'）。支持WebUI/TUI/macOS桌面悬浮球。原生ACP接入：OpenCode/OpenClaw/Qoder ★★★★★，Hermes ★★★★☆，Codex/Claude Code走外部ACP。本地用户档案+跨会话记忆在~/.config/qwaudio/。v1.3.0测试HuggingFace speech-to-speech全本地前台（VAD/STT/LLM/TTS用mlx-lm）——与中国数据不出境要求相关。Apache-2.0。7天1.77K⭐/111 forks。更新于 2026-08-02"
     }
   }
 }

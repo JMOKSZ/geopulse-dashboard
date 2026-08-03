@@ -1,7 +1,7 @@
 {
   "dashboard": "Geopolitical Pulse / 地缘脉冲",
   "version": "1.0.0",
-  "lastUpdated": "2026-07-19T22:00:34Z",
+  "lastUpdated": "2026-08-03T00:00:00Z",
   "updateFrequency": {
     "marketData": "realtime",
     "xScraped": "daily",

@@ -16,8 +16,8 @@
       "threshold_zh": "去北京多于华盛顿=战略偏移",
       "source": "X / news tracking",
       "sourceUrl": "https://x.com/search?q=MBS+travel+2026",
-      "note": "MBS has not traveled abroad since Hormuz crisis escalation. Stayed in Saudi for Hajj 2026 season. No new foreign trip reported. Notably, MBS did not attend any international summits during Jul 5-19 period. Continued to chair Saudi Cabinet in Riyadh. Hormuz crisis keeps MBS grounded. The Iraq-Syria pipeline deal (CNBC, Jul 18) may alter Saudi strategic calculus — pipeline bypasses Strait, reduces dependence on Hormuz. Updated 2026-07-19",
-      "note_zh": "MBS留守沙特，未出访。霍尔木兹危机期间未参加任何国际峰会。继续在利雅得主持沙特内阁。霍尔木兹危机使MBS无法出行。伊拉克-叙利亚管道协议（CNBC，7月18日）可能改变沙特战略考量——管道绕行海峡，降低对霍尔木兹的依赖。更新于 2026-07-19"
+      "note": "MBS has not traveled abroad since Hormuz crisis escalation. Stayed in Saudi; no new foreign trip reported. MBS called Trump as Islamabad talks started without Riyadh (houseofsaud, Jul 11). Saudi FM concluded China visit amid Trump-MBS tensions (Crypto Briefing, Jul 1) — 'Riyadh Pledged the Billion — Beijing Got the Visit'. US-Saudi nuclear deal security implications under scrutiny (Al Jazeera, Jul 23). Saudi military now directly engaged — strikes Houthi Hodeidah, Houthis fire at Saudi oil facilities, US-Saudi joint strikes on Iraqi bases. MBS continues to chair Cabinet in Riyadh. Updated 2026-08-02",
+      "note_zh": "MBS留守沙特，未出访。霍尔木兹危机升级后无新外国行程。伊斯兰堡谈判开始而利雅得缺席时，MBS致电特朗普（houseofsaud，7月11日）。沙特外交大臣在特朗普-MBS紧张中结束访华（Crypto Briefing，7月1日）——'利雅得承诺数十亿——北京得到了访问'。美沙核协议安全影响受审视（半岛电视台，7月23日）。沙特军方直接参战——打击胡塞荷台达，胡塞袭击沙特石油设施，美沙联合打击伊拉克基地。MBS继续在利雅得主持内阁。更新于 2026-08-02"
     },
     "singaporeStance": {
       "value": "Officially neutral, adjusting quietly — AI hub role growing",
@@ -30,8 +30,8 @@
       "threshold_zh": "新加坡选边=其他亚洲盟友已经在做了",
       "source": "speeches / press conferences",
       "sourceUrl": "https://x.com/search?q=Singapore+stance+US+China+2026",
-      "note": "Both US and Chinese AI firms setting up shop in Singapore as 'Asia's neutral AI hub' (Fortune, Jun 19). No policy stance shift yet. Singapore continues neutral posture as US-Iran escalation reaches new height with MoU collapse and US casualties. Singapore may benefit as safe haven for capital flight from Gulf region. Checked 2026-07-19",
-      "note_zh": "中美AI企业均在狮城设点，新加坡为'亚洲中立AI枢纽'（财富，6月19日）。政策立场未变。美伊冲突在谅解备忘录破裂和美军出现伤亡后达到新高，新加坡保持中立。新加坡可能受益于海湾资本外流的避险资金流入。核实于 2026-07-19"
+      "note": "Both US and Chinese AI firms setting up shop in Singapore as 'Asia's neutral AI hub' (Fortune, Jun 19). No policy stance shift yet. Singapore maintains neutral posture as US-Iran war escalates across region (Kuwait base attacked, Gulf energy infrastructure hit). Singapore may benefit as safe haven for Gulf capital flight; HKD-adjacent flows stable. No new Singapore policy signals this cycle. Updated 2026-08-02",
+      "note_zh": "中美AI企业均在狮城设点，新加坡为'亚洲中立AI枢纽'（财富，6月19日）。政策立场未变。美伊战争区域升级（科威特基地遭袭、海湾能源设施受打击）中，新加坡保持中立。新加坡可能受益于海湾资本外流的避险资金流入；港币相关资金流稳定。本周期无新加坡新政策信号。更新于 2026-08-02"
     },
     "adbLoanCurrency": {
       "value": "Annual data (Jun release)",
@@ -45,8 +45,8 @@
       "threshold_zh": "显著增长(>2%)=多边机构对RMB的实质接受",
       "source": "ADB / World Bank",
       "sourceUrl": "https://x.com/search?q=ADB+loan+currency+RMB",
-      "note": "ADB annual report still pending. EU Trade Chief met China's Commerce Minister in Brussels Jun 29 — trade finance implications for RMB loans. No new ADB data observed this cycle. Hormuz crisis and MoU collapse may accelerate energy trade finance shift toward RMB as Gulf states seek alternatives. Checked 2026-07-19",
-      "note_zh": "亚行年报仍未发布。欧盟贸易代表6月29日与中商务部长布鲁塞尔会晤——贸易金融影响RMB贷款。本周期无亚行新数据。霍尔木兹危机和谅解备忘录破裂可能加速能源贸易融资转向RMB，因海湾国家寻求替代方案。核实于 2026-07-19"
+      "note": "ADB annual report still pending. No new ADB data observed this cycle. Record China trade surplus ($125.62B June) strengthens RMB internationalization case. Hormuz re-escalation and oil price surge may accelerate RMB-denominated energy settlement channels (China-Russia, China-Iran). Pakistan-mediated track stalled as conflict resumed. Updated 2026-08-02",
+      "note_zh": "亚行年报仍未发布。本周期无亚行新数据。创纪录中国贸易顺差（6月$1256.2亿）强化人民币国际化论据。霍尔木兹再升级和油价飙升可能加速人民币计价能源结算渠道（中俄、中伊）。巴基斯坦调解轨道随冲突恢复而停滞。更新于 2026-08-02"
     },
     "hkmaInterventions": {
       "value": "Monitor HKD weak-side",
@@ -60,8 +60,8 @@
       "threshold_zh": "持续触碰弱方=亚洲资本外流压力",
       "source": "HKMA daily data",
       "sourceUrl": "https://x.com/search?q=HKMA+intervention+2026",
-      "note": "No major HKMA intervention reported this cycle. Gulf capital flight to safe havens may affect HKD peg but no evidence of sustained weak-side touches yet. Hormuz escalation with MoU collapse may drive capital flows into Hong Kong as safe haven. Monitor for changes as US-Iran tit-for-tat continues with US casualties. Updated 2026-07-19",
-      "note_zh": "本周未报告金管局重大干预。海湾资本逃向避险资产或影响港币联系汇率，但暂无持续弱方兑换触发证据。谅解备忘录破裂后的霍尔木兹升级可能推动资本流入香港作为避风港。美伊报复循环在美军出现伤亡后持续，继续监测资本流向变化。更新于 2026-07-19"
+      "note": "No major HKMA intervention reported this cycle. HKD held near weak end without sustained intervention — last major intervention episode was Aug 2025. Gulf capital flight to safe havens possible amid renewed US-Iran escalation (tanker attacks off Oman, Kuwait base hit) but no evidence of sustained weak-side touches yet. Record China surplus supports regional FX stability. Monitor as energy-price shock hits Asia. Updated 2026-08-02",
+      "note_zh": "本周未报告金管局重大干预。港币在弱方附近持稳而未持续干预——上次重大干预为2025年8月。美伊再升级（阿曼油轮遇袭、科威特基地遭打击）下海湾资本可能逃向避险资产，但暂无持续弱方兑换触发证据。创纪录中国顺差支持区域汇率稳定。关注能源价格冲击对亚洲的影响。更新于 2026-08-02"
     },
     "chinaGoldImportPath": {
       "value": "Hong Kong/Dubai route surging; direct Russia unclear",
@@ -74,8 +74,8 @@
       "threshold_zh": "路径改变=结算体系去美元化在进行",
       "source": "Customs data / trade flows",
       "sourceUrl": "https://x.com/search?q=China+gold+import+Russia+2026",
-      "note": "China's gold imports rise to highest in more than 2 years, up 76% YTD (Seeking Alpha, Jun 24). World Gold Council: Central Bank Gold Buying Hits Second-Highest Monthly Total in May 2026. Hong Kong/Dubai route surging (SCMP, May 4). Iran's envoy to China says Beijing to get Hormuz concessions — but MoU collapse now makes that uncertain. Hormuz crisis → gold becomes more critical as settlement asset. MoU collapse may accelerate gold-for-oil settlement mechanism. Updated 2026-07-19",
-      "note_zh": "中国黄金进口创两年多新高，YTD增长76%（Seeking Alpha，6月24日）。世界黄金协会：2026年5月央行购金创历史第二高月度总量。香港/迪拜路线激增（南华早报，5月4日）。伊朗驻华大使称北京将获海峡权益——但谅解备忘录破裂后此承诺不确定性增加。霍尔木兹危机→黄金作为结算资产更关键。谅解备忘录破裂可能加速黄金换石油结算机制。更新于 2026-07-19"
+      "note": "China's June net gold imports via Hong Kong up from year ago, down from May (Reuters, Jul 27). Gold price ~$4,100/oz (Jul 31, up from $4,019). Central bank buying remains elevated. World Gold Council: official buying accelerated in May. Hong Kong/Dubai route remains key; direct Russia unclear. Hormuz closure and re-escalation make gold-for-oil settlement mechanisms increasingly relevant. Gold fell 2% Jul 23 on inflation fears/rate-hike bets but recovered on renewed escalation. Updated 2026-08-02",
+      "note_zh": "中国6月经香港净黄金进口同比上升、较5月下降（路透，7月27日）。金价约$4,100/盎司（7月31日，高于$4,019）。央行购金仍处高位。世界黄金协会：5月官方购买加速。香港/迪拜路线仍关键；对俄直购不明。霍尔木兹关闭和再升级使黄金换石油结算机制愈加相关。金价7月23日因通胀担忧/加息押注跌2%，但在再升级后回升。更新于 2026-08-02"
     },
     "pewFavorability": {
       "value": "US ~49% · China ~36% (2025, 25 countries)",
@@ -89,8 +89,8 @@
       "threshold_zh": "美国在盟友中好感度持续下降；中国稳定偏低但在全球南方改善",
       "source": "Pew Global Attitudes Survey 2024–2025",
       "sourceUrl": "https://www.pewresearch.org/global/",
-      "note": "Pew surveyed 35 countries in 2024 and 25 in spring 2025. US median favorable fell from 54% to ~49%. China rose from 35% to ~36%. No new Pew data published this cycle. Hormuz crisis and MoU collapse may further shift Global South favorability toward China as US military action in Middle East escalates. Checked 2026-07-19",
-      "note_zh": "皮尤2024年调查35国、2025年春季调查25国。美国好感度中位数从54%降至约49%。中国从35%升至约36%。本周期无新皮尤数据。霍尔木兹危机和谅解备忘录破裂可能进一步推动全球南方好感度转向中国，因美军在中东的军事行动升级。核实于 2026-07-19"
+      "note": "Pew surveyed 35 countries in 2024 and 25 in spring 2025. US median favorable fell from 54% to ~49%. China rose from 35% to ~36%. No new Pew data published this cycle. Hormuz re-escalation and US military action across region vs China's mediator posture (Pakistan track stalled, but Beijing still seen as non-belligerent) may shift Global South favorability dynamics. Updated 2026-08-02",
+      "note_zh": "皮尤2024年调查35国、2025年春季调查25国。美国好感度中位数从54%降至约49%。中国从35%升至约36%。本周期无新皮尤数据。霍尔木兹再升级和美国在该地区军事行动vs中国非交战调解者姿态（巴基斯坦轨道停滞，但北京仍被视为非交战方）可能改变全球南方好感度动态。更新于 2026-08-02"
     }
   }
 }

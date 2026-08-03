@@ -6,8 +6,8 @@
   "desc_zh": "中国相对优势能否兑现，取决于这些",
   "indicators": {
     "tradeSurplus": {
-      "value": "$105.4B",
-      "value_zh": "1054亿美元",
+      "value": "$125.62B (June record)",
+      "value_zh": "1256.2亿美元（6月创纪录）",
       "unit": "monthly, USD",
       "unit_zh": "月度，美元",
       "baseline": "$85B/mo avg 2025",
@@ -17,8 +17,8 @@
       "threshold_zh": "创纪录。持续>$1000亿=结构优势确认",
       "source": "China Customs (monthly)",
       "sourceUrl": "https://x.com/search?q=China+trade+surplus+May+2026",
-      "note": "May 2026: exports +19.4% YoY. CSI 300: 4529. Updated 2026-07-19",
-      "note_zh": "2026年5月：出口同比+19.4%。沪深300：4529。更新于 2026-07-19"
+      "note": "June 2026: RECORD trade surplus $125.62B — exports +27% YoY (fastest since 2021, monthly record $412.4B), imports +36% (CNBC, Fortune, Jul 13-14). Car exports top 1M/month for first time (Guardian, Jul 14). EU surplus hits record (Bloomberg, Jul 14). Exports to US +13.9% YoY in June. AI boom + tariff rush + Hormuz crisis amplifying China's relative export advantage. Domestic demand weak — GDP miss, NEV retail sales falling. Russia-China trade +25.6% H1. Updated 2026-08-02",
+      "note_zh": "2026年6月：创纪录贸易顺差$1256.2亿——出口同比+27%（2021年以来最快，月度纪录$4124亿），进口+36%（CNBC、财富，7月13-14日）。汽车出口首次突破月100万辆（卫报，7月14日）。对欧盟顺差创纪录（彭博，7月14日）。对美出口6月同比+13.9%。AI热潮+关税抢跑+霍尔木兹危机放大中国相对出口优势。内需疲弱——GDP不及预期，新能源车零售下滑。中俄贸易上半年+25.6%。更新于 2026-08-02"
     },
     "chinaTradeShare": {
       "value": "~15% of world goods exports (2025)",
@@ -51,8 +51,8 @@
       "note_zh": "各商品类别的份额来自各自行业的统计数据。不存在可信的单一'总吨位占比'数据。"
     },
     "industrialProfits": {
-      "value": "+18.8% (Jan-May 2026)",
-      "value_zh": "+18.8%（2026年1-5月）",
+      "value": "+18.7% (Jan-Jun 2026); June +15.1%",
+      "value_zh": "+18.7%（2026年1-6月）；6月+15.1%",
       "unit": "% YoY",
       "unit_zh": "% 同比",
       "baseline": "+4.2% (Q1 2026)",
@@ -62,8 +62,8 @@
       "threshold_zh": "正数=成本传导能力ok；负数=利润被挤压",
       "source": "NBS (monthly, 2-3wk lag)",
       "sourceUrl": "https://x.com/search?q=China+industrial+profits",
-      "note": "Jan-May 2026: +18.8% YoY (NBS, Jun 27). No new June data. EU trade imbalance with China record €1B/day (Guardian). China Shock 2.0 narrative rising at G7. Hormuz crisis amplifying China's export advantage vs competitors. MoU collapse further entrenches China's relative energy cost advantage. Checked 2026-07-19",
-      "note_zh": "2026年1-5月：同比+18.8%（统计局，6月27日）。无6月新数据。欧盟对华贸易逆差创纪录€10亿/天（卫报）。中国冲击2.0叙事在G7升温。霍尔木兹危机放大中国出口优势。谅解备忘录崩溃进一步巩固中国相对能源成本优势。核实于 2026-07-19"
+      "note": "H1 2026: +18.7% YoY (NBS, Jul 26) — June alone slowed to +15.1%, slowest pace of 2026 (IndexBox/Reuters, Jul 27). Chipmaking sector profits soar 2,500% in H1 amid AI boom (SCMP, Jul 27); electronics industry +96.9% H1 (People's Daily). $720B AI-linked exports driving economy (Firstpost). EU trade imbalance record; China Shock 2.0 narrative at G7. Hormuz crisis amplifying China's export advantage; weak domestic demand cushions via exports. Updated 2026-08-02",
+      "note_zh": "2026年上半年：同比+18.7%（统计局，7月26日）——6月单月放缓至+15.1%，为2026年最慢增速（IndexBox/路透，7月27日）。芯片制造业利润上半年飙升2500%（南华早报，7月27日）；电子行业+96.9%（人民日报）。$7200亿AI相关出口驱动经济（Firstpost）。欧盟贸易失衡创纪录；G7'中国冲击2.0'叙事。霍尔木兹危机放大中国出口优势；内需疲弱靠出口缓冲。更新于 2026-08-02"
     },
     "fxSettlement": {
       "value": "Pending SAFE release",
@@ -77,8 +77,8 @@
       "threshold_zh": ">70%=出口商看好RMB；<60%=囤美元",
       "source": "SAFE (monthly)",
       "sourceUrl": "https://x.com/search?q=China+FX+settlement+SAFE",
-      "note": "Lagging indicator but critical for RMB direction conviction. SAFE data still pending for June. Hormuz crisis → increased oil costs may shift FX dynamics. MoU collapse adds to energy cost pressure. Checked 2026-07-19",
-      "note_zh": "滞后指标，但对RMB方向判断至关重要。6月外管局数据仍未发布。霍尔木兹危机→油价上涨可能改变结汇动态。谅解备忘录破裂增加能源成本压力。核实于 2026-07-19"
+      "note": "Lagging indicator but critical for RMB direction conviction. SAFE data still pending for June. Record trade surplus ($125.62B June) and RMB stability suggest exporter USD hoarding pressure limited. Hormuz crisis → increased oil costs may shift FX dynamics. Updated 2026-08-02",
+      "note_zh": "滞后指标，但对RMB方向判断至关重要。6月外管局数据仍未发布。创纪录贸易顺差（6月$1256.2亿）和人民币稳定表明出口商囤美元压力有限。霍尔木兹危机→油价上涨可能改变结汇动态。更新于 2026-08-02"
     },
     "cfetsIndex": {
       "value": "101.41",
@@ -92,12 +92,12 @@
       "threshold_zh": ">104 = 央行可能干预；102-104 = 温和可控",
       "source": "CFETS / Chinamoney",
       "sourceUrl": "https://x.com/search?q=CFETS+人民币汇率指数",
-      "note": "RMB at 6.7775 (daily). CFETS index last known: 101.41 (Jun 2). Updated 2026-07-19",
-      "note_zh": "人民币汇率6.7775（每日）。CFETS指数上次已知：101.41（6月2日）。更新于 2026-07-19"
+      "note": "RMB at 6.7775 (daily, stable). PBOC sees stable RMB amid 2-way fluctuations (China Daily, Jul 15). CFETS index last known: 101.41 (Jun 2). No new CFETS reading found this cycle. RMB resilience continues as record trade surplus ($125.62B June) supports. Updated 2026-08-02",
+      "note_zh": "人民币汇率6.7775（每日，稳定）。央行称人民币双向波动中保持稳定（中国日报，7月15日）。CFETS指数上次已知：101.41（6月2日）。本周期未找到新CFETS读数。创纪录贸易顺差（6月$1256.2亿）支撑人民币韧性。更新于 2026-08-02"
     },
     "chinaEvExports": {
-      "value": "448K passenger EVs (May) · $9.2B · Record high",
-      "value_zh": "5月乘用新能源车出口44.8万辆 · $92亿 · 创纪录",
+      "value": "1M+ total vehicles (Jun, first time) · NEVs >50% · BYD 34.2% share",
+      "value_zh": "6月汽车出口破百万（首次）· 新能源占比过半 · 比亚迪份额34.2%",
       "unit": "units/month",
       "unit_zh": "辆/月",
       "baseline": "~500K/mo (2025 avg)",
@@ -107,8 +107,8 @@
       "threshold_zh": "关注比亚迪+上汽中东/东南亚出货量",
       "source": "CAAM / CPCA",
       "sourceUrl": "https://x.com/search?q=China+EV+exports+2026",
-      "note": "May: record 448K passenger EVs, worth $9.2B (EV Infrastructure News, Jun 26). No new June data yet. BYD gaining market share in SEA and Middle East despite Hormuz shipping disruption. MoU collapse may further boost demand for China EV alternatives in global south. Checked 2026-07-19",
-      "note_zh": "5月：乘用新能源车出口创纪录44.8万辆，价值$92亿（6月26日）。6月数据尚未发布。比亚迪在东南亚和中东市场份额继续增长，尽管霍尔木兹航运中断。谅解备忘录破裂可能进一步推动全球南方对中国电动车替代方案的需求。核实于 2026-07-19"
+      "note": "June: China's monthly vehicle exports exceed 1M for first time ever, NEVs claiming over half (CarNewsChina, Jul 10). BYD leads NEV export share 34.2% in June; Tesla 4th at 7.2% (CnEVPost, Jul 10). June NEV wholesale +22% as fuel car demand crumbles (CPCA). BUT domestic car market heads for worst year since 2021 — sales -20% (CNBC, Jul 20), NEV retail sales fall 6th straight month (CnEVPost, Jul 8) — exports the only growth engine. Hormuz shipping disruption and record overall trade surplus context. Updated 2026-08-02",
+      "note_zh": "6月：中国月度汽车出口首次突破100万辆，新能源车占比过半（CarNewsChina，7月10日）。比亚迪6月新能源出口份额34.2%居首；特斯拉第四占7.2%（CnEVPost，7月10日）。6月新能源批发+22%，燃油车需求崩塌（乘联会）。但国内车市迈向2021年以来最差年份——销量-20%（CNBC，7月20日），新能源零售连续6个月下滑（CnEVPost，7月8日）——出口是唯一增长引擎。霍尔木兹航运中断与创纪录贸易顺差背景。更新于 2026-08-02"
     }
   }
 }
