@@ -126,8 +126,8 @@
       "note_zh": "Carbon Brief（6月4日）：中国2026年初CO2排放上升2%，受AI数据中心需求和弃风弃光推动。十五五目标2030年碳强度降低17%。本周期无新统计局数据。霍尔木兹危机→油价上涨可能加速中国可再生能源部署。DeepSeek内蒙古大型数据中心增加AI驱动电力需求（日本时报，8月1日）。AI蒸馏趋势可能使能源强度下降快于预期。更新于 2026-08-02"
     },
     "chinaAiVoiceAgent": {
-      "value": "Qwen Audio Agent 1.77K⭐ (7d) · full-duplex voice · ACP native for Hermes/OpenClaw/OpenCode",
-      "value_zh": "Qwen Audio Agent 1.77K⭐（7天）· 全双工语音 · Hermes/OpenClaw/OpenCode 原生 ACP",
+      "value": "Qwen Audio Agent 1.77K⭐ (7d) · full-duplex voice · ACP native for Kimi Code/OpenClaw/OpenCode/Hermes",
+      "value_zh": "Qwen Audio Agent 1.77K⭐（7天）· 全双工语音 · Kimi Code/OpenClaw/OpenCode/Hermes 原生 ACP",
       "unit": "China open-source AI signal",
       "unit_zh": "中国开源AI信号",
       "baseline": "N/A (new project)",
@@ -137,8 +137,8 @@
       "threshold_zh": "关注：语音Agent运行时海外采纳度；v1.3.0全本地speech-to-speech消除云依赖",
       "source": "GitHub · QwenAudio (Alibaba)",
       "sourceUrl": "https://github.com/QwenAudio/qwen-audio-agent",
-      "note": "NEW: Alibaba QwenAudio released qwen-audio-agent (2026-07-27) — realtime voice runtime for AI agents. Full-duplex voice with natural interruption; foreground conversation runs in parallel with background agent tasks (spawn_thinking → FIFO queue → fixed agent session → natural callback '已经好了'). Supports WebUI/TUI/macOS desktop orb. Native ACP integration: OpenCode/OpenClaw/Qoder ★★★★★, Hermes ★★★★☆, Codex/Claude Code via external ACP. Local user profile + cross-session memory in ~/.config/qwaudio/. v1.3.0 testing HuggingFace speech-to-speech fully local frontend (VAD/STT/LLM/TTS via mlx-lm) — China data-residency relevant. Apache-2.0. 1.77K⭐/111 forks in 7 days. Updated 2026-08-02",
-      "note_zh": "新：阿里QwenAudio发布qwen-audio-agent（2026-07-27）——AI Agent实时语音运行时。全双工语音+自然打断；前台对话与后台Agent任务并行（spawn_thinking→FIFO队列→固定Agent会话→自然回调'已经好了'）。支持WebUI/TUI/macOS桌面悬浮球。原生ACP接入：OpenCode/OpenClaw/Qoder ★★★★★，Hermes ★★★★☆，Codex/Claude Code走外部ACP。本地用户档案+跨会话记忆在~/.config/qwaudio/。v1.3.0测试HuggingFace speech-to-speech全本地前台（VAD/STT/LLM/TTS用mlx-lm）——与中国数据不出境要求相关。Apache-2.0。7天1.77K⭐/111 forks。更新于 2026-08-02"
+      "note": "NEW: Alibaba QwenAudio released qwen-audio-agent (2026-07-27) — realtime voice runtime for AI agents. Full-duplex voice with natural interruption; foreground conversation runs in parallel with background agent tasks (spawn_thinking → FIFO queue → fixed agent session → natural callback '已经好了'). Supports WebUI/TUI/macOS desktop orb. Native ACP integration: OpenCode/OpenClaw/Qoder/Kimi Code ★★★★★, Hermes ★★★★☆, Codex/Claude Code via external ACP. Local user profile + cross-session memory in ~/.config/qwaudio/. v1.3.0 testing HuggingFace speech-to-speech fully local frontend (VAD/STT/LLM/TTS via mlx-lm) — China data-residency relevant. Apache-2.0. 1.77K⭐/111 forks in 7 days. Updated 2026-08-03",
+      "note_zh": "新：阿里QwenAudio发布qwen-audio-agent（2026-07-27）——AI Agent实时语音运行时。全双工语音+自然打断；前台对话与后台Agent任务并行（spawn_thinking→FIFO队列→固定Agent会话→自然回调'已经好了'）。支持WebUI/TUI/macOS桌面悬浮球。原生ACP接入：OpenCode/OpenClaw/Qoder/Kimi Code ★★★★★，Hermes ★★★★☆，Codex/Claude Code走外部ACP。本地用户档案+跨会话记忆在~/.config/qwaudio/。v1.3.0测试HuggingFace speech-to-speech全本地前台（VAD/STT/LLM/TTS用mlx-lm）——与中国数据不出境要求相关。Apache-2.0。7天1.77K⭐/111 forks。更新于 2026-08-03"
     }
   }
 }
