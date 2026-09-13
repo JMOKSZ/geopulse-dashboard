@@ -472,14 +472,14 @@
     if (isZh) {
       el.textContent =
         `霍尔木兹通过量${throughputTrend}至${throughput}，封锁持续。` +
-        `中国5月顺差${tradeSurplus}创纪录，CFETS指数${cfets}近四年新高。` +
+        `中国最新顺差${tradeSurplus}，CFETS指数${cfets}近四年新高。` +
         `央行购金${gold}持续，GPU黑市${gpuPremium}反映芯片瓶颈。` +
         `当前阶段：美元中心秩序加速侵蚀，中国相对优势在扩大但尚未进入拐点。` +
         `关键变量：霍尔木兹封锁持续时间。`;
     } else {
       el.textContent =
         `Hormuz throughput ${throughputTrend} to ${throughput} — blockade persists. ` +
-        `China trade surplus hit ${tradeSurplus} (record), CFETS at ${cfets} (4yr high). ` +
+        `China trade surplus ${tradeSurplus}; CFETS at ${cfets} (4yr high). ` +
         `Central bank gold buying ${gold}, GPU black market ${gpuPremium}. ` +
         `Phase: Accelerated erosion of dollar-centric order. China's relative advantage widening but not yet at inflection. ` +
         `Key variable: duration of Hormuz closure.`;
