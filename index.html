@@ -615,6 +615,27 @@
             }
         }
 
+        /* ── Motion layer · A 档「克制」（web-motion-design · 2026-09-15）──
+           首屏顺序入场：五个层区块依次淡入 + 上移 8px，70ms 阶梯。
+           克制取舍：看板不做「滚动隐藏」—— 数据永远不靠动画才看得见。 */
+        @keyframes gp-rise {
+            from { opacity: 0; transform: translateY(8px); }
+            to   { opacity: 1; transform: none; }
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            #layer-1,
+            #layer-2,
+            #layer-3,
+            #layer-4,
+            #layer-5 {
+                animation: gp-rise 420ms cubic-bezier(.16, 1, .3, 1) both;
+            }
+            #layer-2 { animation-delay: 70ms; }
+            #layer-3 { animation-delay: 140ms; }
+            #layer-4 { animation-delay: 210ms; }
+            #layer-5 { animation-delay: 280ms; }
+        }
+
         /* ── Reduced motion ──────────────────────────────── */
         @media (prefers-reduced-motion: reduce) {
             *,
@@ -622,6 +643,11 @@
             *::after {
                 animation-duration: 0.01ms !important;
                 transition-duration: 0.01ms !important;
+            }
+            #layer-1, #layer-2, #layer-3, #layer-4, #layer-5 {
+                animation: none !important;
+                opacity: 1 !important;
+                transform: none !important;
             }
         }
 
