@@ -7,8 +7,8 @@
     <meta name="theme-color" content="#FAF5EE">
     <title>Geopolitical Pulse | 地缘脉冲</title>
 
-    <!-- Favicon: 🌐 as inline SVG -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
+    <!-- Favicon: plain inline SVG (no emoji) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='none' stroke='%23C84B31' stroke-width='14'/></svg>">
 
     <!-- External stylesheet -->
     <link rel="stylesheet" href="css/style.css?v=2">
@@ -331,6 +331,32 @@
             font-size: 1.125rem;
             flex-shrink: 0;
             line-height: 1;
+        }
+
+        /* Status indicator: CSS dot, no emoji anywhere in this document. */
+        .risk-dot {
+            display: inline-block;
+            width: 0.7rem;
+            height: 0.7rem;
+            border-radius: 50%;
+            background: #B9AE9B;
+            vertical-align: middle;
+        }
+
+        .risk-dot.high {
+            background: #C0392B;
+        }
+
+        .risk-dot.med {
+            background: #D9A227;
+        }
+
+        .risk-dot.low {
+            background: #3E8E5A;
+        }
+
+        .risk-dot.gray {
+            background: #B9AE9B;
         }
 
         .card-value {
@@ -745,7 +771,7 @@
                 Updated: <time datetime="2026-09-06T09:00:00Z">06 Sep 2026, 09:00 UTC</time>
             </span>
             <button class="btn" id="btn-lang-toggle" aria-label="Switch language to Chinese" data-i18n-attr="aria-label" data-i18n-key="switch-lang">
-                <span class="icon">🌐</span>
+                <span class="icon" aria-hidden="true">文</span>
                 <span data-i18n="lang-label">中文</span>
             </button>
             <button class="btn btn--accent" id="btn-refresh" aria-label="Refresh dashboard data" data-i18n-attr="aria-label" data-i18n-key="refresh">
@@ -753,7 +779,6 @@
                 <span data-i18n="refresh-label">Refresh</span>
             </button>
             <button class="btn" id="btn-export-pdf" aria-label="Export PDF" title="Export PDF">
-                <span>📄</span>
                 <span data-i18n="export-pdf">PDF</span>
             </button>
         </div>
@@ -770,21 +795,20 @@
         <section class="strategic-summary" aria-labelledby="summary-heading">
             <div class="summary-header">
                 <h2 id="summary-heading">
-                    <span aria-hidden="true">📋</span>
                     <span data-i18n="summary-heading">Strategic Summary</span>
                 </h2>
             </div>
             <div class="game-progress">
                 <div class="progress-hero">
                     <div class="progress-bar-track">
-                        <div class="progress-bar" style="width: 47%;" role="progressbar" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100" aria-label="US-China geopolitical game: 47% complete"></div>
+                        <div class="progress-bar" style="width: 46%;" role="progressbar" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100" aria-label="US-China geopolitical game: 46% complete"></div>
                     </div>
-                    <span class="progress-pct">47%</span>
+                    <span class="progress-pct">46%</span>
                 </div>
                 <span class="progress-label" data-i18n="progress-label">US–China Game Progression <small>since 2018 Trump tariffs</small></span>
                 <div class="progress-milestones">
                     <span class="milestone passed">2018<br>Trump tariffs</span>
-                    <span class="milestone active">Now<br>~47%</span>
+                    <span class="milestone active">Now<br>~46%</span>
                     <span class="milestone">New equilibrium<br>~100%</span>
                 </div>
             </div>
@@ -792,7 +816,7 @@
                 <div id="dimension-bars"></div>
             </div>
             <p id="summary-text" data-i18n="summary-text">
-                ACCELERATION PHASE (~47%): the shock is deepening, not resolving. Hormuz disruption → Energy cost advantage shifts to China → Trade surplus swells → Capital controls retain surplus → RMB appreciates → Central banks diversify → Dollar share erodes → Multi-polar system emerges. THIS WEEK (Sep 7-13): A ONE-CHOKEPOINT PROBLEM BECAME A TWO-CHOKEPOINT PROBLEM. Hormuz transits fell BACK to 7 on Sep 9 from 12 the previous day (10-day avg 14) — still ~83% below the pre-war ~138/day. The 'tanker-for-tanker' spiral escalated: CENTCOM disabled 5 Iranian tankers (Kaviz, Charminar, Horizon 1, Risco, Darya) on Sep 8; the IRGC claimed strikes on 2 US destroyers + 18 vessels on Sep 9 and fired 20 ballistic missiles at Al Azraq in Jordan (18 intercepted). The US Navy's Bahrain hub is OUT OF ACTION — the Acting Navy Secretary admitted the 5th Fleet HQ cannot support USS Abraham Lincoln operations and Adm. Caudle says the service will not return 'anytime soon'. Saudi Arabia SHUT its East-West pipeline (4-5 mb/d = 4-5% of global supply) on Sep 10 after drone strikes launched from Iraq; the Houthis seized Mokha and Perim island and now control Bab el-Mandeb. Kpler: Saudi exports to Asia fell from ~3.4 mb/d (Jun) to 128K bpd (Aug), recovering to ~700K. MBS called Trump at least twice on Sep 10 for military help; Washington declined direct action (intelligence/targeting only). Brent settled above $100 on Sep 9 ($101.21, first triple-digit close since July) and ended the week at $104.61 (+9% w/w, +56% YoY); per-ship transit costs are $10-20M with some vessels now sailing uninsured. GCC foreign ministers meet Iran in Oman on Monday Sep 14 over a temporary shipping arrangement — the first real off-ramp test. CHINA: August trade surplus hit a RECORD $119.09B (exports +25% to $401.44B; to the US +34.4%); Jan-Aug vehicle exports 7.15M incl. 3.44M NEVs (+124%) — China exported more cars in eight months than in all of 2025; DeepSeek shipped V4.1-Flash on Sep 10; the PBoC added 650K oz of gold in August (22nd straight month, largest since Oct 2023) with FX reserves at $3.4383T; CFETS 101.64 (Sep 4, −0.23 w/w), USD/CNY 6.7075 (Sep 11, +5.82% YoY). THE STRUCTURAL REVEAL OF THE WEEK: Pew's Spring 2026 survey shows China now viewed more favourably than the US in 25 of 36 countries — China median 51% vs US 37%, the first inversion of the series — with a median 75% saying the US interferes in others' affairs vs 45% for China. DIMS: china_resil: 77% | oil_chokepoint: 74% | geopolitics: 65% | structural: 56% | dollar_pressure: 50% | gold_dedollar: 44% | rmb_axis: 35%. Updated 2026-09-13
+                ACCELERATION PHASE (~46%): the shock is deepening, not resolving. Hormuz disruption → Energy cost advantage shifts to China → Trade surplus swells → Capital controls retain surplus → RMB appreciates → Central banks diversify → Dollar share erodes → Multi-polar system emerges. THIS WEEK (Sep 14-20): THE OFF-RAMP STALLED AND THE SHIPPING CRISIS DEEPENED AGAIN. The Oman-hosted GCC–Iran meeting on Hormuz, due Sep 14, was POSTPONED 'in the interests of consensus' — the first real diplomatic test failed to convene, with Iranian state media alleging US interference and Saudi Arabia trying to add an untenable term to the draft. Hormuz transits COLLAPSED to 3 on Sep 16 (from 12 the previous day, vs a 10-day average of ~17) — the worst print in weeks, and the IRGC now enforces the closure vessel by vessel: the supertanker EL GAIA hit mines on the 'forbidden' southern route on Sep 14 and the IRGC declared the strait 'closed'; a US MQ-9 was downed over Qeshm on Sep 16; the Togo-flagged tanker Trend was set on fire on Sep 18. Counterweight: the US–Iran fire pause has held for a tenth day (through Sep 19) with no Iranian attack on any host state, and Brent has eased to $99.29 (−5.1% w/w) — but war-risk cover still prices at 3-10% of hull value (pre-war 0.25%). Saudi Arabia is now fighting on both flanks: MBS flew to Cairo on Sep 15 to align with Egypt on Red Sea navigation after Washington again declined direct military action; the Houthis completed their takeover of Yemen's west coast and the Bab el-Mandeb approaches; Riyadh cancelled some late-September crude cargoes to Europe; the 5th Fleet's Bahrain hub remains unusable. CHINA: RMB spot firmed to 6.6947 (Sep 18) even as the CFETS basket index slipped to 101.49 (Sep 11, −0.15 w/w); the record August surplus ($119.09B) and a $806B Jan-Aug total underpin the export engine; NBS Jan-Aug industrial profits are due ~Sep 27. THE TECH LEG: Huawei's Shanghai summit (Sep 17) pulled the Ascend 960DT forward to Q1 2027, unveiled a 'Peerium' architecture targeting 1 million processors, raised the Ascend 950DT price 60% on component scarcity, and said Ascend's China share now exceeds Nvidia's — while DeepSeek plans to deploy 160,000 Ascend 950DT chips at its Inner Mongolia data centre; grey-market premiums for restricted Nvidia kit are unchanged at ~2x list. Next milestone: the Xi–Trump meeting in Washington on Sep 24. DIMS: china_resil: 77% | oil_chokepoint: 70% | geopolitics: 65% | structural: 56% | dollar_pressure: 53% | gold_dedollar: 44% | rmb_axis: 35%. Updated 2026-09-13
             </p>
         </section>
 
@@ -802,7 +826,6 @@
         <section class="trend-section" aria-labelledby="trend-heading">
             <div class="trend-header">
                 <h2 id="trend-heading">
-                    <span aria-hidden="true">📈</span>
                     <span data-i18n="trend-heading">US–China Trend Timeline</span>
                 </h2>
             </div>
@@ -818,7 +841,7 @@
             <button class="layer-header" id="layer-1-heading" aria-expanded="true" aria-controls="layer-1-content">
                 <span class="layer-number" aria-hidden="true">1</span>
                 <span class="layer-title" data-i18n="layer-1-title">Strait of Hormuz</span>
-                <span class="layer-aggregate-status" aria-label="Layer status: critical" title="Critical">🔴</span>
+                <span class="layer-aggregate-status" aria-label="Layer status: critical" title="Critical"><span class="risk-dot high"></span></span>
                 <span class="layer-chevron" aria-hidden="true">▼</span>
             </button>
             <div class="layer-content" id="layer-1-content" role="region" aria-labelledby="layer-1-heading">
@@ -827,7 +850,7 @@
                 <article class="card" data-indicator="hrmz-war-risk">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-war-risk">War Risk Premium</span>
-                        <span class="card-status" aria-label="Status: critical" title="Critical — exceeds 0.5% threshold">🔴</span>
+                        <span class="card-status" aria-label="Status: critical" title="Critical — exceeds 0.5% threshold"><span class="risk-dot high"></span></span>
                     </div>
                     <div class="card-value">1.0%</div>
                     <div class="card-unit" data-i18n="ind-war-risk-baseline">Baseline: 0.25%</div>
@@ -842,7 +865,7 @@
                 <article class="card" data-indicator="hrmz-throughput">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-throughput">Strait Throughput</span>
-                        <span class="card-status" aria-label="Status: critical" title="Critical — below 5 mb/d threshold">🔴</span>
+                        <span class="card-status" aria-label="Status: critical" title="Critical — below 5 mb/d threshold"><span class="risk-dot high"></span></span>
                     </div>
                     <div class="card-value">&lt;0.5 mb/d</div>
                     <div class="card-unit" data-i18n="ind-throughput-normal">Normal: 17 mb/d</div>
@@ -857,7 +880,7 @@
                 <article class="card" data-indicator="hrmz-irgc">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-irgc">IRGC Statement Freq</span>
-                        <span class="card-status" aria-label="Status: warning" title="Warning — exceeds 5/week">🟡</span>
+                        <span class="card-status" aria-label="Status: warning" title="Warning — exceeds 5/week"><span class="risk-dot med"></span></span>
                     </div>
                     <div class="card-value">8/week</div>
                     <div class="card-unit">&nbsp;</div>
@@ -872,7 +895,7 @@
                 <article class="card" data-indicator="hrmz-5thfleet">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-5thfleet">US 5th Fleet</span>
-                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                        <span class="card-status" aria-label="Status: warning"><span class="risk-dot med"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-5thfleet-val">Awaiting orders, at anchor Bahrain</div>
                     <div class="card-unit">&nbsp;</div>
@@ -886,7 +909,7 @@
                 <article class="card" data-indicator="hrmz-gcc">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-gcc">Saudi / UAE Stance</span>
-                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                        <span class="card-status" aria-label="Status: warning"><span class="risk-dot med"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-gcc-val">Pressing US for action, exploring alternatives</div>
                     <div class="card-unit">&nbsp;</div>
@@ -905,7 +928,7 @@
             <button class="layer-header" id="layer-2-heading" aria-expanded="false" aria-controls="layer-2-content">
                 <span class="layer-number" aria-hidden="true">2</span>
                 <span class="layer-title" data-i18n="layer-2-title">Dollar System</span>
-                <span class="layer-aggregate-status" aria-label="Layer status: warning" title="Warning">🟡</span>
+                <span class="layer-aggregate-status" aria-label="Layer status: warning" title="Warning"><span class="risk-dot med"></span></span>
                 <span class="layer-chevron" aria-hidden="true">▼</span>
             </button>
             <div class="layer-content" id="layer-2-content" role="region" aria-labelledby="layer-2-heading">
@@ -914,7 +937,7 @@
                 <article class="card" data-indicator="usd-auction">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-auction">Treasury Auction Coverage</span>
-                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                        <span class="card-status" aria-label="Status: warning"><span class="risk-dot med"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-auction-val">Bid-to-cover ratio declining</div>
                     <div class="card-unit">&nbsp;</div>
@@ -928,7 +951,7 @@
                 <article class="card" data-indicator="usd-foreign-holdings">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-foreign-holdings">Foreign Treasury Holdings</span>
-                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                        <span class="card-status" aria-label="Status: warning"><span class="risk-dot med"></span></span>
                     </div>
                     <div class="card-value">$8.1T <span class="card-unit">(estimate)</span></div>
                     <span class="card-trend card-trend--down" aria-label="Trend: decreasing">↓ Decreasing</span>
@@ -941,7 +964,7 @@
                 <article class="card" data-indicator="usd-gold">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-cb-gold">Central Bank Gold Purchases</span>
-                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                        <span class="card-status" aria-label="Status: warning"><span class="risk-dot med"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-cb-gold-val">17t (Apr), China +10t (May)</div>
                     <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
@@ -954,7 +977,7 @@
                 <article class="card" data-indicator="usd-dxy-oil">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-dxy-oil">DXY–Oil Correlation</span>
-                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                        <span class="card-status" aria-label="Status: warning"><span class="risk-dot med"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-dxy-oil-val">Decoupling in progress</div>
                     <span class="card-trend card-trend--down" aria-label="Trend: decoupling">↓ Decoupling</span>
@@ -967,7 +990,7 @@
                 <article class="card" data-indicator="usd-swift-rmb">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-swift-rmb">SWIFT RMB</span>
-                        <span class="card-status" aria-label="Status: normal">🟢</span>
+                        <span class="card-status" aria-label="Status: normal"><span class="risk-dot low"></span></span>
                     </div>
                     <div class="card-value"><span class="val-main">~5.5%</span> <span class="val-sub" data-i18n="ind-swift-abs">// $5.8T annual</span></div>
                     <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
@@ -980,7 +1003,7 @@
                 <article class="card" data-indicator="usd-cips">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-cips">CIPS RMB Volume</span>
-                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                        <span class="card-status" aria-label="Status: warning"><span class="risk-dot med"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-cips-val">~¥180T annual (2025 est.)</div>
                     <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
@@ -999,7 +1022,7 @@
             <button class="layer-header" id="layer-3-heading" aria-expanded="false" aria-controls="layer-3-content">
                 <span class="layer-number" aria-hidden="true">3</span>
                 <span class="layer-title" data-i18n="layer-3-title">China Macro</span>
-                <span class="layer-aggregate-status" aria-label="Layer status: normal" title="Normal">🟢</span>
+                <span class="layer-aggregate-status" aria-label="Layer status: normal" title="Normal"><span class="risk-dot low"></span></span>
                 <span class="layer-chevron" aria-hidden="true">▼</span>
             </button>
             <div class="layer-content" id="layer-3-content" role="region" aria-labelledby="layer-3-heading">
@@ -1008,7 +1031,7 @@
                 <article class="card" data-indicator="cn-trade-surplus">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-trade-surplus">Monthly Trade Surplus</span>
-                        <span class="card-status" aria-label="Status: normal">🟢</span>
+                        <span class="card-status" aria-label="Status: normal"><span class="risk-dot low"></span></span>
                     </div>
                     <div class="card-value">$105.4B</div>
                     <div class="card-unit" data-i18n="ind-trade-surplus-date">May 2026</div>
@@ -1022,7 +1045,7 @@
                 <article class="card" data-indicator="cn-industrial-profits">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-industrial-profits">Industrial Profits</span>
-                        <span class="card-status" aria-label="Status: no data" title="Data pending">⚪</span>
+                        <span class="card-status" aria-label="Status: no data" title="Data pending"><span class="risk-dot gray"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-industrial-profits-val">TBD (monthly)</div>
                     <div class="card-unit">&nbsp;</div>
@@ -1036,7 +1059,7 @@
                 <article class="card" data-indicator="cn-fx-settlement">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-fx-settlement">FX Settlement Ratio</span>
-                        <span class="card-status" aria-label="Status: no data" title="Data pending">⚪</span>
+                        <span class="card-status" aria-label="Status: no data" title="Data pending"><span class="risk-dot gray"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-fx-settlement-val">Available from SAFE (monthly)</div>
                     <div class="card-unit">&nbsp;</div>
@@ -1050,7 +1073,7 @@
                 <article class="card" data-indicator="cn-cfets">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-cfets">CFETS RMB Index</span>
-                        <span class="card-status" aria-label="Status: normal">🟢</span>
+                        <span class="card-status" aria-label="Status: normal"><span class="risk-dot low"></span></span>
                     </div>
                     <div class="card-value">101.41</div>
                     <div class="card-unit" data-i18n="ind-cfets-date">Jun 2, 2026</div>
@@ -1065,7 +1088,7 @@
                 <article class="card" data-indicator="cn-ev-exports">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-ev-exports">China EV Exports</span>
-                        <span class="card-status" aria-label="Status: no data" title="Data pending">⚪</span>
+                        <span class="card-status" aria-label="Status: no data" title="Data pending"><span class="risk-dot gray"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-ev-exports-val">Monthly data via CPCA</div>
                     <div class="card-unit">&nbsp;</div>
@@ -1079,7 +1102,7 @@
                 <article class="card" data-indicator="cn-trade-share">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-trade-share">China Trade Share (Global)</span>
-                        <span class="card-status" aria-label="Status: normal">🟢</span>
+                        <span class="card-status" aria-label="Status: normal"><span class="risk-dot low"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-trade-share-val">~15% of world goods exports (2025)</div>
                     <span class="card-trend card-trend--up" aria-label="Trend: rising">↑ Rising</span>
@@ -1093,7 +1116,7 @@
                 <article class="card" data-indicator="cn-trade-weight">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-trade-weight">China Heavy Industry Dominance</span>
-                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                        <span class="card-status" aria-label="Status: warning"><span class="risk-dot med"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-trade-weight-val">Steel 54% · Cement 60% · Coal 50% · Containers 80%</div>
                     <span class="card-trend card-trend--up" aria-label="Trend: growing">↑ Growing</span>
@@ -1112,7 +1135,7 @@
             <button class="layer-header" id="layer-4-heading" aria-expanded="false" aria-controls="layer-4-content">
                 <span class="layer-number" aria-hidden="true">4</span>
                 <span class="layer-title" data-i18n="layer-4-title">AI &amp; Tech</span>
-                <span class="layer-aggregate-status" aria-label="Layer status: normal" title="Normal">🟢</span>
+                <span class="layer-aggregate-status" aria-label="Layer status: normal" title="Normal"><span class="risk-dot low"></span></span>
                 <span class="layer-chevron" aria-hidden="true">▼</span>
             </button>
             <div class="layer-content" id="layer-4-content" role="region" aria-labelledby="layer-4-heading">
@@ -1121,7 +1144,7 @@
                 <article class="card" data-indicator="ai-gpu-premium">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-gpu-premium">GPU Black Market Premium</span>
-                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                        <span class="card-status" aria-label="Status: warning"><span class="risk-dot med"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-gpu-premium-val">H100 ~2–3× MSRP (grey market)</div>
                     <div class="card-unit">&nbsp;</div>
@@ -1135,7 +1158,7 @@
                 <article class="card" data-indicator="ai-china-adoption">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-ai-adoption">China AI Adoption</span>
-                        <span class="card-status" aria-label="Status: normal">🟢</span>
+                        <span class="card-status" aria-label="Status: normal"><span class="risk-dot low"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-ai-adoption-val">114M+ tokens/day (DeepSeek) · 500K+ devs (通义) · 200+ enterprises (文心)</div>
                     <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
@@ -1148,7 +1171,7 @@
                 <article class="card" data-indicator="ai-inference-volume">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-ai-inference">AI Inference Volume (Tokens)</span>
-                        <span class="card-status" aria-label="Status: normal">🟢</span>
+                        <span class="card-status" aria-label="Status: normal"><span class="risk-dot low"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-ai-inference-val">~¥2.8B/qtr · 3.2× YoY</div>
                     <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
@@ -1161,7 +1184,7 @@
                 <article class="card" data-indicator="ai-military-deployment">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-ai-military">Military AI Deployment</span>
-                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                        <span class="card-status" aria-label="Status: warning"><span class="risk-dot med"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-ai-military-val">300K+ drones/yr · AI C2 all theaters · ASW AI deployed</div>
                     <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
@@ -1174,7 +1197,7 @@
                 <article class="card" data-indicator="ai-compute-power">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-ai-compute">AI Compute Power (Grid)</span>
-                        <span class="card-status" aria-label="Status: normal">🟢</span>
+                        <span class="card-status" aria-label="Status: normal"><span class="risk-dot low"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-ai-compute-val">85 GW DC capacity · +35% YoY · 8% of national grid</div>
                     <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
@@ -1187,7 +1210,7 @@
                 <article class="card" data-indicator="ai-space-capability">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-ai-space">Space Exploration Capability</span>
-                        <span class="card-status" aria-label="Status: normal">🟢</span>
+                        <span class="card-status" aria-label="Status: normal"><span class="risk-dot low"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-ai-space-val">68 launches YTD · 700+ sats added · Tiangong crewed</div>
                     <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
@@ -1200,7 +1223,7 @@
                 <article class="card" data-indicator="ai-nvda-asia">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-nvda-asia">NVDA Asia Revenue</span>
-                        <span class="card-status" aria-label="Status: no data" title="Data pending">⚪</span>
+                        <span class="card-status" aria-label="Status: no data" title="Data pending"><span class="risk-dot gray"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-nvda-asia-val">Next earnings: Aug 2026</div>
                     <div class="card-unit">&nbsp;</div>
@@ -1214,7 +1237,7 @@
                 <article class="card" data-indicator="ai-energy-intensity">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-energy-intensity">China Energy Intensity</span>
-                        <span class="card-status" aria-label="Status: normal">🟢</span>
+                        <span class="card-status" aria-label="Status: normal"><span class="risk-dot low"></span></span>
                     </div>
                     <div class="card-value">−3.2% YoY</div>
                     <div class="card-unit" data-i18n="ind-energy-intensity-date">Est. Q2 2026</div>
@@ -1228,9 +1251,9 @@
                 <article class="card" data-indicator="ai-voice-agent">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-ai-voice-agent">China AI Voice Agent</span>
-                        <span class="card-status" aria-label="Status: normal">🟢</span>
+                        <span class="card-status" aria-label="Status: normal"><span class="risk-dot low"></span></span>
                     </div>
-                    <div class="card-value" data-i18n="ind-ai-voice-agent-val">Qwen Audio Agent 1.77K⭐ (7d) · full-duplex voice · ACP native for Kimi Code/OpenClaw/OpenCode/Hermes</div>
+                    <div class="card-value" data-i18n="ind-ai-voice-agent-val">Qwen Audio Agent 1.77K stars (7d) · full-duplex voice · ACP native for Kimi Code/OpenClaw/OpenCode/Hermes</div>
                     <span class="card-trend card-trend--up" aria-label="Trend: increasing">↑ Increasing</span>
                     <div class="card-source">
                         Source: <a href="https://github.com/QwenAudio/qwen-audio-agent" target="_blank" rel="noopener noreferrer">GitHub · QwenAudio (Alibaba)</a>
@@ -1246,7 +1269,7 @@
             <button class="layer-header" id="layer-5-heading" aria-expanded="false" aria-controls="layer-5-content">
                 <span class="layer-number" aria-hidden="true">5</span>
                 <span class="layer-title" data-i18n="layer-5-title">Wild Signals</span>
-                <span class="layer-aggregate-status" aria-label="Layer status: warning" title="Warning">🟡</span>
+                <span class="layer-aggregate-status" aria-label="Layer status: warning" title="Warning"><span class="risk-dot med"></span></span>
                 <span class="layer-chevron" aria-hidden="true">▼</span>
             </button>
             <div class="layer-content" id="layer-5-content" role="region" aria-labelledby="layer-5-heading">
@@ -1255,7 +1278,7 @@
                 <article class="card" data-indicator="ws-mbs">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-mbs">MBS Travel</span>
-                        <span class="card-status" aria-label="Status: no data" title="Unknown">⚪</span>
+                        <span class="card-status" aria-label="Status: no data" title="Unknown"><span class="risk-dot gray"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-mbs-val">Last visit: Beijing Apr 2026. Next: ?</div>
                     <span class="card-trend card-trend--unknown" aria-label="Trend: unknown">? Unknown</span>
@@ -1268,7 +1291,7 @@
                 <article class="card" data-indicator="ws-singapore">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-singapore">Singapore Stance</span>
-                        <span class="card-status" aria-label="Status: normal">🟢</span>
+                        <span class="card-status" aria-label="Status: normal"><span class="risk-dot low"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-singapore-val">Officially neutral, quietly adjusting</div>
                     <span class="card-trend card-trend--flat" aria-label="Trend: stable">→ Stable</span>
@@ -1281,7 +1304,7 @@
                 <article class="card" data-indicator="ws-adb-rmb">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-adb-rmb">ADB / WB RMB Loans</span>
-                        <span class="card-status" aria-label="Status: no data" title="Data pending">⚪</span>
+                        <span class="card-status" aria-label="Status: no data" title="Data pending"><span class="risk-dot gray"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-adb-rmb-val">Annual data</div>
                     <span class="card-trend card-trend--unknown" aria-label="Trend: unknown">? Unknown</span>
@@ -1294,7 +1317,7 @@
                 <article class="card" data-indicator="ws-hkma">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-hkma">HKMA Interventions</span>
-                        <span class="card-status" aria-label="Status: no data" title="Monitoring">⚪</span>
+                        <span class="card-status" aria-label="Status: no data" title="Monitoring"><span class="risk-dot gray"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-hkma-val">Monitor HKD weak-side touches</div>
                     <span class="card-trend card-trend--flat" aria-label="Trend: monitoring">→ Monitoring</span>
@@ -1307,7 +1330,7 @@
                 <article class="card" data-indicator="ws-gold-route">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-gold-route">China Gold Import Route</span>
-                        <span class="card-status" aria-label="Status: warning" title="Warning">🟡</span>
+                        <span class="card-status" aria-label="Status: warning" title="Warning"><span class="risk-dot med"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-gold-route-val">Switching to direct Russia route?</div>
                     <span class="card-trend card-trend--unknown" aria-label="Trend: unknown">? Unknown</span>
@@ -1320,7 +1343,7 @@
                 <article class="card" data-indicator="ws-pew-fav">
                     <div class="card-header">
                         <span class="card-name" data-i18n="ind-pew-fav">Pew: US vs China Favorability</span>
-                        <span class="card-status" aria-label="Status: warning">🟡</span>
+                        <span class="card-status" aria-label="Status: warning"><span class="risk-dot med"></span></span>
                     </div>
                     <div class="card-value" data-i18n="ind-pew-fav-val">US ~49% · China ~36% (2025, 25 countries)</div>
                     <span class="card-trend card-trend--down" aria-label="Trend: US falling">↓ US falling</span>
