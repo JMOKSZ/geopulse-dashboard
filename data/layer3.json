@@ -51,8 +51,8 @@
       "note_zh": "各商品类别的份额来自各自行业的统计数据。不存在可信的单一'总吨位占比'数据。"
     },
     "industrialProfits": {
-      "value": "+17.6% (Jan-Jul 2026, ¥4.58T); July +11.2%",
-      "value_zh": "+17.6%（2026年1-7月，¥4.58万亿）；7月+11.2%",
+      "value": "+15.7% (Jan-Aug 2026, ¥5.27T); Aug +4.2%",
+      "value_zh": "+15.7%（2026年1-8月，¥5.27万亿）；8月+4.2%",
       "unit": "% YoY",
       "unit_zh": "% 同比",
       "baseline": "+4.2% (Q1 2026)",
@@ -62,8 +62,8 @@
       "threshold_zh": "正数=成本传导能力ok；负数=利润被挤压",
       "source": "NBS (monthly, 2-3wk lag)",
       "sourceUrl": "https://x.com/search?q=China+industrial+profits",
-      "note": "NEW (checked 2026-09-27): JAN-AUG NOT YET ADOPTED — VALUE HELD. NBS's English press-release page showed no first-hand Jan-Aug profits release; a paywalled WSJ snippet (Sep 27) claimed August industrial profit +20.4% YoY vs a 1.5% July decline, which CONFLICTS with NBS's recorded July +11.2% — Jev gate also failed (has_new_data 0.91, source_quality 0.98 <1.5). Value held at Jan-Jul +17.6% pending the official release. Jan-Jul +17.6% (¥4.58T, NBS Aug 27) — below Bloomberg Economics' 18.1% forecast; July alone +11.2% (third straight slowdown, weakest this year; June was +15.1%). Electronics led: profits +110% in Jan-Jul (contributed 9.3pp); integrated circuits +18.5x (>80% of electronics increase); raw-material makers +7.1pp; mining +34.9%, manufacturing +18.8%, utilities -5.8%. Weak spots: ferrous metals -51.2%, autos -20.4%, furniture -51% (property slump); property investment -19.2% Jan-Jul. Revenue +6.5% (¥80.92T), costs +5.9% — raw-material prices squeezing mid/downstream margins (ANZ). NBS: 'AI Plus' + computing-power demand main driver; 新动能 >40% of growth but weaker job/income creation than property/infra (PKU Su Jian). No new NBS data at the Sep 13 check — Jan-Aug profits due ~Sept 27. Updated 2026-09-27",
-      "note_zh": "新（核查于2026-09-27）：1-8月数据未采信——数值保持。统计局英文发布页未见一手1-8月利润数据；《华尔街日报》付费摘要（9月27日）称8月工业利润同比+20.4%、7月-1.5%，与统计局已记录的7月+11.2%相矛盾——Jev闸门亦未通过（has_new_data 0.91、source_quality 0.98<1.5）。数值保持1-7月+17.6%，待官方发布。 1-7月+17.6%（¥4.58万亿，统计局8月27日发布）——低于彭博经济研究的18.1%预测；7月单月+11.2%（连续第三个月放缓，年内最弱；6月为+15.1%）。电子行业领涨：1-7月利润+110%（贡献9.3个百分点）；集成电路+18.5倍（占电子行业增幅80%以上）；原材料制造贡献7.1个百分点；采矿业+34.9%、制造业+18.8%、公用事业-5.8%。薄弱环节：黑色金属冶炼-51.2%、汽车-20.4%、家具-51%（地产拖累）；1-7月房地产投资-19.2%。营收+6.5%（¥80.92万亿）、成本+5.9%——原材料涨价挤压中下游利润率（澳新银行）。统计局：'AI+'与算力需求是主要驱动；新动能占经济增长40%以上，但创造就业和收入能力弱于地产和基建等传统引擎（北大苏剑）。本周期无新统计局数据——1-8月利润约9月27日发布。更新于 2026-09-27"
+      "note": "NEW (checked 2026-10-04): OFFICIAL JAN-AUG RELEASE ADOPTED — Jev gate PASSED (has_new_data 0.86, source_quality 1.99). NBS (Sep 28, Xinhua/gov.cn): Jan-Aug industrial profits +15.7% YoY (¥5.27T); August alone +4.2% YoY — a fifth straight monthly slowdown. Electronics +110% (contributed 62% of total growth); high-tech manufacturing +54.7%; raw materials +47.3% (6.2pp); cost per 100 yuan of revenue down 0.41 yuan, margin 5.66% (+0.44pp). Revenue ¥93.09T (+6.6%). PPI +3.8% in August; industrial output +5.3% Jan-Aug. The prior week's WSJ August print (+20.4%) proved wrong. PRIOR (checked 2026-09-27): Jan-Aug not yet adopted; WSJ snippet conflicted with NBS's July +11.2%. Updated 2026-10-04",
+      "note_zh": "新（核查于2026-10-04）：官方1-8月发布采信——Jev闸门通过（has_new_data 0.86、source_quality 1.99）。统计局（9月28日，新华社/gov.cn）：1-8月工业利润同比+15.7%（¥5.27万亿）；8月单月+4.2%——连续第五个月放缓。电子+110%（贡献总增长62%）；高技术制造+54.7%；原材料+47.3%（贡献6.2个百分点）；每百元营收成本降0.41元，利润率5.66%（+0.44个百分点）。营收¥93.09万亿（+6.6%）。8月PPI +3.8%；1-8月工业产出+5.3%。上周《华尔街日报》的8月+20.4%数据被证伪。前情（核查于2026-09-27）：1-8月未采信；WSJ摘要与统计局7月+11.2%矛盾。更新于 2026-10-04"
     },
     "fxSettlement": {
       "value": "Net settlement surplus $48.5B (Aug) · cross-border net inflow $62.4B (+4% MoM) · non-bank cross-border receipts+payments $1.5T",
