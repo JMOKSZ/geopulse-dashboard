@@ -303,12 +303,13 @@
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
-            transition: transform var(--transition), box-shadow var(--transition);
+            transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
         }
 
         .card:hover {
             transform: translateY(-2px);
             box-shadow: var(--shadow-lg);
+            border-color: rgba(200, 75, 49, 0.28);
         }
 
         .card-header {
@@ -347,6 +348,20 @@
             background: #C0392B;
         }
 
+        /* Critical breathing ring: the most severe indicators signal themselves
+           (micro-interaction semantics, details.so style). Only animates when the
+           user allows motion; reduced-motion global rule kills it. */
+        @media (prefers-reduced-motion: no-preference) {
+            .risk-dot.high {
+                animation: gp-pulse 2.4s ease-in-out infinite;
+            }
+        }
+
+        @keyframes gp-pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(192, 57, 43, 0.35); }
+            50%      { box-shadow: 0 0 0 5px rgba(192, 57, 43, 0); }
+        }
+
         .risk-dot.med {
             background: #D9A227;
         }
@@ -365,6 +380,7 @@
             color: var(--text);
             line-height: 1.2;
             word-break: break-word;
+            font-variant-numeric: tabular-nums;
         }
 
         .card-unit {
@@ -406,8 +422,17 @@
             font-weight: 500;
         }
 
-        .card-source a:hover {
-            text-decoration: underline;
+        /* Underline expands from left on hover (hover-capable devices only). */
+        .card-source a {
+            background: linear-gradient(currentColor, currentColor) no-repeat left bottom / 0% 1px;
+            transition: background-size var(--transition);
+        }
+
+        @media (hover: hover) {
+            .card-source a:hover {
+                background-size: 100% 1px;
+                text-decoration: none;
+            }
         }
 
         /* ── Strategic Summary ────────────────────────────── */
