@@ -92,8 +92,8 @@
       "threshold_zh": ">104 = 央行可能干预；102-104 = 温和可控",
       "source": "CFETS / Chinamoney",
       "sourceUrl": "https://x.com/search?q=CFETS+人民币汇率指数",
-      "note": "RMB at 6.6862 (daily). CFETS index last known: 101.41 (Jun 2). Updated 2026-10-18",
-      "note_zh": "人民币汇率6.6862（每日）。CFETS指数上次已知：101.41（6月2日）。更新于 2026-10-18"
+      "note": "NEW (checked 2026-10-25): index at four-year high but PBOC-managed — VALUE HELD (Jev gate FAILED source_quality 1.26<1.5). Bloomberg replica of CFETS RMB Index hit 103.9 (Oct 9, highest since Apr 2022, YTD >5%) after PBOC rejected undervaluation claims; replica 103.73 on Oct 15 (+5.75% YTD). USD/CNY 6.6747 (Oct 22), near strongest since June 2022. Q3 GDP 4.5% YoY, beat. Official CFETS print (Sep 30: 103.20) pending update. RMB at 6.6862 (daily). CFETS index last known: 101.41 (Jun 2). Updated 2026-10-25",
+      "note_zh": "新（核查于2026-10-25）：指数创四年新高但属央行管理区间——数值保持（Jev闸门未过：source_quality 1.26<1.5）。彭博CFETS复刻指数10月9日达103.9（2022年4月以来最高，年内涨超5%），此前央行驳斥低估论；复刻指数10月15日103.73（年内+5.75%）。USD/CNY 6.6747（10月22日），接近2022年6月以来最强。三季度GDP同比4.5%、超预期。CFETS官方口径（9月30日103.20）待更新。人民币汇率6.6862（每日）。CFETS指数上次已知：101.41（6月2日）。更新于 2026-10-25"
     },
     "chinaEvExports": {
       "value": "1.053M vehicles exported (Sep, CAAM, +61.4% YoY, +4.2% MoM) · NEV exports 571K (+160% YoY, +8.6% MoM) = >50% of exports 4th straight month · Jan-Sep exports 8.205M (+65.8%), incl. >4M NEVs · CAAM sees 2026 exports >10M",
