@@ -17,8 +17,8 @@
       "threshold_zh": "创纪录。持续>$1000亿=结构优势确认",
       "source": "China Customs (monthly)",
       "sourceUrl": "https://x.com/search?q=China+trade+surplus+September+2026",
-      "note": "May 2026: exports +19.4% YoY. CSI 300: 4171. Updated 2026-10-18",
-      "note_zh": "2026年5月：出口同比+19.4%。沪深300：4171。更新于 2026-10-18"
+      "note": "(checked 2026-11-08): no fresh credible data this week; value held. May 2026: exports +19.4% YoY. CSI 300: 4171. Updated 2026-10-18",
+      "note_zh": "（核查于2026-11-08）：本周无可信新数据，数值维持。2026年5月：出口同比+19.4%。沪深300：4171。更新于 2026-10-18"
     },
     "chinaTradeShare": {
       "value": "~15% of world goods exports (2025)",
@@ -32,8 +32,8 @@
       "threshold_zh": "WTO：2009年起全球第一出口大国。关税压力下份额仍在上升",
       "source": "WTO World Trade Statistical Review 2025",
       "sourceUrl": "https://www.wto.org/english/res_e/statis_e/wts_2025_e.pdf",
-      "note": "China's share of global goods exports rose to ~15% in 2025, up from ~14.2% in 2020. Absolute export value ~$3.8T.",
-      "note_zh": "中国全球商品出口份额2025年升至约15%，2020年为14.2%。出口绝对值约$3.8万亿。"
+      "note": "(checked 2026-11-08): no fresh credible data this week; value held. China's share of global goods exports rose to ~15% in 2025, up from ~14.2% in 2020. Absolute export value ~$3.8T.",
+      "note_zh": "（核查于2026-11-08）：本周无可信新数据，数值维持。中国全球商品出口份额2025年升至约15%，2020年为14.2%。出口绝对值约$3.8万亿。"
     },
     "chinaTradeWeight": {
       "value": "Steel 54% · Cement 60% · Coal 50% · Containers 80%",
@@ -47,8 +47,8 @@
       "threshold_zh": "无单一'全球吨位占比'统计——按商品类别分列",
       "source": "World Steel / IEA / UN Comtrade",
       "sourceUrl": "https://www.worldsteel.org/steel-by-topic/statistics.html",
-      "note": "Individual commodity shares are each sourced from their respective industry data. No credible single 'total tonnage share' exists.",
-      "note_zh": "各商品类别的份额来自各自行业的统计数据。不存在可信的单一'总吨位占比'数据。"
+      "note": "(checked 2026-11-08): no fresh credible data this week; value held. Individual commodity shares are each sourced from their respective industry data. No credible single 'total tonnage share' exists.",
+      "note_zh": "（核查于2026-11-08）：本周无可信新数据，数值维持。各商品类别的份额来自各自行业的统计数据。不存在可信的单一'总吨位占比'数据。"
     },
     "industrialProfits": {
       "value": "+15.5% (Jan-Sep 2026, ¥6.03T) · Sep +14.4% — strongest since Jun, rebound from Aug's +4.2% · electronics doubled (contributed 9.6pp) · high-tech mfg +52.0% · nonferrous +79.7% · optical-fiber profits ~6x on AI/data-center demand · margin 5.68%",
