@@ -1,7 +1,7 @@
 {
   "dashboard": "Geopolitical Pulse / 地缘脉冲",
   "version": "1.0.0",
-  "lastUpdated": "2026-11-08T00:03:54Z",
+  "lastUpdated": "2026-11-15T00:03:46Z",
   "updateFrequency": {
     "marketData": "realtime",
     "xScraped": "daily",
@@ -29,25 +29,25 @@
     ]
   },
   "keyLevels": {
-    "usdCny": "6.6713",
-    "dxy": "100.12",
+    "usdCny": "6.6719",
+    "dxy": "98.99",
     "cfets": "101.64",
-    "gold": "$4,075/oz",
-    "wti": "$90.83/bbl",
+    "gold": "$3,886/oz",
+    "wti": "$88.56/bbl",
     "regime": "Accelerated De-Dollarization",
     "regime_zh": "去美元化加速",
     "gameProgression": "45%",
-    "brent": "$98.32/bbl",
-    "csi300": "4054.28",
-    "sse": "3649.18",
-    "sp500": "7376.86",
-    "us10y": "4.86%",
+    "brent": "$95.84/bbl",
+    "csi300": "4016.29",
+    "sse": "3634.35",
+    "sp500": "7561.67",
+    "us10y": "5.15%",
     "dim_rmb_axis": "36%",
     "dim_gold_dedollar": "44%",
-    "dim_dollar_pressure": "55%",
-    "dim_oil_chokepoint": "69%",
-    "dim_china_resil": "63%",
-    "dim_structural": "45%",
+    "dim_dollar_pressure": "59%",
+    "dim_oil_chokepoint": "67%",
+    "dim_china_resil": "53%",
+    "dim_structural": "44%",
     "dim_geopolitics": "66%"
   },
   "gameScoreHistory": [
@@ -241,6 +241,18 @@
       "oil_chokepoint": 68.9,
       "china_resil": 63.0,
       "structural": 45.1,
+      "geopolitics": 65.8
+    },
+    {
+      "date": "2026-11-15",
+      "score": 45,
+      "delta": 0,
+      "rmb_axis": 36.0,
+      "gold_dedollar": 43.6,
+      "dollar_pressure": 58.9,
+      "oil_chokepoint": 67.0,
+      "china_resil": 52.7,
+      "structural": 44.4,
       "geopolitics": 65.8
     }
   ]
